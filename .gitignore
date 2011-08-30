@@ -1,3 +1,8 @@
 build
 libSBOLcore.jar
 
+/nbproject/private/
+/lib/sommer~svn/trunk/misc/Jersey/nbproject/private/
+/lib/sommer~svn
+/lib/openrdf-sesame-2.5.0-onejar.jar
+/lib/openrdf-alibaba-2.0-beta12.jar

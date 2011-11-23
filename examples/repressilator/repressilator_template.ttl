@@ -1,0 +1,105 @@
+@prefix : <http://mydatasource.org/data#> .
+@prefix sbol: <http://sbols.org/sbol.owl#> .
+@prefix data: <http://mydatasource.org/data#> .
+
+:pLlacO1 a sbol:DnaComponent ;
+ sbol:name "pLlacO1";
+ sbol:description "Strong, tightly repressible promoter containing lac operators";
+ sbol:type <http://identifiers.org/obo.so/SO:0000167>.
+
+:tetRlite a sbol:DnaComponent ;
+ sbol:name "tetR-lite";
+ sbol:description "Coding region for TetR repressor with the 11-amino-acid ssrA tag (denoted 'lite')";
+ sbol:type <http://identifiers.org/obo.so/SO:0000316>.
+
+:t1 a sbol:DnaComponent ;
+ sbol:name "T1 terminator";
+ sbol:description "T1 terminator from the E. coli rrnB operon";
+ sbol:type <http://identifiers.org/obo.so/SO:0000141>.
+
+:lambdaPr a sbol:DnaComponent ;
+ sbol:name "lambda Pr";
+ sbol:description "The right promoter from phage lambda";
+ sbol:type <http://identifiers.org/obo.so/SO:0000167>.
+
+:lacIlite a sbol:DnaComponent ;
+ sbol:name "lacI-lite";
+ sbol:description "Coding region for LacI repressor with the 11-amino-acid ssrA tag (denoted 'lite')";
+ sbol:type <http://identifiers.org/obo.so/SO:0000316>.
+
+:pLtetO1 a sbol:DnaComponent ;
+ sbol:name "pLtetO1";
+ sbol:description "Strong, tightly repressible promoter containing tet operators";
+ sbol:type <http://identifiers.org/obo.so/SO:0000167>.
+
+:lamdacIlite a sbol:DnaComponent ;
+ sbol:name "lambda cI-lite";
+ sbol:description "Coding region for CI repressor with the 11-amino-acid ssrA tag (denoted 'lite')";
+ sbol:type <http://identifiers.org/obo.so/SO:0000316>.
+
+:pSC101ori a sbol:DnaComponent ;
+ sbol:name "pSC101 origin";
+ sbol:description "Low-copy origin of replication";
+ sbol:type <http://identifiers.org/obo.so/SO:0000296>.
+
+:ampR a sbol:DnaComponent ;
+ sbol:name "ampR";
+ sbol:description "Ampicilin resistance marker";
+ sbol:type <http://identifiers.org/obo.so/SO:0000316>.
+
+:repressilator a sbol:DnaComponent ;
+ sbol:name "Repressilator Circuit" ;
+ sbol:annotations :pro1 , 
+                 :cds1 ,
+                 :term1 ,
+                 :pro2 ,
+                 :cds2 ,
+                 :term2 ,
+                 :pro3 ,
+                 :cds3 ,
+                 :term3 ,
+                 :ori1 ,
+                 :term4 ,
+                 :cds5 ,
+                 :term5 .
+
+:pro1 a sbol:SequenceAnnotation ;
+ sbol:subComponent :pLlacO1 ;
+ sbol:precedes :cds1 .
+:cds1 a sbol:SequenceAnnotation ;
+ sbol:subComponent :tetRlite ;
+ sbol:precedes :term1 .
+:term1 a sbol:SequenceAnnotation ;
+ sbol:subComponent :t1 ;
+ sbol:precedes :pro2 .
+:pro2 a sbol:SequenceAnnotation ;
+ sbol:subComponent :lambdaPr ;
+ sbol:precedes :cds2 .
+:cds2 a sbol:SequenceAnnotation ;
+ sbol:subComponent :lacIlite ;
+ sbol:precedes :term2 .
+:term2 a sbol:SequenceAnnotation ;
+ sbol:subComponent :t1 ;
+ sbol:precedes :pro3 .
+:pro3 a sbol:SequenceAnnotation ;
+ sbol:subComponent :pLtetO1 ;
+ sbol:precedes :cds3 .
+:cds3 a sbol:SequenceAnnotation ;
+ sbol:subComponent :lambdacIlite ;
+ sbol:precedes :term3 .
+:term3 a sbol:SequenceAnnotation ;
+ sbol:subComponent :t1 ;
+ sbol:precedes :ori1 .
+:ori1 a sbol:SequenceAnnotation ;
+ sbol:subComponent :pSC101ori ;
+ sbol:precedes :term4 .
+:term4 a sbol:SequenceAnnotation ;
+ sbol:subComponent :t1 ;
+ sbol:precedes :cds5 .
+:cds5 a sbol:SequenceAnnotation ;
+ sbol:subComponent :ampR ;
+ sbol:precedes :term5 .
+:term5 a sbol:SequenceAnnotation ;
+ sbol:subComponent :t1;
+ sbol:precedes :pro1 .
+

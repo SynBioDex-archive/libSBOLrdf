@@ -1,0 +1,139 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+         xmlns:sbol="http://sbols.org/sbol.owl#"
+         xmlns:SO="http://identifiers.org/obo.so/SO:"
+         xmlns:data="http://mydatasource.org/data#">
+  <sbol:DnaComponent rdf:about="data:t1">
+    <sbol:name>T1 terminator</sbol:name>
+    <sbol:description>T1 terminator from the E. coli rrnB operon</sbol:description>
+    <sbol:type rdf:resource="SO:0000141" />
+  </sbol:DnaComponent>
+  <sbol:DnaComponent rdf:about="data:lamdacIlite">
+    <sbol:name>lambda cI-lite</sbol:name>
+    <sbol:description>Coding region for CI repressor with the 11-amino-acid ssrA tag (denoted 'lite')</sbol:description>
+    <sbol:type rdf:resource="SO:0000316" />
+  </sbol:DnaComponent>
+  <sbol:DnaComponent rdf:about="data:repressilator">
+    <sbol:name>Repressilator Circuit</sbol:name>
+    <sbol:annotations>
+      <sbol:SequenceAnnotation rdf:about="data:pro1">
+        <sbol:subComponent>
+          <sbol:DnaComponent rdf:about="data:pLlacO1">
+            <sbol:name>pLlacO1</sbol:name>
+            <sbol:description>Strong, tightly repressible promoter containing lac operators</sbol:description>
+            <sbol:type rdf:resource="SO:0000167" />
+          </sbol:DnaComponent>
+        </sbol:subComponent>
+        <sbol:precedes rdf:resource="data:cds1" />
+      </sbol:SequenceAnnotation>
+    </sbol:annotations>
+    <sbol:annotations>
+      <sbol:SequenceAnnotation rdf:about="data:cds1">
+        <sbol:subComponent>
+          <sbol:DnaComponent rdf:about="data:tetRlite">
+            <sbol:name>tetR-lite</sbol:name>
+            <sbol:description>Coding region for TetR repressor with the 11-amino-acid ssrA tag (denoted 'lite')</sbol:description>
+            <sbol:type rdf:resource="SO:0000316" />
+          </sbol:DnaComponent>
+        </sbol:subComponent>
+        <sbol:precedes rdf:resource="data:term1" />
+      </sbol:SequenceAnnotation>
+    </sbol:annotations>
+    <sbol:annotations>
+      <sbol:SequenceAnnotation rdf:about="data:term1">
+        <sbol:subComponent rdf:resource="data:t1" />
+        <sbol:precedes rdf:resource="data:pro2" />
+      </sbol:SequenceAnnotation>
+    </sbol:annotations>
+    <sbol:annotations>
+      <sbol:SequenceAnnotation rdf:about="data:pro2">
+        <sbol:subComponent>
+          <sbol:DnaComponent rdf:about="data:lambdaPr">
+            <sbol:name>lambda Pr</sbol:name>
+            <sbol:description>The right promoter from phage lambda</sbol:description>
+            <sbol:type rdf:resource="SO:0000167" />
+          </sbol:DnaComponent>
+        </sbol:subComponent>
+        <sbol:precedes rdf:resource="data:cds2" />
+      </sbol:SequenceAnnotation>
+    </sbol:annotations>
+    <sbol:annotations>
+      <sbol:SequenceAnnotation rdf:about="data:cds2">
+        <sbol:subComponent>
+          <sbol:DnaComponent rdf:about="data:lacIlite">
+            <sbol:name>lacI-lite</sbol:name>
+            <sbol:description>Coding region for LacI repressor with the 11-amino-acid ssrA tag (denoted 'lite')</sbol:description>
+            <sbol:type rdf:resource="SO:0000316" />
+          </sbol:DnaComponent>
+        </sbol:subComponent>
+        <sbol:precedes rdf:resource="data:term2" />
+      </sbol:SequenceAnnotation>
+    </sbol:annotations>
+    <sbol:annotations>
+      <sbol:SequenceAnnotation rdf:about="data:term2">
+        <sbol:subComponent rdf:resource="data:t1" />
+        <sbol:precedes rdf:resource="data:pro3" />
+      </sbol:SequenceAnnotation>
+    </sbol:annotations>
+    <sbol:annotations>
+      <sbol:SequenceAnnotation rdf:about="data:pro3">
+        <sbol:subComponent>
+          <sbol:DnaComponent rdf:about="data:pLtetO1">
+            <sbol:name>pLtetO1</sbol:name>
+            <sbol:description>Strong, tightly repressible promoter containing tet operators</sbol:description>
+            <sbol:type rdf:resource="SO:0000167" />
+          </sbol:DnaComponent>
+        </sbol:subComponent>
+        <sbol:precedes rdf:resource="data:cds3" />
+      </sbol:SequenceAnnotation>
+    </sbol:annotations>
+    <sbol:annotations>
+      <sbol:SequenceAnnotation rdf:about="data:cds3">
+        <sbol:subComponent rdf:resource="data:lambdacIlite" />
+        <sbol:precedes rdf:resource="data:term3" />
+      </sbol:SequenceAnnotation>
+    </sbol:annotations>
+    <sbol:annotations>
+      <sbol:SequenceAnnotation rdf:about="data:term3">
+        <sbol:subComponent rdf:resource="data:t1" />
+        <sbol:precedes rdf:resource="data:ori1" />
+      </sbol:SequenceAnnotation>
+    </sbol:annotations>
+    <sbol:annotations>
+      <sbol:SequenceAnnotation rdf:about="data:ori1">
+        <sbol:subComponent>
+          <sbol:DnaComponent rdf:about="data:pSC101ori">
+            <sbol:name>pSC101 origin</sbol:name>
+            <sbol:description>Low-copy origin of replication</sbol:description>
+            <sbol:type rdf:resource="SO:0000296" />
+          </sbol:DnaComponent>
+        </sbol:subComponent>
+        <sbol:precedes rdf:resource="data:term4" />
+      </sbol:SequenceAnnotation>
+    </sbol:annotations>
+    <sbol:annotations>
+      <sbol:SequenceAnnotation rdf:about="data:term4">
+        <sbol:subComponent rdf:resource="data:t1" />
+        <sbol:precedes rdf:resource="data:cds5" />
+      </sbol:SequenceAnnotation>
+    </sbol:annotations>
+    <sbol:annotations>
+      <sbol:SequenceAnnotation rdf:about="data:cds5">
+        <sbol:subComponent>
+          <sbol:DnaComponent rdf:about="data:ampR">
+            <sbol:name>ampR</sbol:name>
+            <sbol:description>Ampicilin resistance marker</sbol:description>
+            <sbol:type rdf:resource="SO:0000316" />
+          </sbol:DnaComponent>
+        </sbol:subComponent>
+        <sbol:precedes rdf:resource="data:term5" />
+      </sbol:SequenceAnnotation>
+    </sbol:annotations>
+    <sbol:annotations>
+      <sbol:SequenceAnnotation rdf:about="data:term5">
+        <sbol:subComponent rdf:resource="data:t1" />
+        <sbol:precedes rdf:resource="data:pro1" />
+      </sbol:SequenceAnnotation>
+    </sbol:annotations>
+  </sbol:DnaComponent>
+</rdf:RDF>

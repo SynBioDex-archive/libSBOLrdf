@@ -147,7 +147,7 @@ xmlns:prd="http://partsregistry.org/cgi/xml/part.cgi?part="
             </xsl:if>
             <s:subComponent>
               <s:DnaComponent rdf:about="{concat($prd,concat('RFC_',scar_standard))}"> 
-                <s:displayId><xsl:value-of select="scar_name"/></s:displayId>
+                <s:displayId><xsl:value-of select="concat('RFC_',scar_standard)"/></s:displayId>
                 <xsl:choose>
                   <xsl:when test="normalize-space(scar_nickname)">
                   <s:name><xsl:value-of select="scar_nickname"/></s:name>

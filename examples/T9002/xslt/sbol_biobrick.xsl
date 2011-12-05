@@ -208,7 +208,7 @@ xmlns:prd="http://partsregistry.org/cgi/xml/part.cgi?part="
                   <xsl:when test="starts-with(title,'BBa_') and not(key('parts',title))">
                     <s:DnaComponent rdf:about="{concat($prd,title)}">
                       <s:displayId><xsl:value-of select="title" /></s:displayId>
-                      <pr:type rdf:resource="{concat($prt,type)}"/>
+                      <pr:type rdf:resource="{concat($prt,translate(type,$uc,$lc))}"/>
                     </s:DnaComponent>
                   </xsl:when>
                   <!-- This feature is not a part -->
@@ -223,7 +223,7 @@ xmlns:prd="http://partsregistry.org/cgi/xml/part.cgi?part="
                          <s:name><xsl:value-of select="type"/></s:name>
                        </xsl:otherwise>
                      </xsl:choose>
-                      <pr:type rdf:resource="{concat($prt,type)}"/>
+                      <pr:type rdf:resource="{concat($prt,translate(type,$uc,$lc))}"/>
                     </s:DnaComponent>
                   </xsl:otherwise>
                 </xsl:choose>

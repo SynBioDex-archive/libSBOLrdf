@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rdf:RDF
+  xmlns:it='http://xmlns.rdfinference.org/ril/issue-tracker'
+  xmlns:dc='http://purl.org/metadata/dublin_core#'
+  xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#'
+>
+<rdf:description about='http://rdfinference.org/ril/ril-20010502'>
+  <it:issue
+rdf:resource='http://rdfinference.org/ril/issue-tracker/issues/i2001030423'/>
+</rdf:description>
+<rdf:description
+about='http://rdfinference.org/ril/issue-tracker/issues/i2001030423'>
+  <it:author
+rdf:resource='http://rdfinference.org/ril/issue-tracker/users/uogbuji'/>
+  <it:comment>
+    <rdf:description>
+      <it:author>Alexandre Fayolle</it:author>
+      <it:body>
+The abbreviation in listing 8 doesn't seem necessary to us.
+      </it:body>
+    </rdf:description>
+  </it:comment>
+  <it:action>
+    <rdf:description>
+      <it:author
+rdf:resource='http://rdfinference.org/ril/issue-tracker/users/uogbuji'/>
+      <it:assigned-to
+rdf:resource='http://rdfinference.org/ril/issue-tracker/users/uogbuji'>
+      <it:body>Organize a vote on this topic</it:body>
+    </rdf:description>
+  </it:action>
+</rdf:description>
+</rdf:RDF>

@@ -21,58 +21,47 @@ xmlns:prd="http://partsregistry.org/cgi/xml/part.cgi?part="
 <xsl:strip-space elements="*"/>
 <xsl:output indent="yes"/>
 
-<xsl:key name="ppp" match="subpart" use="part_name"/>
+<xsl:key name="parts" match="subpart" use="part_name"/>
 <xsl:template match="/">
 <rdf:RDF>
 
   <xsl:for-each select="rsbpml/part_list/part">
-         <xsl:for-each select="features/feature">
-              <xsl:variable name="feat_id">
-                <xsl:choose>
-                  <xsl:when test="starts-with(title,'BBa_')">
-                    <xsl:if test="key('ppp',title)">
-                    <xsl:value-of select="title"/>
-                    </xsl:if>
-                  </xsl:when>
-                  <xsl:otherwise>
-                    <xsl:value-of select="id"/>
-                  </xsl:otherwise>
-                </xsl:choose>
-              </xsl:variable>
-              <s:DnaComponent rdf:about="{concat($prd,$feat_id)}">
-                <s:displayId><xsl:copy-of select="$feat_id" /></s:displayId>
-                    <s:f><xsl:value-of select="id"/></s:f>
-              </s:DnaComponent>
-
-        </xsl:for-each>
-   <s:DnaComponent rdf:about="{concat($prd,part_name)}">
+    <s:DnaComponent rdf:about="{concat($prd,part_name)}">
       <s:displayId><xsl:value-of select="part_name"/></s:displayId>
          <xsl:for-each select="deep_subparts/subpart">
               <s:DnaComponent rdf:about="{concat($prd,part_name)}"> 
                 <s:displayId><xsl:value-of select="part_name"/></s:displayId>
          </s:DnaComponent> 
           </xsl:for-each>
-
- 
-
-  </s:DnaComponent>
+        <xsl:for-each select="features/feature">
+               <xsl:choose>
+                 <!-- There is a subpart with this BBa_  -->
+                 <xsl:when test="starts-with(title,'BBa_') and key('parts',title)">
+                   <s:DnaComponent rdf:about="{concat($prd,title)}">
+                     <!-- type -->
+                   </s:DnaComponent>
+                 </xsl:when>
+                 <!-- This BBa_ is a part, not listed as subpart -->
+                 <xsl:when test="starts-with(title,'BBa_') and not(key('parts',title))">
+                   <s:DnaComponent rdf:about="{concat($prd,title)}">
+                     <s:displayId><xsl:copy-of select="title" /></s:displayId>
+                     <!-- type -->
+                   </s:DnaComponent>
+                 </xsl:when>
+                 <!-- This feature is not a part -->
+                 <xsl:otherwise>
+                   <s:DnaComponent rdf:about="{concat($prd,id)}">
+                     <s:displayId><xsl:copy-of select="title" /></s:displayId>
+                     <s:f><xsl:value-of select="id"/></s:f>
+                     <!-- type -->
+                   </s:DnaComponent>
+                 </xsl:otherwise>
+               </xsl:choose>
+         </xsl:for-each>
+    </s:DnaComponent>
   </xsl:for-each>
 
 </rdf:RDF>
 </xsl:template>
-
-
-<!--
-        <tr>
-          <td>&#160;</td>
-     </table>
-    </td></tr>
-    </xsl:for-each>
-  </table>
-  </body>
-  </html>
-</xsl:template>
-
-  -->
 </xsl:stylesheet>
 

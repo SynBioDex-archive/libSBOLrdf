@@ -63,58 +63,58 @@ prd:BBa_R0062 pr:type prt:biobrick,
 	s:name "lux pR";
 	a s:DnaComponent.
 prd:BBa_T9002 pr:type prt:signalling;
-	s:annotations prd:id87084,
-		prd:id87102,
-		prd:id87119,
-		prd:id87137,
-		prd:id87154,
-		prd:id87171,
-		prd:id87191,
-		prd:id87208,
-		prd:id87226,
-		prd:id87243,
-		prd:id87263,
-		prd:id87281,
-		prd:id87303,
-		prd:id87321,
-		prd:id87347,
-		prd:id87392,
-		prd:id87415,
-		prd:id87438,
-		prd:id87460,
-		prd:id87483,
-		prd:id87505,
-		prd:id87528,
-		prd:id87549,
-		prd:id87571,
-		prd:id87594,
-		prd:id87616,
-		prd:id87639,
-		prd:id87662,
-		prd:id87683,
-		prd:id87706,
-		prd:id87728,
-		prd:id87751,
-		prd:id87773,
-		prd:id87795,
-		prd:id87816,
-		prd:id87839,
-		prd:id87862,
-		prd:id87884,
-		prd:id87907,
-		prd:id87929,
-		prd:id87951,
-		prd:id87974,
-		prd:id87997,
-		prd:id88020,
-		prd:id88043,
-		prd:id88064,
-		prd:id88087,
-		prd:id88110,
-		prd:id88132;
+	s:annotations prd:id269095,
+		prd:id269113,
+		prd:id269130,
+		prd:id269148,
+		prd:id269166,
+		prd:id269183,
+		prd:id269202,
+		prd:id269219,
+		prd:id269237,
+		prd:id269254,
+		prd:id269274,
+		prd:id269293,
+		prd:id269315,
+		prd:id269333,
+		prd:id269360,
+		prd:id269404,
+		prd:id269427,
+		prd:id269450,
+		prd:id269472,
+		prd:id269495,
+		prd:id269517,
+		prd:id269540,
+		prd:id269561,
+		prd:id269584,
+		prd:id269606,
+		prd:id269628,
+		prd:id269651,
+		prd:id269674,
+		prd:id269695,
+		prd:id269718,
+		prd:id269740,
+		prd:id269763,
+		prd:id269786,
+		prd:id269807,
+		prd:id269828,
+		prd:id269851,
+		prd:id269874,
+		prd:id269897,
+		prd:id269919,
+		prd:id269941,
+		prd:id269964,
+		prd:id269987,
+		prd:id270009,
+		prd:id270032,
+		prd:id270055,
+		prd:id270076,
+		prd:id270099,
+		prd:id270122,
+		prd:id270144;
 	s:description "GFP Producer Controlled by 3OC6HSL Receiver Device";
 	s:displayId "BBa_T9002";
-	s:dnaSequence prd:id87039;
+	s:dnaSequence prd:id269050;
 	s:name "T9002";
 	a s:DnaComponent.
 prf:1565164 pr:type prt:binding;
@@ -213,225 +213,224 @@ prf:1565253 pr:type prt:stop;
 	s:displayId "1565253";
 	s:name "stop";
 	a s:DnaComponent.
-prd:id87039 s:nucleotides "tccctatcagtgatagagattgacatccctatcagtgatagagatactgagcactactagagaaagaggagaaatactagatgaaaaacataaatgccgacgacacatacagaataattaataaaattaaagcttgtagaagcaataatgatattaatcaatgcttatctgatatgactaaaatggtacattgtgaatattatttactcgcgatcatttatcctcattctatggttaaatctgatatttcaatcctagataattaccctaaaaaatggaggcaatattatgatgacgctaatttaataaaatatgatcctatagtagattattctaactccaatcattcaccaattaattggaatatatttgaaaacaatgctgtaaataaaaaatctccaaatgtaattaaagaagcgaaaacatcaggtcttatcactgggtttagtttccctattcatacggctaacaatggcttcggaatgcttagttttgcacattcagaaaaagacaactatatagatagtttatttttacatgcgtgtatgaacataccattaattgttccttctctagttgataattatcgaaaaataaatatagcaaataataaatcaaacaacgatttaaccaaaagagaaaaagaatgtttagcgtgggcatgcgaaggaaaaagctcttgggatatttcaaaaatattaggttgcagtgagcgtactgtcactttccatttaaccaatgcgcaaatgaaactcaatacaacaaaccgctgccaaagtatttctaaagcaattttaacaggagcaattgattgcccatactttaaaaattaataacactgatagtgctagtgtagatcactactagagccaggcatcaaataaaacgaaaggctcagtcgaaagactgggcctttcgttttatctgttgtttgtcggtgaacgctctctactagagtcacactggctcaccttcgggtgggcctttctgcgtttatatactagagacctgtaggatcgtacaggtttacgcaagaaaatggtttgttatagtcgaataaatactagagtcacacaggaaagtactagatgcgtaaaggagaagaacttttcactggagttgtcccaattcttgttgaattagatggtgatgttaatgggcacaaattttctgtcagtggagagggtgaaggtgatgcaacatacggaaaacttacccttaaatttatttgcactactggaaaactacctgttccatggccaacacttgtcactactttcggttatggtgttcaatgctttgcgagatacccagatcatatgaaacagcatgactttttcaagagtgccatgcccgaaggttatgtacaggaaagaactatatttttcaaagatgacgggaactacaagacacgtgctgaagtcaagtttgaaggtgatacccttgttaatagaatcgagttaaaaggtattgattttaaagaagatggaaacattcttggacacaaattggaatacaactataactcacacaatgtatacatcatggcagacaaacaaaagaatggaatcaaagttaacttcaaaattagacacaacattgaagatggaagcgttcaactagcagaccattatcaacaaaatactccaattggcgatggccctgtccttttaccagacaaccattacctgtccacacaatctgccctttcgaaagatcccaacgaaaagagagaccacatggtccttcttgagtttgtaacagctgctgggattacacatggcatggatgaactatacaaataataatactagagccaggcatcaaataaaacgaaaggctcagtcgaaagactgggcctttcgttttatctgttgtttgtcggtgaacgctctctactagagtcacactggctcaccttcgggtgggcctttctgcgtttata";
+prd:id269050 s:nucleotides "tccctatcagtgatagagattgacatccctatcagtgatagagatactgagcactactagagaaagaggagaaatactagatgaaaaacataaatgccgacgacacatacagaataattaataaaattaaagcttgtagaagcaataatgatattaatcaatgcttatctgatatgactaaaatggtacattgtgaatattatttactcgcgatcatttatcctcattctatggttaaatctgatatttcaatcctagataattaccctaaaaaatggaggcaatattatgatgacgctaatttaataaaatatgatcctatagtagattattctaactccaatcattcaccaattaattggaatatatttgaaaacaatgctgtaaataaaaaatctccaaatgtaattaaagaagcgaaaacatcaggtcttatcactgggtttagtttccctattcatacggctaacaatggcttcggaatgcttagttttgcacattcagaaaaagacaactatatagatagtttatttttacatgcgtgtatgaacataccattaattgttccttctctagttgataattatcgaaaaataaatatagcaaataataaatcaaacaacgatttaaccaaaagagaaaaagaatgtttagcgtgggcatgcgaaggaaaaagctcttgggatatttcaaaaatattaggttgcagtgagcgtactgtcactttccatttaaccaatgcgcaaatgaaactcaatacaacaaaccgctgccaaagtatttctaaagcaattttaacaggagcaattgattgcccatactttaaaaattaataacactgatagtgctagtgtagatcactactagagccaggcatcaaataaaacgaaaggctcagtcgaaagactgggcctttcgttttatctgttgtttgtcggtgaacgctctctactagagtcacactggctcaccttcgggtgggcctttctgcgtttatatactagagacctgtaggatcgtacaggtttacgcaagaaaatggtttgttatagtcgaataaatactagagtcacacaggaaagtactagatgcgtaaaggagaagaacttttcactggagttgtcccaattcttgttgaattagatggtgatgttaatgggcacaaattttctgtcagtggagagggtgaaggtgatgcaacatacggaaaacttacccttaaatttatttgcactactggaaaactacctgttccatggccaacacttgtcactactttcggttatggtgttcaatgctttgcgagatacccagatcatatgaaacagcatgactttttcaagagtgccatgcccgaaggttatgtacaggaaagaactatatttttcaaagatgacgggaactacaagacacgtgctgaagtcaagtttgaaggtgatacccttgttaatagaatcgagttaaaaggtattgattttaaagaagatggaaacattcttggacacaaattggaatacaactataactcacacaatgtatacatcatggcagacaaacaaaagaatggaatcaaagttaacttcaaaattagacacaacattgaagatggaagcgttcaactagcagaccattatcaacaaaatactccaattggcgatggccctgtccttttaccagacaaccattacctgtccacacaatctgccctttcgaaagatcccaacgaaaagagagaccacatggtccttcttgagtttgtaacagctgctgggattacacatggcatggatgaactatacaaataataatactagagccaggcatcaaataaaacgaaaggctcagtcgaaagactgggcctttcgttttatctgttgtttgtcggtgaacgctctctactagagtcacactggctcaccttcgggtgggcctttctgcgtttata";
 	a s:DnaSequence.
-prd:id87084 s:subComponent prd:BBa_R0040;
+prd:id269095 s:subComponent prd:BBa_R0040;
 	a s:SequenceAnnotation.
-prd:id87102 s:precedes prd:id87084;
+prd:id269113 s:precedes prd:id269095;
 	s:subComponent prd:BBa_B0034;
 	a s:SequenceAnnotation.
-prd:id87119 s:precedes prd:id87084;
+prd:id269130 s:precedes prd:id269095;
 	s:subComponent prd:BBa_C0062;
 	a s:SequenceAnnotation.
-prd:id87137 s:precedes prd:id87084;
+prd:id269148 s:precedes prd:id269095;
 	s:subComponent prd:BBa_B0010;
 	a s:SequenceAnnotation.
-prd:id87154 s:precedes prd:id87084;
+prd:id269166 s:precedes prd:id269095;
 	s:subComponent prd:BBa_B0012;
 	a s:SequenceAnnotation.
-prd:id87171 s:precedes prd:id87084;
+prd:id269183 s:precedes prd:id269095;
 	s:subComponent prd:BBa_R0062;
 	a s:SequenceAnnotation.
-prd:id87191 s:precedes prd:id87084;
+prd:id269202 s:precedes prd:id269095;
 	s:subComponent prd:BBa_B0032;
 	a s:SequenceAnnotation.
-prd:id87208 s:precedes prd:id87084;
+prd:id269219 s:precedes prd:id269095;
 	s:subComponent prd:BBa_E0040;
 	a s:SequenceAnnotation.
-prd:id87226 s:precedes prd:id87084;
+prd:id269237 s:precedes prd:id269095;
 	s:subComponent prd:BBa_B0010;
 	a s:SequenceAnnotation.
-prd:id87243 s:precedes prd:id87084;
+prd:id269254 s:precedes prd:id269095;
 	s:subComponent prd:BBa_B0012;
 	a s:SequenceAnnotation.
-prd:id87263 s:subComponent prd:BBa_F2620;
+prd:id269274 s:subComponent prd:BBa_F2620;
 	a s:SequenceAnnotation.
-prd:id87281 s:precedes prd:id87263;
+prd:id269293 s:precedes prd:id269274;
 	s:subComponent prd:BBa_E0240;
 	a s:SequenceAnnotation.
-prd:id87303 s:subComponent prd:BBa_F2620;
+prd:id269315 s:subComponent prd:BBa_F2620;
 	a s:SequenceAnnotation.
-prd:id87321 s:precedes prd:id87303;
+prd:id269333 s:precedes prd:id269315;
 	s:subComponent prd:RFC_10;
 	a s:SequenceAnnotation.
-prd:id87344 s:nucleotides "tactagag";
+prd:id269356 s:nucleotides "tactagag";
 	a s:DnaSequence.
-prd:id87347 s:precedes prd:id87303;
+prd:id269360 s:precedes prd:id269315;
 	s:subComponent prd:BBa_E0240;
 	a s:SequenceAnnotation.
-prd:id87392 s:bioEnd "19";
+prd:id269404 s:bioEnd "19";
 	s:bioStart "1";
 	s:strand "+";
 	s:subComponent prf:1565164;
 	a s:SequenceAnnotation.
-prd:id87415 s:bioEnd "54";
+prd:id269427 s:bioEnd "54";
 	s:bioStart "1";
 	s:strand "+";
 	s:subComponent prd:BBa_R0040;
 	a s:SequenceAnnotation.
-prd:id87438 s:bioEnd "25";
+prd:id269450 s:bioEnd "25";
 	s:bioStart "20";
 	s:strand "+";
 	s:subComponent prf:1565166;
 	a s:SequenceAnnotation.
-prd:id87460 s:bioEnd "44";
+prd:id269472 s:bioEnd "44";
 	s:bioStart "26";
 	s:strand "+";
 	s:subComponent prf:1565167;
 	a s:SequenceAnnotation.
-prd:id87483 s:bioEnd "48";
+prd:id269495 s:bioEnd "48";
 	s:bioStart "43";
 	s:strand "+";
 	s:subComponent prf:1565168;
 	a s:SequenceAnnotation.
-prd:id87505 s:bioEnd "74";
+prd:id269517 s:bioEnd "74";
 	s:bioStart "63";
 	s:strand "+";
 	s:subComponent prd:BBa_B0034;
 	a s:SequenceAnnotation.
-prd:id87528 s:bioEnd "70";
+prd:id269540 s:bioEnd "70";
 	s:bioStart "67";
 	s:strand "+";
 	s:subComponent prf:1565172;
 	a s:SequenceAnnotation.
-prd:id87549 s:bioEnd "836";
+prd:id269561 s:bioEnd "836";
 	s:bioStart "81";
 	s:strand "+";
 	s:subComponent prd:BBa_C0062;
 	a s:SequenceAnnotation.
-prd:id87571 s:bioEnd "830";
+prd:id269584 s:bioEnd "830";
 	s:bioStart "81";
 	s:strand "+";
 	s:subComponent prf:1565187;
 	a s:SequenceAnnotation.
-prd:id87594 s:bioEnd "82";
+prd:id269606 s:bioEnd "82";
 	s:bioStart "81";
 	s:strand "+";
 	s:subComponent prf:1565186;
 	a s:SequenceAnnotation.
-prd:id87616 s:bioEnd "254";
+prd:id269628 s:bioEnd "254";
 	s:bioStart "254";
 	s:strand "+";
 	s:subComponent prf:1565189;
 	a s:SequenceAnnotation.
-prd:id87639 s:bioEnd "572";
+prd:id269651 s:bioEnd "572";
 	s:bioStart "572";
 	s:strand "+";
 	s:subComponent prf:1565190;
 	a s:SequenceAnnotation.
-prd:id87662 s:bioEnd "861";
+prd:id269674 s:bioEnd "861";
 	s:bioStart "837";
 	s:strand "+";
 	s:subComponent prf:1565191;
 	a s:SequenceAnnotation.
-prd:id87683 s:bioEnd "949";
+prd:id269695 s:bioEnd "949";
 	s:bioStart "870";
 	s:strand "+";
 	s:subComponent prd:BBa_B0010;
 	a s:SequenceAnnotation.
-prd:id87706 s:bioEnd "924";
+prd:id269718 s:bioEnd "924";
 	s:bioStart "881";
 	s:strand "+";
 	s:subComponent prf:1565197;
 	a s:SequenceAnnotation.
-prd:id87728 s:bioEnd "998";
+prd:id269740 s:bioEnd "998";
 	s:bioStart "958";
 	s:strand "+";
 	s:subComponent prd:BBa_B0012;
 	a s:SequenceAnnotation.
-prd:id87751 s:bioEnd "984";
+prd:id269763 s:bioEnd "984";
 	s:bioStart "965";
 	s:strand "+";
 	s:subComponent prf:1565207;
 	a s:SequenceAnnotation.
-prd:id87773 s:bioEnd "998";
+prd:id269786 s:bioEnd "998";
 	s:bioStart "985";
 	s:strand "+";
 	s:subComponent prf:1565208;
 	a s:SequenceAnnotation.
-prd:id87795 s:bioEnd "991";
+prd:id269807 s:bioEnd "991";
 	s:bioStart "991";
 	s:strand "+";
 	s:subComponent prf:1565209;
 	a s:SequenceAnnotation.
-prd:id87816 s:bioEnd "1026";
+prd:id269828 s:bioEnd "1026";
 	s:bioStart "1007";
 	s:strand "+";
 	s:subComponent prf:1565220;
 	a s:SequenceAnnotation.
-prd:id87839 s:bioEnd "1061";
+prd:id269851 s:bioEnd "1061";
 	s:bioStart "1007";
 	s:strand "+";
 	s:subComponent prd:BBa_R0062;
 	a s:SequenceAnnotation.
-prd:id87862 s:bioEnd "1031";
+prd:id269874 s:bioEnd "1031";
 	s:bioStart "1026";
 	s:strand "+";
 	s:subComponent prf:1565222;
 	a s:SequenceAnnotation.
-prd:id87884 s:bioEnd "1053";
+prd:id269897 s:bioEnd "1053";
 	s:bioStart "1048";
 	s:strand "+";
 	s:subComponent prf:1565223;
 	a s:SequenceAnnotation.
-prd:id87907 s:bioEnd "1059";
+prd:id269919 s:bioEnd "1059";
 	s:bioStart "1059";
 	s:strand "+";
 	s:subComponent prf:1565224;
 	a s:SequenceAnnotation.
-prd:id87929 s:bioEnd "1082";
+prd:id269941 s:bioEnd "1082";
 	s:bioStart "1070";
 	s:strand "+";
 	s:subComponent prf:1565231;
 	a s:SequenceAnnotation.
-prd:id87951 s:bioEnd "1082";
+prd:id269964 s:bioEnd "1082";
 	s:bioStart "1070";
 	s:strand "+";
 	s:subComponent prd:BBa_B0032;
 	a s:SequenceAnnotation.
-prd:id87974 s:bioEnd "1079";
+prd:id269987 s:bioEnd "1079";
 	s:bioStart "1076";
 	s:strand "+";
 	s:subComponent prf:1565233;
 	a s:SequenceAnnotation.
-prd:id87997 s:bioEnd "1808";
+prd:id270009 s:bioEnd "1808";
 	s:bioStart "1089";
 	s:strand "+";
 	s:subComponent prd:BBa_E0040;
 	a s:SequenceAnnotation.
-prd:id88020 s:bioEnd "1896";
+prd:id270032 s:bioEnd "1896";
 	s:bioStart "1817";
 	s:strand "+";
 	s:subComponent prd:BBa_B0010;
 	a s:SequenceAnnotation.
-prd:id88043 s:bioEnd "1871";
+prd:id270055 s:bioEnd "1871";
 	s:bioStart "1828";
 	s:strand "+";
 	s:subComponent prf:1565241;
 	a s:SequenceAnnotation.
-prd:id88064 s:bioEnd "1945";
+prd:id270076 s:bioEnd "1945";
 	s:bioStart "1905";
 	s:strand "+";
 	s:subComponent prd:BBa_B0012;
 	a s:SequenceAnnotation.
-prd:id88087 s:bioEnd "1931";
+prd:id270099 s:bioEnd "1931";
 	s:bioStart "1912";
 	s:strand "+";
 	s:subComponent prf:1565251;
 	a s:SequenceAnnotation.
-prd:id88110 s:bioEnd "1945";
+prd:id270122 s:bioEnd "1945";
 	s:bioStart "1932";
 	s:strand "+";
 	s:subComponent prf:1565252;
 	a s:SequenceAnnotation.
-prd:id88132 s:bioEnd "1938";
+prd:id270144 s:bioEnd "1938";
 	s:bioStart "1938";
 	s:strand "+";
 	s:subComponent prf:1565253;
 	a s:SequenceAnnotation.
 prd:RFC_10 pr:type prt:scar;
-	s:description "";
 	s:displayId "RFC_10";
-	s:dnaSequence prd:id87344;
+	s:dnaSequence prd:id269356;
 	s:name "[10]";
 	a s:DnaComponent.

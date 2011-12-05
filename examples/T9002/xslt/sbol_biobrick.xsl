@@ -25,14 +25,7 @@ xmlns:prd="http://partsregistry.org/cgi/xml/part.cgi?part="
 <rdf:RDF>
 
   <xsl:for-each select="rsbpml/part_list/part">
-    <xsl:variable name="part_id">
-      <xsl:value-of select="part_name"/>
-      <!-- 
-      <xsl:value-of select="part_url"/>
-      -->
-    </xsl:variable>
-    <s:DnaComponent rdf:about="{concat($prd,$part_id)}">
-      <s:uri rdf:resource="{concat($prd,$part_id)}"/>
+    <s:DnaComponent rdf:about="{concat($prd,part_name)}">
       <s:displayId><xsl:value-of select="part_name"/></s:displayId>
         <xsl:choose>
           <xsl:when test="normalize-space(part_nickname)">
@@ -59,11 +52,7 @@ xmlns:prd="http://partsregistry.org/cgi/xml/part.cgi?part="
             <xsl:value-of select="."/>
           -->
       <s:dnaSequence>
-          <xsl:variable name="seq_id">
-            <xsl:value-of select="generate-id()"/>
-          </xsl:variable>
-        <s:DnaSequence rdf:about="{concat($prd,$seq_id)}">
-          <s:uri rdf:resource="{concat($prd,$seq_id)}"/>
+        <s:DnaSequence rdf:about="{concat($prd,generate-id())}">
           <s:nucleotides>
             <xsl:value-of select="translate(sequences/seq_data, 
                         '&#x20;&#x9;&#xD;&#xA;', ' ')"/>
@@ -73,20 +62,12 @@ xmlns:prd="http://partsregistry.org/cgi/xml/part.cgi?part="
 
          <xsl:for-each select="deep_subparts/subpart">
          <s:annotations>
-          <xsl:variable name="anot_id">
-            <xsl:value-of select="generate-id()"/>
-          </xsl:variable>
-          <s:SequenceAnnotation rdf:about="{concat($prd,$anot_id)}">
-            <s:uri rdf:resource="{concat($prd,$anot_id)}"/>
+          <s:SequenceAnnotation rdf:about="{concat($prd,generate-id())}">
             <xsl:if test="preceding-sibling::*">
             <s:precedes rdf:resource="{concat($prd,generate-id(preceding-sibling::*))}"/>
             </xsl:if>
             <s:subComponent>
-            <xsl:variable name="subpart_id">
-              <xsl:value-of select="part_name"/>
-            </xsl:variable>
-              <s:DnaComponent rdf:about="{concat($prd,$subpart_id)}"> 
-                <s:uri rdf:resource="{concat($prd,$subpart_id)}"/>
+              <s:DnaComponent rdf:about="{concat($prd,part_name)}"> 
                 <s:displayId><xsl:value-of select="part_name"/></s:displayId>
                 <xsl:choose>
                   <xsl:when test="normalize-space(part_nickname)">
@@ -107,21 +88,13 @@ xmlns:prd="http://partsregistry.org/cgi/xml/part.cgi?part="
           <xsl:for-each select="specified_subparts/subpart">
           <s:annotations>
 
-          <xsl:variable name="anot_id">
-            <xsl:value-of select="generate-id()"/>
-          </xsl:variable>
-          <s:SequenceAnnotation rdf:about="{concat($prd,$anot_id)}">
-            <s:uri rdf:resource="{concat($prd,$anot_id)}"/>
+          <s:SequenceAnnotation rdf:about="{concat($prd,generate-id())}">
             <xsl:if test="preceding-sibling::*">
             <s:precedes rdf:resource="{concat($prd,generate-id(preceding-sibling::*))}"/>
             </xsl:if>
             <s:subComponent>
 
-          <xsl:variable name="subpart_id">
-            <xsl:value-of select="part_name"/>
-          </xsl:variable>
-              <s:DnaComponent rdf:about="{concat($prd,$subpart_id)}"> 
-                <s:uri rdf:resource="{concat($prd,$subpart_id)}"/>
+              <s:DnaComponent rdf:about="{concat($prd,part_name)}"> 
                 <s:displayId><xsl:value-of select="part_name"/></s:displayId>
                 <xsl:choose>
                   <xsl:when test="normalize-space(part_nickname)">
@@ -142,21 +115,13 @@ xmlns:prd="http://partsregistry.org/cgi/xml/part.cgi?part="
           <xsl:for-each select="specified_subscars/subpart">
           <s:annotations>
 
-          <xsl:variable name="anot_id">
-            <xsl:value-of select="generate-id()"/>
-          </xsl:variable>
-          <s:SequenceAnnotation rdf:about="{concat($prd,$anot_id)}">
-            <s:uri rdf:resource="{concat($prd,$anot_id)}"/>
+          <s:SequenceAnnotation rdf:about="{concat($prd,generate-id())}">
             <xsl:if test="preceding-sibling::*">
             <s:precedes rdf:resource="{concat($prd,generate-id(preceding-sibling::*))}"/>
             </xsl:if>
             <s:subComponent>
 
-            <xsl:variable name="subpart_id">
-              <xsl:value-of select="part_name"/>
-            </xsl:variable>
-              <s:DnaComponent rdf:about="{concat($prd,$subpart_id)}"> 
-                <s:uri rdf:resource="{concat($prd,$subpart_id)}"/>
+              <s:DnaComponent rdf:about="{concat($prd,part_name)}"> 
                 <s:displayId><xsl:value-of select="part_name"/></s:displayId>
                 <xsl:choose>
                   <xsl:when test="normalize-space(part_nickname)">
@@ -176,21 +141,12 @@ xmlns:prd="http://partsregistry.org/cgi/xml/part.cgi?part="
 
           <xsl:for-each select="specified_subscars/scar">
           <s:annotations>
-          <xsl:variable name="anot_id">
-            <xsl:value-of select="generate-id()"/>
-          </xsl:variable>
-          <s:SequenceAnnotation rdf:about="{concat($prd,$anot_id)}">
-            <s:uri rdf:resource="{concat($prd,$anot_id)}"/>
+          <s:SequenceAnnotation rdf:about="{concat($prd,generate-id())}">
             <xsl:if test="preceding-sibling::*">
             <s:precedes rdf:resource="{concat($prd,generate-id(preceding-sibling::*))}"/>
             </xsl:if>
             <s:subComponent>
-              <xsl:variable name="scar_id">
-                <xsl:value-of select="concat('RFC_',scar_standard)"/>
-              </xsl:variable>
-
-              <s:DnaComponent rdf:about="{concat($prd,$scar_id)}"> 
-                <s:uri rdf:resource="{concat($prd,$scar_id)}"/>
+              <s:DnaComponent rdf:about="{concat($prd,concat('RFC_',scar_standard))}"> 
                 <s:displayId><xsl:value-of select="scar_name"/></s:displayId>
                 <xsl:choose>
                   <xsl:when test="normalize-space(scar_nickname)">
@@ -203,11 +159,7 @@ xmlns:prd="http://partsregistry.org/cgi/xml/part.cgi?part="
                 <s:description><xsl:value-of select="normalize-space(scar_comments)"/></s:description>
                 <pr:type rdf:resource="{concat($prt,scar_type)}"/>
                 <s:dnaSequence>
-                <xsl:variable name="seq_id">
-                  <xsl:value-of select="generate-id(scar_sequence)"/>
-                </xsl:variable>
-                <s:DnaSequence rdf:about="{concat($prd,$seq_id)}">
-                  <s:uri rdf:resource="{concat($prd,$seq_id)}"/>
+                <s:DnaSequence rdf:about="{concat($prd,generate-id(scar_sequence))}">
                   <s:nucleotides>
                     <xsl:value-of select="translate(scar_sequence, 
                       '&#x20;&#x9;&#xD;&#xA;', ' ')"/>
@@ -222,11 +174,7 @@ xmlns:prd="http://partsregistry.org/cgi/xml/part.cgi?part="
     
         <xsl:for-each select="features/feature">
           <s:annotations>
-          <xsl:variable name="anot_id">
-            <xsl:value-of select="generate-id()"/>
-          </xsl:variable>
-          <s:SequenceAnnotation rdf:about="{concat($prd,$anot_id)}">
-            <s:uri rdf:resource="{concat($prd,$anot_id)}"/>
+          <s:SequenceAnnotation rdf:about="{concat($prd,generate-id())}">
 <!--
             <xsl:if test="preceding-sibling::*">
             <s:precedes rdf:resource="{concat($prd,generate-id(preceding-sibling::*))}"/>
@@ -255,7 +203,6 @@ xmlns:prd="http://partsregistry.org/cgi/xml/part.cgi?part="
                 </xsl:choose>
               </xsl:variable>
               <s:DnaComponent rdf:about="{concat($prd,$feat_id)}">
-                <s:uri rdf:resource="{concat($prd,$feat_id)}"/>
                 <s:displayId><xsl:copy-of select="$feat_id" /></s:displayId>
                 <xsl:choose>
                   <xsl:when test="normalize-space(title)">
@@ -280,18 +227,5 @@ xmlns:prd="http://partsregistry.org/cgi/xml/part.cgi?part="
 </rdf:RDF>
 </xsl:template>
 
-
-<!--
-        <tr>
-          <td>&#160;</td>
-     </table>
-    </td></tr>
-    </xsl:for-each>
-  </table>
-  </body>
-  </html>
-</xsl:template>
-
-  -->
 </xsl:stylesheet>
 

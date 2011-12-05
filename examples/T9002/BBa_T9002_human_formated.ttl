@@ -1,0 +1,553 @@
+@prefix s: <http://sbols.org/rdf#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix pr: <http://partsregistry.org/>.
+@prefix prt: <http://partsregistry.org/type/>.
+@prefix prd: <http://partsregistry.org/data/>.
+
+prd:1565164 a s:DnaComponent;
+	s:uri prd:1565164;
+	s:displayId "1565164";
+	s:name "TetR 1";
+	pr:type prt:binding;
+
+prd:1565166 a s:DnaComponent;
+	s:uri prd:1565166;
+	s:displayId "1565166";
+	s:name "-35";
+	pr:type prt:promoter;
+
+prd:1565167 a s:DnaComponent;
+	s:uri prd:1565167;
+	s:displayId "1565167";
+	s:name "TetR 2";
+	pr:type prt:binding;
+
+prd:1565168 a s:DnaComponent;
+	s:uri prd:1565168;
+	s:displayId "1565168";
+	s:name "-10";
+	pr:type prt:promoter;
+
+prd:1565172 a s:DnaComponent;
+	s:uri prd:1565172;
+	s:displayId "1565172";
+	s:name "conserved";
+	pr:type prt:conserved;
+
+prd:1565186 a s:DnaComponent;
+	s:uri prd:1565186;
+	s:displayId "1565186";
+	s:name "prefix";
+	pr:type prt:BioBrick;
+
+prd:1565187 a s:DnaComponent;
+	s:uri prd:1565187;
+	s:displayId "1565187";
+	s:name "luxR";
+	pr:type prt:cds;
+
+prd:1565189 a s:DnaComponent;
+	s:uri prd:1565189;
+	s:displayId "1565189";
+	s:name "T";
+	pr:type prt:s_mutation;
+
+prd:1565190 a s:DnaComponent;
+	s:uri prd:1565190;
+	s:displayId "1565190";
+	s:name "A";
+	pr:type prt:s_mutation;
+
+prd:1565191 a s:DnaComponent;
+	s:uri prd:1565191;
+	s:displayId "1565191";
+	s:name "barcode";
+	pr:type prt:barcode;
+
+prd:1565197 a s:DnaComponent;
+	s:uri prd:1565197;
+	s:displayId "1565197";
+	s:name "stem_loop";
+	pr:type prt:stem_loop;
+
+prd:1565207 a s:DnaComponent;
+	s:uri prd:1565207;
+	s:displayId "1565207";
+	s:name "T7 TE";
+	pr:type prt:stem_loop;
+
+prd:1565208 a s:DnaComponent;
+	s:uri prd:1565208;
+	s:displayId "1565208";
+	s:name "polya";
+	pr:type prt:polya;
+
+prd:1565209 a s:DnaComponent;
+	s:uri prd:1565209;
+	s:displayId "1565209";
+	s:name "stop";
+	pr:type prt:stop;
+
+prd:1565220 a s:DnaComponent;
+	s:uri prd:1565220;
+	s:displayId "1565220";
+	s:name "LuxR/HSL";
+	pr:type prt:binding;
+
+prd:1565222 a s:DnaComponent;
+	s:uri prd:1565222;
+	s:displayId "1565222";
+	s:name "-35";
+	pr:type prt:promoter;
+
+prd:1565223 a s:DnaComponent;
+	s:uri prd:1565223;
+	s:displayId "1565223";
+	s:name "-10";
+	pr:type prt:promoter;
+
+prd:1565224 a s:DnaComponent;
+	s:uri prd:1565224;
+	s:displayId "1565224";
+	s:name "start";
+	pr:type prt:start;
+
+prd:1565231 a s:DnaComponent;
+	s:uri prd:1565231;
+	s:displayId "1565231";
+	s:name "RBS-3\\Weak";
+	pr:type prt:rbs;
+
+prd:1565233 a s:DnaComponent;
+	s:uri prd:1565233;
+	s:displayId "1565233";
+	s:name "RBS";
+	pr:type prt:rbs;
+
+prd:1565241 a s:DnaComponent;
+	s:uri prd:1565241;
+	s:displayId "1565241";
+	s:name "stem_loop";
+	pr:type prt:stem_loop;
+
+prd:1565251 a s:DnaComponent;
+	s:uri prd:1565251;
+	s:displayId "1565251";
+	s:name "T7 TE";
+	pr:type prt:stem_loop;
+
+prd:1565252 a s:DnaComponent;
+	s:uri prd:1565252;
+	s:displayId "1565252";
+	s:name "polya";
+	pr:type prt:polya;
+
+prd:1565253 a s:DnaComponent;
+	s:uri prd:1565253;
+	s:displayId "1565253";
+	s:name "stop";
+	pr:type prt:stop;
+
+prd:RFC_10 a s:DnaComponent;
+	s:uri prd:RFC_10;
+	s:displayId "RFC[10]";
+	s:name "[10]";
+	pr:type prt:Scar;
+	s:dnaSequence prd:id162997;
+
+prd:id162997 a s:DnaSequence;
+	s:uri prd:id162997;
+	s:nucleotides "tactagag";
+
+prd:BBa_B0010 a s:DnaComponent;
+	s:uri prd:BBa_B0010;
+	s:displayId "BBa_B0010";
+	s:name "BBa_B0010";
+	s:description "T1 from E. coli rrnB";
+	pr:type prt:BioBrick, prt:Terminator;
+
+prd:BBa_B0012 a s:DnaComponent;
+	s:uri prd:BBa_B0012;
+	s:displayId "BBa_B0012";
+	s:name "BBa_B0012";
+	s:description "TE from coliphageT7";
+	pr:type prt:BioBrick, prt:Terminator;
+
+prd:BBa_B0032 a s:DnaComponent;
+	s:uri prd:BBa_B0032;
+	s:displayId "1565232", "BBa_B0032";
+	s:name "BBa_B0032";
+	s:description "RBS.3 (medium) -- derivative of BBa_0030";
+	pr:type prt:BioBrick, prt:RBS;
+
+prd:BBa_B0034 a s:DnaComponent;
+	s:uri prd:BBa_B0034;
+	s:displayId "1565173", "BBa_B0034";
+	s:name "BBa_B0034";
+	s:description "RBS (Elowitz 1999) -- defines RBS efficiency";
+	pr:type prt:BioBrick, prt:RBS;
+
+prd:BBa_C0062 a s:DnaComponent;
+	s:uri prd:BBa_C0062;
+	s:displayId "1565188", "BBa_C0062";
+	s:name "BBa_C0062", "luxr";
+	s:description "luxR repressor/activator, (no LVA?)";
+	pr:type prt:BioBrick, prt:Coding;
+
+prd:BBa_E0040 a s:DnaComponent;
+	s:uri prd:BBa_E0040;
+	s:displayId "1565235", "BBa_E0040";
+	s:name "BBa_E0040", "GFP";
+	s:description "green fluorescent protein derived from jellyfish Aequeora victoria wild-type GFP (SwissProt: P42212";
+	pr:type prt:BioBrick, prt:Coding;
+
+prd:BBa_E0240 a s:DnaComponent;
+	s:uri prd:BBa_E0240;
+	s:displayId "BBa_E0240";
+	s:name "GFP report";
+	s:description "GFP generator";
+	pr:type prt:Reporter;
+
+prd:BBa_F2620 a s:DnaComponent;
+	s:uri prd:BBa_F2620;
+	s:displayId "BBa_F2620";
+	s:name "BBa_F2620";
+	s:description "3OC<sub>6</sub>HSL -> PoPS Receiver";
+	pr:type prt:Signalling;
+
+prd:BBa_R0040 a s:DnaComponent;
+	s:uri prd:BBa_R0040;
+	s:displayId "1565165", "BBa_R0040";
+	s:name "BBa_R0040", "p(tetR)";
+	s:description "TetR repressible promoter";
+	pr:type prt:BioBrick, prt:Regulatory;
+
+prd:BBa_R0062 a s:DnaComponent;
+	s:uri prd:BBa_R0062;
+	s:displayId "1565221", "BBa_R0062";
+	s:name "BBa_R0062", "lux pR";
+	s:description "Promoter (luxR & HSL regulated -- lux pR)";
+	pr:type prt:BioBrick, prt:Regulatory;
+
+prd:BBa_T9002 a s:DnaComponent;
+	s:uri prd:BBa_T9002;
+	s:displayId "BBa_T9002";
+	s:name "T9002";
+	s:description "GFP Producer Controlled by 3OC6HSL Receiver Device";
+	pr:type prt:Signalling;
+	s:annotations prd:id162739, prd:id162757, prd:id162774, prd:id162792, prd:id162809, prd:id162826, prd:id162845, prd:id162863, prd:id162881, prd:id162898, prd:id162917, prd:id162935, prd:id162956, prd:id162975, prd:id163000, prd:id163044, prd:id163068, prd:id163090, prd:id163113, prd:id163135, prd:id163158, prd:id163180, prd:id163201, prd:id163224, prd:id163246, prd:id163269, prd:id163291, prd:id163314, prd:id163335, prd:id163358, prd:id163380, prd:id163403, prd:id163426, prd:id163447, prd:id163468, prd:id163491, prd:id163514, prd:id163537, prd:id163560, prd:id163581, prd:id163604, prd:id163627, prd:id163649, prd:id163672, prd:id163695, prd:id163717, prd:id163740, prd:id163763, prd:id163784;
+	s:dnaSequence prd:id162418;
+
+prd:id162418 a s:DnaSequence;
+	s:uri prd:id162418;
+	s:nucleotides "tccctatcagtgatagagattgacatccctatcagtgatagagatactgagcactactagagaaagaggagaaatactagatgaaaaacataaatgccgacgacacatacagaataattaataaaattaaagcttgtagaagcaataatgatattaatcaatgcttatctgatatgactaaaatggtacattgtgaatattatttactcgcgatcatttatcctcattctatggttaaatctgatatttcaatcctagataattaccctaaaaaatggaggcaatattatgatgacgctaatttaataaaatatgatcctatagtagattattctaactccaatcattcaccaattaattggaatatatttgaaaacaatgctgtaaataaaaaatctccaaatgtaattaaagaagcgaaaacatcaggtcttatcactgggtttagtttccctattcatacggctaacaatggcttcggaatgcttagttttgcacattcagaaaaagacaactatatagatagtttatttttacatgcgtgtatgaacataccattaattgttccttctctagttgataattatcgaaaaataaatatagcaaataataaatcaaacaacgatttaaccaaaagagaaaaagaatgtttagcgtgggcatgcgaaggaaaaagctcttgggatatttcaaaaatattaggttgcagtgagcgtactgtcactttccatttaaccaatgcgcaaatgaaactcaatacaacaaaccgctgccaaagtatttctaaagcaattttaacaggagcaattgattgcccatactttaaaaattaataacactgatagtgctagtgtagatcactactagagccaggcatcaaataaaacgaaaggctcagtcgaaagactgggcctttcgttttatctgttgtttgtcggtgaacgctctctactagagtcacactggctcaccttcgggtgggcctttctgcgtttatatactagagacctgtaggatcgtacaggtttacgcaagaaaatggtttgttatagtcgaataaatactagagtcacacaggaaagtactagatgcgtaaaggagaagaacttttcactggagttgtcccaattcttgttgaattagatggtgatgttaatgggcacaaattttctgtcagtggagagggtgaaggtgatgcaacatacggaaaacttacccttaaatttatttgcactactggaaaactacctgttccatggccaacacttgtcactactttcggttatggtgttcaatgctttgcgagatacccagatcatatgaaacagcatgactttttcaagagtgccatgcccgaaggttatgtacaggaaagaactatatttttcaaagatgacgggaactacaagacacgtgctgaagtcaagtttgaaggtgatacccttgttaatagaatcgagttaaaaggtattgattttaaagaagatggaaacattcttggacacaaattggaatacaactataactcacacaatgtatacatcatggcagacaaacaaaagaatggaatcaaagttaacttcaaaattagacacaacattgaagatggaagcgttcaactagcagaccattatcaacaaaatactccaattggcgatggccctgtccttttaccagacaaccattacctgtccacacaatctgccctttcgaaagatcccaacgaaaagagagaccacatggtccttcttgagtttgtaacagctgctgggattacacatggcatggatgaactatacaaataataatactagagccaggcatcaaataaaacgaaaggctcagtcgaaagactgggcctttcgttttatctgttgtttgtcggtgaacgctctctactagagtcacactggctcaccttcgggtgggcctttctgcgtttata".
+
+prd:id162956 a s:SequenceAnnotation;
+	s:uri prd:id162956;
+	s:subComponent prd:BBa_F2620; 
+
+prd:id162917 a s:SequenceAnnotation;
+	s:uri prd:id162917;
+	s:subComponent prd:BBa_F2620;
+
+prd:id162739 a s:SequenceAnnotation;
+	s:uri prd:id162739;
+	s:subComponent prd:BBa_R0040;
+
+prd:id162757 a s:SequenceAnnotation;
+	s:uri prd:id162757;
+	s:precedes prd:id162739;
+	s:subComponent prd:BBa_B0034;
+
+prd:id162774 a s:SequenceAnnotation;
+	s:uri prd:id162774;
+	s:precedes prd:id162739;
+	s:subComponent prd:BBa_C0062;
+
+prd:id162792 a s:SequenceAnnotation;
+	s:uri prd:id162792;
+	s:precedes prd:id162739;
+	s:subComponent prd:BBa_B0010;
+
+prd:id162809 a s:SequenceAnnotation;
+	s:uri prd:id162809;
+	s:precedes prd:id162739;
+	s:subComponent prd:BBa_B0012;
+
+prd:id162826 a s:SequenceAnnotation;
+	s:uri prd:id162826;
+	s:precedes prd:id162739;
+	s:subComponent prd:BBa_R0062;
+
+prd:id162845 a s:SequenceAnnotation;
+	s:uri prd:id162845;
+	s:precedes prd:id162739;
+	s:subComponent prd:BBa_B0032;
+
+prd:id162863 a s:SequenceAnnotation;
+	s:uri prd:id162863;
+	s:precedes prd:id162739;
+	s:subComponent prd:BBa_E0040;
+
+prd:id162881 a s:SequenceAnnotation;
+	s:uri prd:id162881;
+	s:precedes prd:id162739;
+	s:subComponent prd:BBa_B0010;
+
+prd:id162898 a s:SequenceAnnotation;
+	s:uri prd:id162898;
+	s:precedes prd:id162739;
+	s:subComponent prd:BBa_B0012;
+
+prd:id162935 a s:SequenceAnnotation;
+	s:uri prd:id162935;
+	s:precedes prd:id162917;
+	s:subComponent prd:BBa_E0240;
+
+prd:id162975 a s:SequenceAnnotation;
+	s:uri prd:id162975;
+	s:precedes prd:id162956;
+	s:subComponent prd:RFC_10;
+
+prd:id163000 a s:SequenceAnnotation;
+	s:uri prd:id163000;
+	s:precedes prd:id162956;
+	s:subComponent prd:BBa_E0240;
+
+prd:id163044 a s:SequenceAnnotation;
+	s:uri prd:id163044;
+	s:bioStart "1";
+	s:bioEnd "19";
+	s:strand "+";
+	s:subComponent prd:1565164;
+
+prd:id163068 a s:SequenceAnnotation;
+	s:uri prd:id163068;
+	s:bioStart "1";
+	s:bioEnd "54";
+	s:strand "+";
+	s:subComponent prd:BBa_R0040;
+
+prd:id163090 a s:SequenceAnnotation;
+	s:uri prd:id163090;
+	s:bioStart "20";
+	s:bioEnd "25";
+	s:strand "+";
+	s:subComponent prd:1565166;
+
+prd:id163113 a s:SequenceAnnotation;
+	s:uri prd:id163113;
+	s:bioStart "26";
+	s:bioEnd "44";
+	s:strand "+";
+	s:subComponent prd:1565167;
+
+prd:id163135 a s:SequenceAnnotation;
+	s:uri prd:id163135;
+	s:bioStart "43";
+	s:bioEnd "48";
+	s:strand "+";
+	s:subComponent prd:1565168;
+
+prd:id163158 a s:SequenceAnnotation;
+	s:uri prd:id163158;
+	s:bioStart "63";
+	s:bioEnd "74";
+	s:strand "+";
+	s:subComponent prd:BBa_B0034;
+
+prd:id163180 a s:SequenceAnnotation;
+	s:uri prd:id163180;
+	s:bioStart "67";
+	s:bioEnd "70";
+	s:strand "+";
+	s:subComponent prd:1565172;
+
+prd:id163201 a s:SequenceAnnotation;
+	s:uri prd:id163201;
+	s:bioStart "81";
+	s:bioEnd "836";
+	s:strand "+";
+	s:subComponent prd:BBa_C0062;
+
+prd:id163224 a s:SequenceAnnotation;
+	s:uri prd:id163224;
+	s:bioStart "81";
+	s:bioEnd "830";
+	s:strand "+";
+	s:subComponent prd:1565187;
+
+prd:id163246 a s:SequenceAnnotation;
+	s:uri prd:id163246;
+	s:bioStart "81";
+	s:bioEnd "82";
+	s:strand "+";
+	s:subComponent prd:1565186;
+
+prd:id163269 a s:SequenceAnnotation;
+	s:uri prd:id163269;
+	s:bioStart "254";
+	s:bioEnd "254";
+	s:strand "+";
+	s:subComponent prd:1565189;
+
+prd:id163291 a s:SequenceAnnotation;
+	s:uri prd:id163291;
+	s:bioStart "572";
+	s:bioEnd "572";
+	s:strand "+";
+	s:subComponent prd:1565190;
+
+prd:id163314 a s:SequenceAnnotation;
+	s:uri prd:id163314;
+	s:bioStart "837";
+	s:bioEnd "861";
+	s:strand "+";
+	s:subComponent prd:1565191;
+
+prd:id163335 a s:SequenceAnnotation;
+	s:uri prd:id163335;
+	s:bioStart "870";
+	s:bioEnd "949";
+	s:strand "+";
+	s:subComponent prd:BBa_B0010;
+
+prd:id163358 a s:SequenceAnnotation;
+	s:uri prd:id163358;
+	s:bioStart "881";
+	s:bioEnd "924";
+	s:strand "+";
+	s:subComponent prd:1565197;
+
+prd:id163380 a s:SequenceAnnotation;
+	s:uri prd:id163380;
+	s:bioStart "958";
+	s:bioEnd "998";
+	s:strand "+";
+	s:subComponent prd:BBa_B0012;
+
+prd:id163403 a s:SequenceAnnotation;
+	s:uri prd:id163403;
+	s:bioStart "965";
+	s:bioEnd "984";
+	s:strand "+";
+	s:subComponent prd:1565207;
+
+prd:id163426 a s:SequenceAnnotation;
+	s:uri prd:id163426;
+	s:bioStart "985";
+	s:bioEnd "998";
+	s:strand "+";
+	s:subComponent prd:1565208;
+
+prd:id163447 a s:SequenceAnnotation;
+	s:uri prd:id163447;
+	s:bioStart "991";
+	s:bioEnd "991";
+	s:strand "+";
+	s:subComponent prd:1565209;
+
+prd:id163468 a s:SequenceAnnotation;
+	s:uri prd:id163468;
+	s:bioStart "1007";
+	s:bioEnd "1026";
+	s:strand "+";
+	s:subComponent prd:1565220;
+
+prd:id163491 a s:SequenceAnnotation;
+	s:uri prd:id163491;
+	s:bioStart "1007";
+	s:bioEnd "1061";
+	s:strand "+";
+	s:subComponent prd:BBa_R0062;
+
+prd:id163514 a s:SequenceAnnotation;
+	s:uri prd:id163514;
+	s:bioStart "1026";
+	s:bioEnd "1031";
+	s:strand "+";
+	s:subComponent prd:1565222;
+
+prd:id163537 a s:SequenceAnnotation;
+	s:uri prd:id163537;
+	s:bioEnd "1053";
+	s:bioStart "1048";
+	s:strand "+";
+	s:subComponent prd:1565223;
+
+prd:id163560 a s:SequenceAnnotation;
+	s:uri prd:id163560;
+	s:bioStart "1059";
+	s:bioEnd "1059";
+	s:strand "+";
+	s:subComponent prd:1565224;
+
+prd:id163581 a s:SequenceAnnotation;
+	s:uri prd:id163581;
+	s:bioStart "1070";
+	s:bioEnd "1082";
+	s:strand "+";
+	s:subComponent prd:1565231;
+
+prd:id163604 a s:SequenceAnnotation;
+	s:uri prd:id163604;
+	s:bioStart "1070";
+	s:bioEnd "1082";
+	s:strand "+";
+	s:subComponent prd:BBa_B0032;
+
+prd:id163627 a s:SequenceAnnotation;
+	s:uri prd:id163627;
+	s:bioStart "1076";
+	s:bioEnd "1079";
+	s:strand "+";
+	s:subComponent prd:1565233;
+
+prd:id163649 a s:SequenceAnnotation;
+	s:uri prd:id163649;
+	s:bioStart "1089";
+	s:bioEnd "1808";
+	s:strand "+";
+	s:subComponent prd:BBa_E0040;
+
+prd:id163672 a s:SequenceAnnotation;
+	s:uri prd:id163672;
+	s:bioStart "1817";
+	s:bioEnd "1896";
+	s:strand "+";
+	s:subComponent prd:BBa_B0010;
+
+prd:id163695 a s:SequenceAnnotation;
+	s:uri prd:id163695;
+	s:bioStart "1828";
+	s:bioEnd "1871";
+	s:strand "+";
+	s:subComponent prd:1565241;
+
+prd:id163717 a s:SequenceAnnotation;
+	s:uri prd:id163717;
+	s:bioStart "1905";
+	s:bioEnd "1945";
+	s:strand "+";
+	s:subComponent prd:BBa_B0012;
+
+prd:id163740 a s:SequenceAnnotation;
+	s:uri prd:id163740;
+	s:bioStart "1912";
+	s:bioEnd "1931";
+	s:strand "+";
+	s:subComponent prd:1565251;
+
+prd:id163763 a s:SequenceAnnotation;
+	s:uri prd:id163763;
+	s:bioStart "1932";
+	s:bioEnd "1945";
+	s:strand "+";
+	s:subComponent prd:1565252;
+
+prd:id163784 a s:SequenceAnnotation;
+	s:uri prd:id163784;
+	s:bioStart "1938";
+	s:bioEnd "1938";
+	s:strand "+";
+	s:subComponent prd:1565253;

@@ -1,7 +1,8 @@
 @prefix s: <http://sbols.org/rdf#>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix prf: <http://partsregistry.org/data/feature/>.
 @prefix pr: <http://partsregistry.org/>.
 @prefix prt: <http://partsregistry.org/type/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix prd: <http://partsregistry.org/data/>.
 prd:BBa_B0010 pr:type prt:biobrick,
 		prt:terminator;
@@ -62,376 +63,375 @@ prd:BBa_R0062 pr:type prt:biobrick,
 	s:name "lux pR";
 	a s:DnaComponent.
 prd:BBa_T9002 pr:type prt:signalling;
-	s:annotations prd:id223308,
-		prd:id223326,
-		prd:id223343,
-		prd:id223361,
-		prd:id223378,
-		prd:id223395,
-		prd:id223414,
-		prd:id223432,
-		prd:id223450,
-		prd:id223467,
-		prd:id223486,
-		prd:id223505,
-		prd:id223527,
-		prd:id223545,
-		prd:id223571,
-		prd:id223616,
-		prd:id223639,
-		prd:id223662,
-		prd:id223684,
-		prd:id223707,
-		prd:id223729,
-		prd:id223752,
-		prd:id223773,
-		prd:id223795,
-		prd:id223818,
-		prd:id223840,
-		prd:id223863,
-		prd:id223886,
-		prd:id223907,
-		prd:id223930,
-		prd:id223952,
-		prd:id223975,
-		prd:id223997,
-		prd:id224019,
-		prd:id224040,
-		prd:id224063,
-		prd:id224086,
-		prd:id224108,
-		prd:id224131,
-		prd:id224153,
-		prd:id224175,
-		prd:id224198,
-		prd:id224221,
-		prd:id224244,
-		prd:id224267,
-		prd:id224288,
-		prd:id224311,
-		prd:id224334,
-		prd:id224356;
+	s:annotations prd:id87084,
+		prd:id87102,
+		prd:id87119,
+		prd:id87137,
+		prd:id87154,
+		prd:id87171,
+		prd:id87191,
+		prd:id87208,
+		prd:id87226,
+		prd:id87243,
+		prd:id87263,
+		prd:id87281,
+		prd:id87303,
+		prd:id87321,
+		prd:id87347,
+		prd:id87392,
+		prd:id87415,
+		prd:id87438,
+		prd:id87460,
+		prd:id87483,
+		prd:id87505,
+		prd:id87528,
+		prd:id87549,
+		prd:id87571,
+		prd:id87594,
+		prd:id87616,
+		prd:id87639,
+		prd:id87662,
+		prd:id87683,
+		prd:id87706,
+		prd:id87728,
+		prd:id87751,
+		prd:id87773,
+		prd:id87795,
+		prd:id87816,
+		prd:id87839,
+		prd:id87862,
+		prd:id87884,
+		prd:id87907,
+		prd:id87929,
+		prd:id87951,
+		prd:id87974,
+		prd:id87997,
+		prd:id88020,
+		prd:id88043,
+		prd:id88064,
+		prd:id88087,
+		prd:id88110,
+		prd:id88132;
 	s:description "GFP Producer Controlled by 3OC6HSL Receiver Device";
 	s:displayId "BBa_T9002";
-	s:dnaSequence prd:id223263;
+	s:dnaSequence prd:id87039;
 	s:name "T9002";
 	a s:DnaComponent.
-<http://partsregistry.org/data/feature/1565164> pr:type prt:binding;
+prf:1565164 pr:type prt:binding;
 	s:displayId "1565164";
 	s:name "TetR 1";
 	a s:DnaComponent.
-<http://partsregistry.org/data/feature/1565166> pr:type prt:promoter;
+prf:1565166 pr:type prt:promoter;
 	s:displayId "1565166";
 	s:name "-35";
 	a s:DnaComponent.
-<http://partsregistry.org/data/feature/1565167> pr:type prt:binding;
+prf:1565167 pr:type prt:binding;
 	s:displayId "1565167";
 	s:name "TetR 2";
 	a s:DnaComponent.
-<http://partsregistry.org/data/feature/1565168> pr:type prt:promoter;
+prf:1565168 pr:type prt:promoter;
 	s:displayId "1565168";
 	s:name "-10";
 	a s:DnaComponent.
-<http://partsregistry.org/data/feature/1565172> pr:type prt:conserved;
+prf:1565172 pr:type prt:conserved;
 	s:displayId "1565172";
 	s:name "conserved";
 	a s:DnaComponent.
-<http://partsregistry.org/data/feature/1565186> pr:type prt:BioBrick;
+prf:1565186 pr:type prt:BioBrick;
 	s:displayId "1565186";
 	s:name "prefix";
 	a s:DnaComponent.
-<http://partsregistry.org/data/feature/1565187> pr:type prt:cds;
+prf:1565187 pr:type prt:cds;
 	s:displayId "1565187";
 	s:name "luxR";
 	a s:DnaComponent.
-<http://partsregistry.org/data/feature/1565189> pr:type prt:s_mutation;
+prf:1565189 pr:type prt:s_mutation;
 	s:displayId "1565189";
 	s:name "T";
 	a s:DnaComponent.
-<http://partsregistry.org/data/feature/1565190> pr:type prt:s_mutation;
+prf:1565190 pr:type prt:s_mutation;
 	s:displayId "1565190";
 	s:name "A";
 	a s:DnaComponent.
-<http://partsregistry.org/data/feature/1565191> pr:type prt:barcode;
+prf:1565191 pr:type prt:barcode;
 	s:displayId "1565191";
 	s:name "barcode";
 	a s:DnaComponent.
-<http://partsregistry.org/data/feature/1565197> pr:type prt:stem_loop;
+prf:1565197 pr:type prt:stem_loop;
 	s:displayId "1565197";
 	s:name "stem_loop";
 	a s:DnaComponent.
-<http://partsregistry.org/data/feature/1565207> pr:type prt:stem_loop;
+prf:1565207 pr:type prt:stem_loop;
 	s:displayId "1565207";
 	s:name "T7 TE";
 	a s:DnaComponent.
-<http://partsregistry.org/data/feature/1565208> pr:type prt:polya;
+prf:1565208 pr:type prt:polya;
 	s:displayId "1565208";
 	s:name "polya";
 	a s:DnaComponent.
-<http://partsregistry.org/data/feature/1565209> pr:type prt:stop;
+prf:1565209 pr:type prt:stop;
 	s:displayId "1565209";
 	s:name "stop";
 	a s:DnaComponent.
-<http://partsregistry.org/data/feature/1565220> pr:type prt:binding;
+prf:1565220 pr:type prt:binding;
 	s:displayId "1565220";
 	s:name "LuxR/HSL";
 	a s:DnaComponent.
-<http://partsregistry.org/data/feature/1565222> pr:type prt:promoter;
+prf:1565222 pr:type prt:promoter;
 	s:displayId "1565222";
 	s:name "-35";
 	a s:DnaComponent.
-<http://partsregistry.org/data/feature/1565223> pr:type prt:promoter;
+prf:1565223 pr:type prt:promoter;
 	s:displayId "1565223";
 	s:name "-10";
 	a s:DnaComponent.
-<http://partsregistry.org/data/feature/1565224> pr:type prt:start;
+prf:1565224 pr:type prt:start;
 	s:displayId "1565224";
 	s:name "start";
 	a s:DnaComponent.
-<http://partsregistry.org/data/feature/1565231> pr:type prt:rbs;
+prf:1565231 pr:type prt:rbs;
 	s:displayId "1565231";
 	s:name "RBS-3\\Weak";
 	a s:DnaComponent.
-<http://partsregistry.org/data/feature/1565233> pr:type prt:rbs;
+prf:1565233 pr:type prt:rbs;
 	s:displayId "1565233";
 	s:name "RBS";
 	a s:DnaComponent.
-<http://partsregistry.org/data/feature/1565241> pr:type prt:stem_loop;
+prf:1565241 pr:type prt:stem_loop;
 	s:displayId "1565241";
 	s:name "stem_loop";
 	a s:DnaComponent.
-<http://partsregistry.org/data/feature/1565251> pr:type prt:stem_loop;
+prf:1565251 pr:type prt:stem_loop;
 	s:displayId "1565251";
 	s:name "T7 TE";
 	a s:DnaComponent.
-<http://partsregistry.org/data/feature/1565252> pr:type prt:polya;
+prf:1565252 pr:type prt:polya;
 	s:displayId "1565252";
 	s:name "polya";
 	a s:DnaComponent.
-<http://partsregistry.org/data/feature/1565253> pr:type prt:stop;
+prf:1565253 pr:type prt:stop;
 	s:displayId "1565253";
 	s:name "stop";
 	a s:DnaComponent.
-prd:id223263 s:nucleotides "tccctatcagtgatagagattgacatccctatcagtgatagagatactgagcactactagagaaagaggagaaatactagatgaaaaacataaatgccgacgacacatacagaataattaataaaattaaagcttgtagaagcaataatgatattaatcaatgcttatctgatatgactaaaatggtacattgtgaatattatttactcgcgatcatttatcctcattctatggttaaatctgatatttcaatcctagataattaccctaaaaaatggaggcaatattatgatgacgctaatttaataaaatatgatcctatagtagattattctaactccaatcattcaccaattaattggaatatatttgaaaacaatgctgtaaataaaaaatctccaaatgtaattaaagaagcgaaaacatcaggtcttatcactgggtttagtttccctattcatacggctaacaatggcttcggaatgcttagttttgcacattcagaaaaagacaactatatagatagtttatttttacatgcgtgtatgaacataccattaattgttccttctctagttgataattatcgaaaaataaatatagcaaataataaatcaaacaacgatttaaccaaaagagaaaaagaatgtttagcgtgggcatgcgaaggaaaaagctcttgggatatttcaaaaatattaggttgcagtgagcgtactgtcactttccatttaaccaatgcgcaaatgaaactcaatacaacaaaccgctgccaaagtatttctaaagcaattttaacaggagcaattgattgcccatactttaaaaattaataacactgatagtgctagtgtagatcactactagagccaggcatcaaataaaacgaaaggctcagtcgaaagactgggcctttcgttttatctgttgtttgtcggtgaacgctctctactagagtcacactggctcaccttcgggtgggcctttctgcgtttatatactagagacctgtaggatcgtacaggtttacgcaagaaaatggtttgttatagtcgaataaatactagagtcacacaggaaagtactagatgcgtaaaggagaagaacttttcactggagttgtcccaattcttgttgaattagatggtgatgttaatgggcacaaattttctgtcagtggagagggtgaaggtgatgcaacatacggaaaacttacccttaaatttatttgcactactggaaaactacctgttccatggccaacacttgtcactactttcggttatggtgttcaatgctttgcgagatacccagatcatatgaaacagcatgactttttcaagagtgccatgcccgaaggttatgtacaggaaagaactatatttttcaaagatgacgggaactacaagacacgtgctgaagtcaagtttgaaggtgatacccttgttaatagaatcgagttaaaaggtattgattttaaagaagatggaaacattcttggacacaaattggaatacaactataactcacacaatgtatacatcatggcagacaaacaaaagaatggaatcaaagttaacttcaaaattagacacaacattgaagatggaagcgttcaactagcagaccattatcaacaaaatactccaattggcgatggccctgtccttttaccagacaaccattacctgtccacacaatctgccctttcgaaagatcccaacgaaaagagagaccacatggtccttcttgagtttgtaacagctgctgggattacacatggcatggatgaactatacaaataataatactagagccaggcatcaaataaaacgaaaggctcagtcgaaagactgggcctttcgttttatctgttgtttgtcggtgaacgctctctactagagtcacactggctcaccttcgggtgggcctttctgcgtttata";
+prd:id87039 s:nucleotides "tccctatcagtgatagagattgacatccctatcagtgatagagatactgagcactactagagaaagaggagaaatactagatgaaaaacataaatgccgacgacacatacagaataattaataaaattaaagcttgtagaagcaataatgatattaatcaatgcttatctgatatgactaaaatggtacattgtgaatattatttactcgcgatcatttatcctcattctatggttaaatctgatatttcaatcctagataattaccctaaaaaatggaggcaatattatgatgacgctaatttaataaaatatgatcctatagtagattattctaactccaatcattcaccaattaattggaatatatttgaaaacaatgctgtaaataaaaaatctccaaatgtaattaaagaagcgaaaacatcaggtcttatcactgggtttagtttccctattcatacggctaacaatggcttcggaatgcttagttttgcacattcagaaaaagacaactatatagatagtttatttttacatgcgtgtatgaacataccattaattgttccttctctagttgataattatcgaaaaataaatatagcaaataataaatcaaacaacgatttaaccaaaagagaaaaagaatgtttagcgtgggcatgcgaaggaaaaagctcttgggatatttcaaaaatattaggttgcagtgagcgtactgtcactttccatttaaccaatgcgcaaatgaaactcaatacaacaaaccgctgccaaagtatttctaaagcaattttaacaggagcaattgattgcccatactttaaaaattaataacactgatagtgctagtgtagatcactactagagccaggcatcaaataaaacgaaaggctcagtcgaaagactgggcctttcgttttatctgttgtttgtcggtgaacgctctctactagagtcacactggctcaccttcgggtgggcctttctgcgtttatatactagagacctgtaggatcgtacaggtttacgcaagaaaatggtttgttatagtcgaataaatactagagtcacacaggaaagtactagatgcgtaaaggagaagaacttttcactggagttgtcccaattcttgttgaattagatggtgatgttaatgggcacaaattttctgtcagtggagagggtgaaggtgatgcaacatacggaaaacttacccttaaatttatttgcactactggaaaactacctgttccatggccaacacttgtcactactttcggttatggtgttcaatgctttgcgagatacccagatcatatgaaacagcatgactttttcaagagtgccatgcccgaaggttatgtacaggaaagaactatatttttcaaagatgacgggaactacaagacacgtgctgaagtcaagtttgaaggtgatacccttgttaatagaatcgagttaaaaggtattgattttaaagaagatggaaacattcttggacacaaattggaatacaactataactcacacaatgtatacatcatggcagacaaacaaaagaatggaatcaaagttaacttcaaaattagacacaacattgaagatggaagcgttcaactagcagaccattatcaacaaaatactccaattggcgatggccctgtccttttaccagacaaccattacctgtccacacaatctgccctttcgaaagatcccaacgaaaagagagaccacatggtccttcttgagtttgtaacagctgctgggattacacatggcatggatgaactatacaaataataatactagagccaggcatcaaataaaacgaaaggctcagtcgaaagactgggcctttcgttttatctgttgtttgtcggtgaacgctctctactagagtcacactggctcaccttcgggtgggcctttctgcgtttata";
 	a s:DnaSequence.
-prd:id223308 s:subComponent prd:BBa_R0040;
+prd:id87084 s:subComponent prd:BBa_R0040;
 	a s:SequenceAnnotation.
-prd:id223326 s:precedes prd:id223308;
+prd:id87102 s:precedes prd:id87084;
 	s:subComponent prd:BBa_B0034;
 	a s:SequenceAnnotation.
-prd:id223343 s:precedes prd:id223308;
+prd:id87119 s:precedes prd:id87084;
 	s:subComponent prd:BBa_C0062;
 	a s:SequenceAnnotation.
-prd:id223361 s:precedes prd:id223308;
+prd:id87137 s:precedes prd:id87084;
 	s:subComponent prd:BBa_B0010;
 	a s:SequenceAnnotation.
-prd:id223378 s:precedes prd:id223308;
+prd:id87154 s:precedes prd:id87084;
 	s:subComponent prd:BBa_B0012;
 	a s:SequenceAnnotation.
-prd:id223395 s:precedes prd:id223308;
+prd:id87171 s:precedes prd:id87084;
 	s:subComponent prd:BBa_R0062;
 	a s:SequenceAnnotation.
-prd:id223414 s:precedes prd:id223308;
+prd:id87191 s:precedes prd:id87084;
 	s:subComponent prd:BBa_B0032;
 	a s:SequenceAnnotation.
-prd:id223432 s:precedes prd:id223308;
+prd:id87208 s:precedes prd:id87084;
 	s:subComponent prd:BBa_E0040;
 	a s:SequenceAnnotation.
-prd:id223450 s:precedes prd:id223308;
+prd:id87226 s:precedes prd:id87084;
 	s:subComponent prd:BBa_B0010;
 	a s:SequenceAnnotation.
-prd:id223467 s:precedes prd:id223308;
+prd:id87243 s:precedes prd:id87084;
 	s:subComponent prd:BBa_B0012;
 	a s:SequenceAnnotation.
-prd:id223486 s:subComponent prd:BBa_F2620;
+prd:id87263 s:subComponent prd:BBa_F2620;
 	a s:SequenceAnnotation.
-prd:id223505 s:precedes prd:id223486;
+prd:id87281 s:precedes prd:id87263;
 	s:subComponent prd:BBa_E0240;
 	a s:SequenceAnnotation.
-prd:id223527 s:subComponent prd:BBa_F2620;
+prd:id87303 s:subComponent prd:BBa_F2620;
 	a s:SequenceAnnotation.
-prd:id223545 s:precedes prd:id223527;
+prd:id87321 s:precedes prd:id87303;
 	s:subComponent prd:RFC_10;
 	a s:SequenceAnnotation.
-prd:id223568 s:nucleotides "tactagag";
+prd:id87344 s:nucleotides "tactagag";
 	a s:DnaSequence.
-prd:id223571 s:precedes prd:id223527;
+prd:id87347 s:precedes prd:id87303;
 	s:subComponent prd:BBa_E0240;
 	a s:SequenceAnnotation.
-prd:id223616 s:bioEnd "19";
+prd:id87392 s:bioEnd "19";
 	s:bioStart "1";
 	s:strand "+";
-	s:subComponent <http://partsregistry.org/data/feature/1565164>;
+	s:subComponent prf:1565164;
 	a s:SequenceAnnotation.
-prd:id223639 s:bioEnd "54";
+prd:id87415 s:bioEnd "54";
 	s:bioStart "1";
 	s:strand "+";
 	s:subComponent prd:BBa_R0040;
 	a s:SequenceAnnotation.
-prd:id223662 s:bioEnd "25";
+prd:id87438 s:bioEnd "25";
 	s:bioStart "20";
 	s:strand "+";
-	s:subComponent <http://partsregistry.org/data/feature/1565166>;
+	s:subComponent prf:1565166;
 	a s:SequenceAnnotation.
-prd:id223684 s:bioEnd "44";
+prd:id87460 s:bioEnd "44";
 	s:bioStart "26";
 	s:strand "+";
-	s:subComponent <http://partsregistry.org/data/feature/1565167>;
+	s:subComponent prf:1565167;
 	a s:SequenceAnnotation.
-prd:id223707 s:bioEnd "48";
+prd:id87483 s:bioEnd "48";
 	s:bioStart "43";
 	s:strand "+";
-	s:subComponent <http://partsregistry.org/data/feature/1565168>;
+	s:subComponent prf:1565168;
 	a s:SequenceAnnotation.
-prd:id223729 s:bioEnd "74";
+prd:id87505 s:bioEnd "74";
 	s:bioStart "63";
 	s:strand "+";
 	s:subComponent prd:BBa_B0034;
 	a s:SequenceAnnotation.
-prd:id223752 s:bioEnd "70";
+prd:id87528 s:bioEnd "70";
 	s:bioStart "67";
 	s:strand "+";
-	s:subComponent <http://partsregistry.org/data/feature/1565172>;
+	s:subComponent prf:1565172;
 	a s:SequenceAnnotation.
-prd:id223773 s:bioEnd "836";
+prd:id87549 s:bioEnd "836";
 	s:bioStart "81";
 	s:strand "+";
 	s:subComponent prd:BBa_C0062;
 	a s:SequenceAnnotation.
-prd:id223795 s:bioEnd "830";
+prd:id87571 s:bioEnd "830";
 	s:bioStart "81";
 	s:strand "+";
-	s:subComponent <http://partsregistry.org/data/feature/1565187>;
+	s:subComponent prf:1565187;
 	a s:SequenceAnnotation.
-prd:id223818 s:bioEnd "82";
+prd:id87594 s:bioEnd "82";
 	s:bioStart "81";
 	s:strand "+";
-	s:subComponent <http://partsregistry.org/data/feature/1565186>;
+	s:subComponent prf:1565186;
 	a s:SequenceAnnotation.
-prd:id223840 s:bioEnd "254";
+prd:id87616 s:bioEnd "254";
 	s:bioStart "254";
 	s:strand "+";
-	s:subComponent <http://partsregistry.org/data/feature/1565189>;
+	s:subComponent prf:1565189;
 	a s:SequenceAnnotation.
-prd:id223863 s:bioEnd "572";
+prd:id87639 s:bioEnd "572";
 	s:bioStart "572";
 	s:strand "+";
-	s:subComponent <http://partsregistry.org/data/feature/1565190>;
+	s:subComponent prf:1565190;
 	a s:SequenceAnnotation.
-prd:id223886 s:bioEnd "861";
+prd:id87662 s:bioEnd "861";
 	s:bioStart "837";
 	s:strand "+";
-	s:subComponent <http://partsregistry.org/data/feature/1565191>;
+	s:subComponent prf:1565191;
 	a s:SequenceAnnotation.
-prd:id223907 s:bioEnd "949";
+prd:id87683 s:bioEnd "949";
 	s:bioStart "870";
 	s:strand "+";
 	s:subComponent prd:BBa_B0010;
 	a s:SequenceAnnotation.
-prd:id223930 s:bioEnd "924";
+prd:id87706 s:bioEnd "924";
 	s:bioStart "881";
 	s:strand "+";
-	s:subComponent <http://partsregistry.org/data/feature/1565197>;
+	s:subComponent prf:1565197;
 	a s:SequenceAnnotation.
-prd:id223952 s:bioEnd "998";
+prd:id87728 s:bioEnd "998";
 	s:bioStart "958";
 	s:strand "+";
 	s:subComponent prd:BBa_B0012;
 	a s:SequenceAnnotation.
-prd:id223975 s:bioEnd "984";
+prd:id87751 s:bioEnd "984";
 	s:bioStart "965";
 	s:strand "+";
-	s:subComponent <http://partsregistry.org/data/feature/1565207>;
+	s:subComponent prf:1565207;
 	a s:SequenceAnnotation.
-prd:id223997 s:bioEnd "998";
+prd:id87773 s:bioEnd "998";
 	s:bioStart "985";
 	s:strand "+";
-	s:subComponent <http://partsregistry.org/data/feature/1565208>;
+	s:subComponent prf:1565208;
 	a s:SequenceAnnotation.
-prd:id224019 s:bioEnd "991";
+prd:id87795 s:bioEnd "991";
 	s:bioStart "991";
 	s:strand "+";
-	s:subComponent <http://partsregistry.org/data/feature/1565209>;
+	s:subComponent prf:1565209;
 	a s:SequenceAnnotation.
-prd:id224040 s:bioEnd "1026";
+prd:id87816 s:bioEnd "1026";
 	s:bioStart "1007";
 	s:strand "+";
-	s:subComponent <http://partsregistry.org/data/feature/1565220>;
+	s:subComponent prf:1565220;
 	a s:SequenceAnnotation.
-prd:id224063 s:bioEnd "1061";
+prd:id87839 s:bioEnd "1061";
 	s:bioStart "1007";
 	s:strand "+";
 	s:subComponent prd:BBa_R0062;
 	a s:SequenceAnnotation.
-prd:id224086 s:bioEnd "1031";
+prd:id87862 s:bioEnd "1031";
 	s:bioStart "1026";
 	s:strand "+";
-	s:subComponent <http://partsregistry.org/data/feature/1565222>;
+	s:subComponent prf:1565222;
 	a s:SequenceAnnotation.
-prd:id224108 s:bioEnd "1053";
+prd:id87884 s:bioEnd "1053";
 	s:bioStart "1048";
 	s:strand "+";
-	s:subComponent <http://partsregistry.org/data/feature/1565223>;
+	s:subComponent prf:1565223;
 	a s:SequenceAnnotation.
-prd:id224131 s:bioEnd "1059";
+prd:id87907 s:bioEnd "1059";
 	s:bioStart "1059";
 	s:strand "+";
-	s:subComponent <http://partsregistry.org/data/feature/1565224>;
+	s:subComponent prf:1565224;
 	a s:SequenceAnnotation.
-prd:id224153 s:bioEnd "1082";
+prd:id87929 s:bioEnd "1082";
 	s:bioStart "1070";
 	s:strand "+";
-	s:subComponent <http://partsregistry.org/data/feature/1565231>;
+	s:subComponent prf:1565231;
 	a s:SequenceAnnotation.
-prd:id224175 s:bioEnd "1082";
+prd:id87951 s:bioEnd "1082";
 	s:bioStart "1070";
 	s:strand "+";
 	s:subComponent prd:BBa_B0032;
 	a s:SequenceAnnotation.
-prd:id224198 s:bioEnd "1079";
+prd:id87974 s:bioEnd "1079";
 	s:bioStart "1076";
 	s:strand "+";
-	s:subComponent <http://partsregistry.org/data/feature/1565233>;
+	s:subComponent prf:1565233;
 	a s:SequenceAnnotation.
-prd:id224221 s:bioEnd "1808";
+prd:id87997 s:bioEnd "1808";
 	s:bioStart "1089";
 	s:strand "+";
 	s:subComponent prd:BBa_E0040;
 	a s:SequenceAnnotation.
-prd:id224244 s:bioEnd "1896";
+prd:id88020 s:bioEnd "1896";
 	s:bioStart "1817";
 	s:strand "+";
 	s:subComponent prd:BBa_B0010;
 	a s:SequenceAnnotation.
-prd:id224267 s:bioEnd "1871";
+prd:id88043 s:bioEnd "1871";
 	s:bioStart "1828";
 	s:strand "+";
-	s:subComponent <http://partsregistry.org/data/feature/1565241>;
+	s:subComponent prf:1565241;
 	a s:SequenceAnnotation.
-prd:id224288 s:bioEnd "1945";
+prd:id88064 s:bioEnd "1945";
 	s:bioStart "1905";
 	s:strand "+";
 	s:subComponent prd:BBa_B0012;
 	a s:SequenceAnnotation.
-prd:id224311 s:bioEnd "1931";
+prd:id88087 s:bioEnd "1931";
 	s:bioStart "1912";
 	s:strand "+";
-	s:subComponent <http://partsregistry.org/data/feature/1565251>;
+	s:subComponent prf:1565251;
 	a s:SequenceAnnotation.
-prd:id224334 s:bioEnd "1945";
+prd:id88110 s:bioEnd "1945";
 	s:bioStart "1932";
 	s:strand "+";
-	s:subComponent <http://partsregistry.org/data/feature/1565252>;
+	s:subComponent prf:1565252;
 	a s:SequenceAnnotation.
-prd:id224356 s:bioEnd "1938";
+prd:id88132 s:bioEnd "1938";
 	s:bioStart "1938";
 	s:strand "+";
-	s:subComponent <http://partsregistry.org/data/feature/1565253>;
+	s:subComponent prf:1565253;
 	a s:SequenceAnnotation.
 prd:RFC_10 pr:type prt:scar;
 	s:description "";
 	s:displayId "RFC_10";
-	s:dnaSequence prd:id223568;
+	s:dnaSequence prd:id87344;
 	s:name "[10]";
 	a s:DnaComponent.
-

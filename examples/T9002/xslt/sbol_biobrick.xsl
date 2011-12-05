@@ -160,7 +160,9 @@ xmlns:prd="http://partsregistry.org/cgi/xml/part.cgi?part="
                   <s:name><xsl:value-of select="scar_name"/></s:name>
                   </xsl:otherwise>
                 </xsl:choose>
-                <s:description><xsl:value-of select="normalize-space(scar_comments)"/></s:description>
+                <xsl:if test="normalize-space(scar_comments)">
+                  <s:description><xsl:value-of select="normalize-space(scar_comments)"/></s:description>
+                </xsl:if>
                 <pr:type rdf:resource="{concat($prt,translate(scar_type,$uc,$lc))}"/>
                 <s:dnaSequence>
                 <s:DnaSequence rdf:about="{concat($prd,generate-id(scar_sequence))}">

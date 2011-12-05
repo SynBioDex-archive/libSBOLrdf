@@ -7,7 +7,7 @@ xmlns:s="http://sbols.org/rdf#"
 xmlns:pr="http://partsregistry.org/"
 xmlns:prt="http://partsregistry.org/type/"
 xmlns:prd="http://partsregistry.org/data/"
-xmlns:prf="http://partsregistry.org/data/feature"
+xmlns:prf="http://partsregistry.org/data/feature/"
 >
 <xsl:param name="prd" select="'http://partsregistry.org/data/'"/>
 <xsl:param name="prt" select="'http://partsregistry.org/type/'"/>

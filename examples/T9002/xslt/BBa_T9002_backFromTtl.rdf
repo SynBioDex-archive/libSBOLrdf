@@ -1,0 +1,596 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:pr="http://partsregistry.org/" xmlns:prf="http://partsregistry.org/data/feature/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:prt="http://partsregistry.org/type/" xmlns:s="http://sbols.org/rdf#" xmlns:prd="http://partsregistry.org/data/">
+	<s:DnaComponent rdf:about="http://partsregistry.org/data/BBa_B0010">
+		<pr:type rdf:resource="http://partsregistry.org/type/biobrick" />
+		<pr:type rdf:resource="http://partsregistry.org/type/terminator" />
+		<s:description>T1 from E. coli rrnB</s:description>
+		<s:displayId>BBa_B0010</s:displayId>
+		<s:name>BBa_B0010</s:name>
+	</s:DnaComponent>
+	<s:DnaComponent rdf:about="http://partsregistry.org/data/BBa_B0012">
+		<pr:type rdf:resource="http://partsregistry.org/type/biobrick" />
+		<pr:type rdf:resource="http://partsregistry.org/type/terminator" />
+		<s:description>TE from coliphageT7</s:description>
+		<s:displayId>BBa_B0012</s:displayId>
+		<s:name>BBa_B0012</s:name>
+	</s:DnaComponent>
+	<s:DnaComponent rdf:about="http://partsregistry.org/data/BBa_B0032">
+		<pr:type rdf:resource="http://partsregistry.org/type/biobrick" />
+		<pr:type rdf:resource="http://partsregistry.org/type/rbs" />
+		<s:description>RBS.3 (medium) -- derivative of BBa_0030</s:description>
+		<s:displayId>BBa_B0032</s:displayId>
+		<s:name>BBa_B0032</s:name>
+	</s:DnaComponent>
+	<s:DnaComponent rdf:about="http://partsregistry.org/data/BBa_B0034">
+		<pr:type rdf:resource="http://partsregistry.org/type/biobrick" />
+		<pr:type rdf:resource="http://partsregistry.org/type/rbs" />
+		<s:description>RBS (Elowitz 1999) -- defines RBS efficiency</s:description>
+		<s:displayId>BBa_B0034</s:displayId>
+		<s:name>BBa_B0034</s:name>
+	</s:DnaComponent>
+	<s:DnaComponent rdf:about="http://partsregistry.org/data/BBa_C0062">
+		<pr:type rdf:resource="http://partsregistry.org/type/biobrick" />
+		<pr:type rdf:resource="http://partsregistry.org/type/coding" />
+		<s:description>luxR repressor/activator, (no LVA?)</s:description>
+		<s:displayId>BBa_C0062</s:displayId>
+		<s:name>luxr</s:name>
+	</s:DnaComponent>
+	<s:DnaComponent rdf:about="http://partsregistry.org/data/BBa_E0040">
+		<pr:type rdf:resource="http://partsregistry.org/type/biobrick" />
+		<pr:type rdf:resource="http://partsregistry.org/type/coding" />
+		<s:description>green fluorescent protein derived from jellyfish Aequeora victoria wild-type GFP (SwissProt: P42212</s:description>
+		<s:displayId>BBa_E0040</s:displayId>
+		<s:name>GFP</s:name>
+	</s:DnaComponent>
+	<s:DnaComponent rdf:about="http://partsregistry.org/data/BBa_E0240">
+		<pr:type rdf:resource="http://partsregistry.org/type/reporter" />
+		<s:description>GFP generator</s:description>
+		<s:displayId>BBa_E0240</s:displayId>
+		<s:name>GFP report</s:name>
+	</s:DnaComponent>
+	<s:DnaComponent rdf:about="http://partsregistry.org/data/BBa_F2620">
+		<pr:type rdf:resource="http://partsregistry.org/type/signalling" />
+		<s:description>3OC&lt;sub&gt;6&lt;/sub&gt;HSL -&gt; PoPS Receiver</s:description>
+		<s:displayId>BBa_F2620</s:displayId>
+		<s:name>BBa_F2620</s:name>
+	</s:DnaComponent>
+	<s:DnaComponent rdf:about="http://partsregistry.org/data/BBa_R0040">
+		<pr:type rdf:resource="http://partsregistry.org/type/biobrick" />
+		<pr:type rdf:resource="http://partsregistry.org/type/regulatory" />
+		<s:description>TetR repressible promoter</s:description>
+		<s:displayId>BBa_R0040</s:displayId>
+		<s:name>p(tetR)</s:name>
+	</s:DnaComponent>
+	<s:DnaComponent rdf:about="http://partsregistry.org/data/BBa_R0062">
+		<pr:type rdf:resource="http://partsregistry.org/type/biobrick" />
+		<pr:type rdf:resource="http://partsregistry.org/type/regulatory" />
+		<s:description>Promoter (luxR &amp; HSL regulated -- lux pR)</s:description>
+		<s:displayId>BBa_R0062</s:displayId>
+		<s:name>lux pR</s:name>
+	</s:DnaComponent>
+	<s:DnaComponent rdf:about="http://partsregistry.org/data/BBa_T9002">
+		<pr:type rdf:resource="http://partsregistry.org/type/signalling" />
+		<s:annotations>
+			<s:SequenceAnnotation rdf:about="http://partsregistry.org/data/id286311">
+				<s:subComponent rdf:resource="http://partsregistry.org/data/BBa_R0040" />
+			</s:SequenceAnnotation>
+		</s:annotations>
+		<s:annotations>
+			<s:SequenceAnnotation rdf:about="http://partsregistry.org/data/id286329">
+				<s:precedes rdf:resource="http://partsregistry.org/data/id286311" />
+				<s:subComponent rdf:resource="http://partsregistry.org/data/BBa_B0034" />
+			</s:SequenceAnnotation>
+		</s:annotations>
+		<s:annotations>
+			<s:SequenceAnnotation rdf:about="http://partsregistry.org/data/id286346">
+				<s:precedes rdf:resource="http://partsregistry.org/data/id286311" />
+				<s:subComponent rdf:resource="http://partsregistry.org/data/BBa_C0062" />
+			</s:SequenceAnnotation>
+		</s:annotations>
+		<s:annotations>
+			<s:SequenceAnnotation rdf:about="http://partsregistry.org/data/id286364">
+				<s:precedes rdf:resource="http://partsregistry.org/data/id286311" />
+				<s:subComponent rdf:resource="http://partsregistry.org/data/BBa_B0010" />
+			</s:SequenceAnnotation>
+		</s:annotations>
+		<s:annotations>
+			<s:SequenceAnnotation rdf:about="http://partsregistry.org/data/id286381">
+				<s:precedes rdf:resource="http://partsregistry.org/data/id286311" />
+				<s:subComponent rdf:resource="http://partsregistry.org/data/BBa_B0012" />
+			</s:SequenceAnnotation>
+		</s:annotations>
+		<s:annotations>
+			<s:SequenceAnnotation rdf:about="http://partsregistry.org/data/id286398">
+				<s:precedes rdf:resource="http://partsregistry.org/data/id286311" />
+				<s:subComponent rdf:resource="http://partsregistry.org/data/BBa_R0062" />
+			</s:SequenceAnnotation>
+		</s:annotations>
+		<s:annotations>
+			<s:SequenceAnnotation rdf:about="http://partsregistry.org/data/id286417">
+				<s:precedes rdf:resource="http://partsregistry.org/data/id286311" />
+				<s:subComponent rdf:resource="http://partsregistry.org/data/BBa_B0032" />
+			</s:SequenceAnnotation>
+		</s:annotations>
+		<s:annotations>
+			<s:SequenceAnnotation rdf:about="http://partsregistry.org/data/id286434">
+				<s:precedes rdf:resource="http://partsregistry.org/data/id286311" />
+				<s:subComponent rdf:resource="http://partsregistry.org/data/BBa_E0040" />
+			</s:SequenceAnnotation>
+		</s:annotations>
+		<s:annotations>
+			<s:SequenceAnnotation rdf:about="http://partsregistry.org/data/id286453">
+				<s:precedes rdf:resource="http://partsregistry.org/data/id286311" />
+				<s:subComponent rdf:resource="http://partsregistry.org/data/BBa_B0010" />
+			</s:SequenceAnnotation>
+		</s:annotations>
+		<s:annotations>
+			<s:SequenceAnnotation rdf:about="http://partsregistry.org/data/id286470">
+				<s:precedes rdf:resource="http://partsregistry.org/data/id286311" />
+				<s:subComponent rdf:resource="http://partsregistry.org/data/BBa_B0012" />
+			</s:SequenceAnnotation>
+		</s:annotations>
+		<s:annotations>
+			<s:SequenceAnnotation rdf:about="http://partsregistry.org/data/id286489">
+				<s:subComponent rdf:resource="http://partsregistry.org/data/BBa_F2620" />
+			</s:SequenceAnnotation>
+		</s:annotations>
+		<s:annotations>
+			<s:SequenceAnnotation rdf:about="http://partsregistry.org/data/id286507">
+				<s:precedes rdf:resource="http://partsregistry.org/data/id286489" />
+				<s:subComponent rdf:resource="http://partsregistry.org/data/BBa_E0240" />
+			</s:SequenceAnnotation>
+		</s:annotations>
+		<s:annotations>
+			<s:SequenceAnnotation rdf:about="http://partsregistry.org/data/id286529">
+				<s:subComponent rdf:resource="http://partsregistry.org/data/BBa_F2620" />
+			</s:SequenceAnnotation>
+		</s:annotations>
+		<s:annotations>
+			<s:SequenceAnnotation rdf:about="http://partsregistry.org/data/id286548">
+				<s:precedes rdf:resource="http://partsregistry.org/data/id286529" />
+				<s:subComponent>
+					<s:DnaComponent rdf:about="http://partsregistry.org/data/RFC_10">
+						<pr:type rdf:resource="http://partsregistry.org/type/scar" />
+						<s:displayId>RFC_10</s:displayId>
+						<s:dnaSequence>
+							<s:DnaSequence rdf:about="http://partsregistry.org/data/id286570">
+								<s:nucleotides>tactagag</s:nucleotides>
+							</s:DnaSequence>
+						</s:dnaSequence>
+						<s:name>[10]</s:name>
+					</s:DnaComponent>
+				</s:subComponent>
+			</s:SequenceAnnotation>
+		</s:annotations>
+		<s:annotations>
+			<s:SequenceAnnotation rdf:about="http://partsregistry.org/data/id286574">
+				<s:precedes rdf:resource="http://partsregistry.org/data/id286529" />
+				<s:subComponent rdf:resource="http://partsregistry.org/data/BBa_E0240" />
+			</s:SequenceAnnotation>
+		</s:annotations>
+		<s:annotations>
+			<s:SequenceAnnotation rdf:about="http://partsregistry.org/data/id286618">
+				<s:bioEnd>19</s:bioEnd>
+				<s:bioStart>1</s:bioStart>
+				<s:strand>+</s:strand>
+				<s:subComponent>
+					<s:DnaComponent rdf:about="http://partsregistry.org/data/feature/1565164">
+						<pr:type rdf:resource="http://partsregistry.org/type/binding" />
+						<s:displayId>1565164</s:displayId>
+						<s:name>TetR 1</s:name>
+					</s:DnaComponent>
+				</s:subComponent>
+			</s:SequenceAnnotation>
+		</s:annotations>
+		<s:annotations>
+			<s:SequenceAnnotation rdf:about="http://partsregistry.org/data/id286642">
+				<s:bioEnd>54</s:bioEnd>
+				<s:bioStart>1</s:bioStart>
+				<s:strand>+</s:strand>
+				<s:subComponent rdf:resource="http://partsregistry.org/data/BBa_R0040" />
+			</s:SequenceAnnotation>
+		</s:annotations>
+		<s:annotations>
+			<s:SequenceAnnotation rdf:about="http://partsregistry.org/data/id286664">
+				<s:bioEnd>25</s:bioEnd>
+				<s:bioStart>20</s:bioStart>
+				<s:strand>+</s:strand>
+				<s:subComponent>
+					<s:DnaComponent rdf:about="http://partsregistry.org/data/feature/1565166">
+						<pr:type rdf:resource="http://partsregistry.org/type/promoter" />
+						<s:displayId>1565166</s:displayId>
+						<s:name>-35</s:name>
+					</s:DnaComponent>
+				</s:subComponent>
+			</s:SequenceAnnotation>
+		</s:annotations>
+		<s:annotations>
+			<s:SequenceAnnotation rdf:about="http://partsregistry.org/data/id286686">
+				<s:bioEnd>44</s:bioEnd>
+				<s:bioStart>26</s:bioStart>
+				<s:strand>+</s:strand>
+				<s:subComponent>
+					<s:DnaComponent rdf:about="http://partsregistry.org/data/feature/1565167">
+						<pr:type rdf:resource="http://partsregistry.org/type/binding" />
+						<s:displayId>1565167</s:displayId>
+						<s:name>TetR 2</s:name>
+					</s:DnaComponent>
+				</s:subComponent>
+			</s:SequenceAnnotation>
+		</s:annotations>
+		<s:annotations>
+			<s:SequenceAnnotation rdf:about="http://partsregistry.org/data/id286709">
+				<s:bioEnd>48</s:bioEnd>
+				<s:bioStart>43</s:bioStart>
+				<s:strand>+</s:strand>
+				<s:subComponent>
+					<s:DnaComponent rdf:about="http://partsregistry.org/data/feature/1565168">
+						<pr:type rdf:resource="http://partsregistry.org/type/promoter" />
+						<s:displayId>1565168</s:displayId>
+						<s:name>-10</s:name>
+					</s:DnaComponent>
+				</s:subComponent>
+			</s:SequenceAnnotation>
+		</s:annotations>
+		<s:annotations>
+			<s:SequenceAnnotation rdf:about="http://partsregistry.org/data/id286731">
+				<s:bioEnd>74</s:bioEnd>
+				<s:bioStart>63</s:bioStart>
+				<s:strand>+</s:strand>
+				<s:subComponent rdf:resource="http://partsregistry.org/data/BBa_B0034" />
+			</s:SequenceAnnotation>
+		</s:annotations>
+		<s:annotations>
+			<s:SequenceAnnotation rdf:about="http://partsregistry.org/data/id286754">
+				<s:bioEnd>70</s:bioEnd>
+				<s:bioStart>67</s:bioStart>
+				<s:strand>+</s:strand>
+				<s:subComponent>
+					<s:DnaComponent rdf:about="http://partsregistry.org/data/feature/1565172">
+						<pr:type rdf:resource="http://partsregistry.org/type/conserved" />
+						<s:displayId>1565172</s:displayId>
+						<s:name>conserved</s:name>
+					</s:DnaComponent>
+				</s:subComponent>
+			</s:SequenceAnnotation>
+		</s:annotations>
+		<s:annotations>
+			<s:SequenceAnnotation rdf:about="http://partsregistry.org/data/id286775">
+				<s:bioEnd>836</s:bioEnd>
+				<s:bioStart>81</s:bioStart>
+				<s:strand>+</s:strand>
+				<s:subComponent rdf:resource="http://partsregistry.org/data/BBa_C0062" />
+			</s:SequenceAnnotation>
+		</s:annotations>
+		<s:annotations>
+			<s:SequenceAnnotation rdf:about="http://partsregistry.org/data/id286798">
+				<s:bioEnd>830</s:bioEnd>
+				<s:bioStart>81</s:bioStart>
+				<s:strand>+</s:strand>
+				<s:subComponent>
+					<s:DnaComponent rdf:about="http://partsregistry.org/data/feature/1565187">
+						<pr:type rdf:resource="http://partsregistry.org/type/cds" />
+						<s:displayId>1565187</s:displayId>
+						<s:name>luxR</s:name>
+					</s:DnaComponent>
+				</s:subComponent>
+			</s:SequenceAnnotation>
+		</s:annotations>
+		<s:annotations>
+			<s:SequenceAnnotation rdf:about="http://partsregistry.org/data/id286820">
+				<s:bioEnd>82</s:bioEnd>
+				<s:bioStart>81</s:bioStart>
+				<s:strand>+</s:strand>
+				<s:subComponent>
+					<s:DnaComponent rdf:about="http://partsregistry.org/data/feature/1565186">
+						<pr:type rdf:resource="http://partsregistry.org/type/biobrick" />
+						<s:displayId>1565186</s:displayId>
+						<s:name>prefix</s:name>
+					</s:DnaComponent>
+				</s:subComponent>
+			</s:SequenceAnnotation>
+		</s:annotations>
+		<s:annotations>
+			<s:SequenceAnnotation rdf:about="http://partsregistry.org/data/id286843">
+				<s:bioEnd>254</s:bioEnd>
+				<s:bioStart>254</s:bioStart>
+				<s:strand>+</s:strand>
+				<s:subComponent>
+					<s:DnaComponent rdf:about="http://partsregistry.org/data/feature/1565189">
+						<pr:type rdf:resource="http://partsregistry.org/type/s_mutation" />
+						<s:displayId>1565189</s:displayId>
+						<s:name>T</s:name>
+					</s:DnaComponent>
+				</s:subComponent>
+			</s:SequenceAnnotation>
+		</s:annotations>
+		<s:annotations>
+			<s:SequenceAnnotation rdf:about="http://partsregistry.org/data/id286865">
+				<s:bioEnd>572</s:bioEnd>
+				<s:bioStart>572</s:bioStart>
+				<s:strand>+</s:strand>
+				<s:subComponent>
+					<s:DnaComponent rdf:about="http://partsregistry.org/data/feature/1565190">
+						<pr:type rdf:resource="http://partsregistry.org/type/s_mutation" />
+						<s:displayId>1565190</s:displayId>
+						<s:name>A</s:name>
+					</s:DnaComponent>
+				</s:subComponent>
+			</s:SequenceAnnotation>
+		</s:annotations>
+		<s:annotations>
+			<s:SequenceAnnotation rdf:about="http://partsregistry.org/data/id286888">
+				<s:bioEnd>861</s:bioEnd>
+				<s:bioStart>837</s:bioStart>
+				<s:strand>+</s:strand>
+				<s:subComponent>
+					<s:DnaComponent rdf:about="http://partsregistry.org/data/feature/1565191">
+						<pr:type rdf:resource="http://partsregistry.org/type/barcode" />
+						<s:displayId>1565191</s:displayId>
+						<s:name>barcode</s:name>
+					</s:DnaComponent>
+				</s:subComponent>
+			</s:SequenceAnnotation>
+		</s:annotations>
+		<s:annotations>
+			<s:SequenceAnnotation rdf:about="http://partsregistry.org/data/id286909">
+				<s:bioEnd>949</s:bioEnd>
+				<s:bioStart>870</s:bioStart>
+				<s:strand>+</s:strand>
+				<s:subComponent rdf:resource="http://partsregistry.org/data/BBa_B0010" />
+			</s:SequenceAnnotation>
+		</s:annotations>
+		<s:annotations>
+			<s:SequenceAnnotation rdf:about="http://partsregistry.org/data/id286932">
+				<s:bioEnd>924</s:bioEnd>
+				<s:bioStart>881</s:bioStart>
+				<s:strand>+</s:strand>
+				<s:subComponent>
+					<s:DnaComponent rdf:about="http://partsregistry.org/data/feature/1565197">
+						<pr:type rdf:resource="http://partsregistry.org/type/stem_loop" />
+						<s:displayId>1565197</s:displayId>
+						<s:name>stem_loop</s:name>
+					</s:DnaComponent>
+				</s:subComponent>
+			</s:SequenceAnnotation>
+		</s:annotations>
+		<s:annotations>
+			<s:SequenceAnnotation rdf:about="http://partsregistry.org/data/id286954">
+				<s:bioEnd>998</s:bioEnd>
+				<s:bioStart>958</s:bioStart>
+				<s:strand>+</s:strand>
+				<s:subComponent rdf:resource="http://partsregistry.org/data/BBa_B0012" />
+			</s:SequenceAnnotation>
+		</s:annotations>
+		<s:annotations>
+			<s:SequenceAnnotation rdf:about="http://partsregistry.org/data/id286977">
+				<s:bioEnd>984</s:bioEnd>
+				<s:bioStart>965</s:bioStart>
+				<s:strand>+</s:strand>
+				<s:subComponent>
+					<s:DnaComponent rdf:about="http://partsregistry.org/data/feature/1565207">
+						<pr:type rdf:resource="http://partsregistry.org/type/stem_loop" />
+						<s:displayId>1565207</s:displayId>
+						<s:name>T7 TE</s:name>
+					</s:DnaComponent>
+				</s:subComponent>
+			</s:SequenceAnnotation>
+		</s:annotations>
+		<s:annotations>
+			<s:SequenceAnnotation rdf:about="http://partsregistry.org/data/id287000">
+				<s:bioEnd>998</s:bioEnd>
+				<s:bioStart>985</s:bioStart>
+				<s:strand>+</s:strand>
+				<s:subComponent>
+					<s:DnaComponent rdf:about="http://partsregistry.org/data/feature/1565208">
+						<pr:type rdf:resource="http://partsregistry.org/type/polya" />
+						<s:displayId>1565208</s:displayId>
+						<s:name>polya</s:name>
+					</s:DnaComponent>
+				</s:subComponent>
+			</s:SequenceAnnotation>
+		</s:annotations>
+		<s:annotations>
+			<s:SequenceAnnotation rdf:about="http://partsregistry.org/data/id287021">
+				<s:bioEnd>991</s:bioEnd>
+				<s:bioStart>991</s:bioStart>
+				<s:strand>+</s:strand>
+				<s:subComponent>
+					<s:DnaComponent rdf:about="http://partsregistry.org/data/feature/1565209">
+						<pr:type rdf:resource="http://partsregistry.org/type/stop" />
+						<s:displayId>1565209</s:displayId>
+						<s:name>stop</s:name>
+					</s:DnaComponent>
+				</s:subComponent>
+			</s:SequenceAnnotation>
+		</s:annotations>
+		<s:annotations>
+			<s:SequenceAnnotation rdf:about="http://partsregistry.org/data/id287042">
+				<s:bioEnd>1026</s:bioEnd>
+				<s:bioStart>1007</s:bioStart>
+				<s:strand>+</s:strand>
+				<s:subComponent>
+					<s:DnaComponent rdf:about="http://partsregistry.org/data/feature/1565220">
+						<pr:type rdf:resource="http://partsregistry.org/type/binding" />
+						<s:displayId>1565220</s:displayId>
+						<s:name>LuxR/HSL</s:name>
+					</s:DnaComponent>
+				</s:subComponent>
+			</s:SequenceAnnotation>
+		</s:annotations>
+		<s:annotations>
+			<s:SequenceAnnotation rdf:about="http://partsregistry.org/data/id287065">
+				<s:bioEnd>1061</s:bioEnd>
+				<s:bioStart>1007</s:bioStart>
+				<s:strand>+</s:strand>
+				<s:subComponent rdf:resource="http://partsregistry.org/data/BBa_R0062" />
+			</s:SequenceAnnotation>
+		</s:annotations>
+		<s:annotations>
+			<s:SequenceAnnotation rdf:about="http://partsregistry.org/data/id287088">
+				<s:bioEnd>1031</s:bioEnd>
+				<s:bioStart>1026</s:bioStart>
+				<s:strand>+</s:strand>
+				<s:subComponent>
+					<s:DnaComponent rdf:about="http://partsregistry.org/data/feature/1565222">
+						<pr:type rdf:resource="http://partsregistry.org/type/promoter" />
+						<s:displayId>1565222</s:displayId>
+						<s:name>-35</s:name>
+					</s:DnaComponent>
+				</s:subComponent>
+			</s:SequenceAnnotation>
+		</s:annotations>
+		<s:annotations>
+			<s:SequenceAnnotation rdf:about="http://partsregistry.org/data/id287111">
+				<s:bioEnd>1053</s:bioEnd>
+				<s:bioStart>1048</s:bioStart>
+				<s:strand>+</s:strand>
+				<s:subComponent>
+					<s:DnaComponent rdf:about="http://partsregistry.org/data/feature/1565223">
+						<pr:type rdf:resource="http://partsregistry.org/type/promoter" />
+						<s:displayId>1565223</s:displayId>
+						<s:name>-10</s:name>
+					</s:DnaComponent>
+				</s:subComponent>
+			</s:SequenceAnnotation>
+		</s:annotations>
+		<s:annotations>
+			<s:SequenceAnnotation rdf:about="http://partsregistry.org/data/id287134">
+				<s:bioEnd>1059</s:bioEnd>
+				<s:bioStart>1059</s:bioStart>
+				<s:strand>+</s:strand>
+				<s:subComponent>
+					<s:DnaComponent rdf:about="http://partsregistry.org/data/feature/1565224">
+						<pr:type rdf:resource="http://partsregistry.org/type/start" />
+						<s:displayId>1565224</s:displayId>
+						<s:name>start</s:name>
+					</s:DnaComponent>
+				</s:subComponent>
+			</s:SequenceAnnotation>
+		</s:annotations>
+		<s:annotations>
+			<s:SequenceAnnotation rdf:about="http://partsregistry.org/data/id287155">
+				<s:bioEnd>1082</s:bioEnd>
+				<s:bioStart>1070</s:bioStart>
+				<s:strand>+</s:strand>
+				<s:subComponent>
+					<s:DnaComponent rdf:about="http://partsregistry.org/data/feature/1565231">
+						<pr:type rdf:resource="http://partsregistry.org/type/rbs" />
+						<s:displayId>1565231</s:displayId>
+						<s:name>RBS-3\Weak</s:name>
+					</s:DnaComponent>
+				</s:subComponent>
+			</s:SequenceAnnotation>
+		</s:annotations>
+		<s:annotations>
+			<s:SequenceAnnotation rdf:about="http://partsregistry.org/data/id287178">
+				<s:bioEnd>1082</s:bioEnd>
+				<s:bioStart>1070</s:bioStart>
+				<s:strand>+</s:strand>
+				<s:subComponent rdf:resource="http://partsregistry.org/data/BBa_B0032" />
+			</s:SequenceAnnotation>
+		</s:annotations>
+		<s:annotations>
+			<s:SequenceAnnotation rdf:about="http://partsregistry.org/data/id287201">
+				<s:bioEnd>1079</s:bioEnd>
+				<s:bioStart>1076</s:bioStart>
+				<s:strand>+</s:strand>
+				<s:subComponent>
+					<s:DnaComponent rdf:about="http://partsregistry.org/data/feature/1565233">
+						<pr:type rdf:resource="http://partsregistry.org/type/rbs" />
+						<s:displayId>1565233</s:displayId>
+						<s:name>RBS</s:name>
+					</s:DnaComponent>
+				</s:subComponent>
+			</s:SequenceAnnotation>
+		</s:annotations>
+		<s:annotations>
+			<s:SequenceAnnotation rdf:about="http://partsregistry.org/data/id287223">
+				<s:bioEnd>1808</s:bioEnd>
+				<s:bioStart>1089</s:bioStart>
+				<s:strand>+</s:strand>
+				<s:subComponent rdf:resource="http://partsregistry.org/data/BBa_E0040" />
+			</s:SequenceAnnotation>
+		</s:annotations>
+		<s:annotations>
+			<s:SequenceAnnotation rdf:about="http://partsregistry.org/data/id287246">
+				<s:bioEnd>1896</s:bioEnd>
+				<s:bioStart>1817</s:bioStart>
+				<s:strand>+</s:strand>
+				<s:subComponent rdf:resource="http://partsregistry.org/data/BBa_B0010" />
+			</s:SequenceAnnotation>
+		</s:annotations>
+		<s:annotations>
+			<s:SequenceAnnotation rdf:about="http://partsregistry.org/data/id287269">
+				<s:bioEnd>1871</s:bioEnd>
+				<s:bioStart>1828</s:bioStart>
+				<s:strand>+</s:strand>
+				<s:subComponent>
+					<s:DnaComponent rdf:about="http://partsregistry.org/data/feature/1565241">
+						<pr:type rdf:resource="http://partsregistry.org/type/stem_loop" />
+						<s:displayId>1565241</s:displayId>
+						<s:name>stem_loop</s:name>
+					</s:DnaComponent>
+				</s:subComponent>
+			</s:SequenceAnnotation>
+		</s:annotations>
+		<s:annotations>
+			<s:SequenceAnnotation rdf:about="http://partsregistry.org/data/id287291">
+				<s:bioEnd>1945</s:bioEnd>
+				<s:bioStart>1905</s:bioStart>
+				<s:strand>+</s:strand>
+				<s:subComponent rdf:resource="http://partsregistry.org/data/BBa_B0012" />
+			</s:SequenceAnnotation>
+		</s:annotations>
+		<s:annotations>
+			<s:SequenceAnnotation rdf:about="http://partsregistry.org/data/id287314">
+				<s:bioEnd>1931</s:bioEnd>
+				<s:bioStart>1912</s:bioStart>
+				<s:strand>+</s:strand>
+				<s:subComponent>
+					<s:DnaComponent rdf:about="http://partsregistry.org/data/feature/1565251">
+						<pr:type rdf:resource="http://partsregistry.org/type/stem_loop" />
+						<s:displayId>1565251</s:displayId>
+						<s:name>T7 TE</s:name>
+					</s:DnaComponent>
+				</s:subComponent>
+			</s:SequenceAnnotation>
+		</s:annotations>
+		<s:annotations>
+			<s:SequenceAnnotation rdf:about="http://partsregistry.org/data/id287336">
+				<s:bioEnd>1945</s:bioEnd>
+				<s:bioStart>1932</s:bioStart>
+				<s:strand>+</s:strand>
+				<s:subComponent>
+					<s:DnaComponent rdf:about="http://partsregistry.org/data/feature/1565252">
+						<pr:type rdf:resource="http://partsregistry.org/type/polya" />
+						<s:displayId>1565252</s:displayId>
+						<s:name>polya</s:name>
+					</s:DnaComponent>
+				</s:subComponent>
+			</s:SequenceAnnotation>
+		</s:annotations>
+		<s:annotations>
+			<s:SequenceAnnotation rdf:about="http://partsregistry.org/data/id287358">
+				<s:bioEnd>1938</s:bioEnd>
+				<s:bioStart>1938</s:bioStart>
+				<s:strand>+</s:strand>
+				<s:subComponent>
+					<s:DnaComponent rdf:about="http://partsregistry.org/data/feature/1565253">
+						<pr:type rdf:resource="http://partsregistry.org/type/stop" />
+						<s:displayId>1565253</s:displayId>
+						<s:name>stop</s:name>
+					</s:DnaComponent>
+				</s:subComponent>
+			</s:SequenceAnnotation>
+		</s:annotations>
+		<s:description>GFP Producer Controlled by 3OC6HSL Receiver Device</s:description>
+		<s:displayId>BBa_T9002</s:displayId>
+		<s:dnaSequence>
+			<s:DnaSequence rdf:about="http://partsregistry.org/data/id286266">
+				<s:nucleotides>tccctatcagtgatagagattgacatccctatcagtgatagagatactgagcactactagagaaagaggagaaatactagatgaaaaacataaatgccgacgacacatacagaataattaataaaattaaagcttgtagaagcaataatgatattaatcaatgcttatctgatatgactaaaatggtacattgtgaatattatttactcgcgatcatttatcctcattctatggttaaatctgatatttcaatcctagataattaccctaaaaaatggaggcaatattatgatgacgctaatttaataaaatatgatcctatagtagattattctaactccaatcattcaccaattaattggaatatatttgaaaacaatgctgtaaataaaaaatctccaaatgtaattaaagaagcgaaaacatcaggtcttatcactgggtttagtttccctattcatacggctaacaatggcttcggaatgcttagttttgcacattcagaaaaagacaactatatagatagtttatttttacatgcgtgtatgaacataccattaattgttccttctctagttgataattatcgaaaaataaatatagcaaataataaatcaaacaacgatttaaccaaaagagaaaaagaatgtttagcgtgggcatgcgaaggaaaaagctcttgggatatttcaaaaatattaggttgcagtgagcgtactgtcactttccatttaaccaatgcgcaaatgaaactcaatacaacaaaccgctgccaaagtatttctaaagcaattttaacaggagcaattgattgcccatactttaaaaattaataacactgatagtgctagtgtagatcactactagagccaggcatcaaataaaacgaaaggctcagtcgaaagactgggcctttcgttttatctgttgtttgtcggtgaacgctctctactagagtcacactggctcaccttcgggtgggcctttctgcgtttatatactagagacctgtaggatcgtacaggtttacgcaagaaaatggtttgttatagtcgaataaatactagagtcacacaggaaagtactagatgcgtaaaggagaagaacttttcactggagttgtcccaattcttgttgaattagatggtgatgttaatgggcacaaattttctgtcagtggagagggtgaaggtgatgcaacatacggaaaacttacccttaaatttatttgcactactggaaaactacctgttccatggccaacacttgtcactactttcggttatggtgttcaatgctttgcgagatacccagatcatatgaaacagcatgactttttcaagagtgccatgcccgaaggttatgtacaggaaagaactatatttttcaaagatgacgggaactacaagacacgtgctgaagtcaagtttgaaggtgatacccttgttaatagaatcgagttaaaaggtattgattttaaagaagatggaaacattcttggacacaaattggaatacaactataactcacacaatgtatacatcatggcagacaaacaaaagaatggaatcaaagttaacttcaaaattagacacaacattgaagatggaagcgttcaactagcagaccattatcaacaaaatactccaattggcgatggccctgtccttttaccagacaaccattacctgtccacacaatctgccctttcgaaagatcccaacgaaaagagagaccacatggtccttcttgagtttgtaacagctgctgggattacacatggcatggatgaactatacaaataataatactagagccaggcatcaaataaaacgaaaggctcagtcgaaagactgggcctttcgttttatctgttgtttgtcggtgaacgctctctactagagtcacactggctcaccttcgggtgggcctttctgcgtttata</s:nucleotides>
+			</s:DnaSequence>
+		</s:dnaSequence>
+		<s:name>T9002</s:name>
+	</s:DnaComponent>
+</rdf:RDF>

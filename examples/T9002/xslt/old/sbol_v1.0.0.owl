@@ -18,15 +18,11 @@
 <rdf:RDF xmlns="http://sbols.org/rdf#"
      xml:base="http://sbols.org/rdf"
      xmlns:obo="http://purl.obolibrary.org/obo/"
-     xmlns:prf="&pr;data/feature/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:prt="&pr;type/"
-     xmlns:prd="&pr;data/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:SO="http://purl.org/obo/owl/SO#"
-     xmlns:pr="http://partsregistry.org/">
+     xmlns:SO="http://purl.org/obo/owl/SO#">
     <owl:Ontology rdf:about="http://sbols.org/rdf"/>
     
 
@@ -39,8 +35,14 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    <owl:AnnotationProperty rdf:about="http://sbols.org/rdf#description">
+        <rdfs:subPropertyOf rdf:resource="&rdfs;comment"/>
+    </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="&obo;IAO_0000412">
         <rdfs:label xml:lang="en">imported from</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://sbols.org/rdf#name">
+        <rdfs:subPropertyOf rdf:resource="&rdfs;label"/>
     </owl:AnnotationProperty>
     
 
@@ -153,151 +155,6 @@
      -->
 
     
-
-
-    <!-- http://partsregistry.org/type/barcode -->
-
-    <owl:Class rdf:about="&pr;type/barcode">
-        <rdfs:subClassOf rdf:resource="http://sbols.org/rdf#DnaComponent"/>
-    </owl:Class>
-    
-
-
-    <!-- http://partsregistry.org/type/binding -->
-
-    <owl:Class rdf:about="&pr;type/binding">
-        <rdfs:subClassOf rdf:resource="&obo;SO_0000409"/>
-    </owl:Class>
-    
-
-
-    <!-- http://partsregistry.org/type/biobrick -->
-
-    <owl:Class rdf:about="&pr;type/biobrick">
-        <rdfs:subClassOf rdf:resource="http://sbols.org/rdf#DnaComponent"/>
-    </owl:Class>
-    
-
-
-    <!-- http://partsregistry.org/type/cds -->
-
-    <owl:Class rdf:about="&pr;type/cds">
-        <rdfs:subClassOf rdf:resource="&obo;SO_0000316"/>
-    </owl:Class>
-    
-
-
-    <!-- http://partsregistry.org/type/coding -->
-
-    <owl:Class rdf:about="&pr;type/coding">
-        <rdfs:subClassOf rdf:resource="&obo;SO_0000316"/>
-    </owl:Class>
-    
-
-
-    <!-- http://partsregistry.org/type/conserved -->
-
-    <owl:Class rdf:about="&pr;type/conserved">
-        <rdfs:subClassOf rdf:resource="&obo;SO_0000856"/>
-    </owl:Class>
-    
-
-
-    <!-- http://partsregistry.org/type/polya -->
-
-    <owl:Class rdf:about="&pr;type/polya">
-        <rdfs:subClassOf rdf:resource="&obo;SO_0000553"/>
-    </owl:Class>
-    
-
-
-    <!-- http://partsregistry.org/type/promoter -->
-
-    <owl:Class rdf:about="&pr;type/promoter">
-        <rdfs:subClassOf rdf:resource="&obo;SO_0000167"/>
-    </owl:Class>
-    
-
-
-    <!-- http://partsregistry.org/type/rbs -->
-
-    <owl:Class rdf:about="&pr;type/rbs">
-        <rdfs:subClassOf rdf:resource="&obo;SO_0000552"/>
-    </owl:Class>
-    
-
-
-    <!-- http://partsregistry.org/type/regulatory -->
-
-    <owl:Class rdf:about="&pr;type/regulatory">
-        <rdfs:subClassOf rdf:resource="&obo;SO_0005836"/>
-    </owl:Class>
-    
-
-
-    <!-- http://partsregistry.org/type/reporter -->
-
-    <owl:Class rdf:about="&pr;type/reporter">
-        <rdfs:subClassOf rdf:resource="&obo;SO_0000316"/>
-    </owl:Class>
-    
-
-
-    <!-- http://partsregistry.org/type/s_mutation -->
-
-    <owl:Class rdf:about="&pr;type/s_mutation">
-        <rdfs:subClassOf rdf:resource="&obo;SO_0001017"/>
-    </owl:Class>
-    
-
-
-    <!-- http://partsregistry.org/type/scar -->
-
-    <owl:Class rdf:about="&pr;type/scar">
-        <rdfs:subClassOf rdf:resource="http://sbols.org/rdf#DnaComponent"/>
-    </owl:Class>
-    
-
-
-    <!-- http://partsregistry.org/type/signalling -->
-
-    <owl:Class rdf:about="&pr;type/signalling">
-        <rdfs:subClassOf rdf:resource="http://sbols.org/rdf#DnaComponent"/>
-    </owl:Class>
-    
-
-
-    <!-- http://partsregistry.org/type/start -->
-
-    <owl:Class rdf:about="&pr;type/start">
-        <rdfs:subClassOf rdf:resource="http://sbols.org/rdf#DnaComponent"/>
-    </owl:Class>
-    
-
-
-    <!-- http://partsregistry.org/type/stem_loop -->
-
-    <owl:Class rdf:about="&pr;type/stem_loop">
-        <rdfs:subClassOf rdf:resource="&obo;SO_0000313"/>
-    </owl:Class>
-    
-
-
-    <!-- http://partsregistry.org/type/stop -->
-
-    <owl:Class rdf:about="&pr;type/stop">
-        <rdfs:subClassOf rdf:resource="http://sbols.org/rdf#DnaComponent"/>
-    </owl:Class>
-    
-
-
-    <!-- http://partsregistry.org/type/terminator -->
-
-    <owl:Class rdf:about="&pr;type/terminator">
-        <rdfs:subClassOf rdf:resource="&obo;SO_0000141"/>
-    </owl:Class>
-    
-
 
     <!-- http://purl.obolibrary.org/obo/SO_0000141 -->
 

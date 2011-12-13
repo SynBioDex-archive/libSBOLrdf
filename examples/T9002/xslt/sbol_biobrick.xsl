@@ -3,14 +3,19 @@
 <xsl:stylesheet version="1.0"
 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-xmlns:s="http://sbols.org/rdf#"
+xmlns:s="http://sbols.org/v1#"
 xmlns:pr="http://partsregistry.org/"
 xmlns:prt="http://partsregistry.org/type/"
-xmlns:prd="http://partsregistry.org/data/"
-xmlns:prf="http://partsregistry.org/data/feature/"
+xmlns:prp="http://partsregistry.org/part/"
+xmlns:pra="http://partsregistry.org/anot/"
+xmlns:prs="http://partsregistry.org/seq/"
+xmlns:prf="http://partsregistry.org/feat/"
 >
-<xsl:param name="prd" select="'http://partsregistry.org/data/'"/>
 <xsl:param name="prt" select="'http://partsregistry.org/type/'"/>
+<xsl:param name="prp" select="'http://partsregistry.org/part/'"/>
+<xsl:param name="pra" select="'http://partsregistry.org/anot/'"/>
+<xsl:param name="prs" select="'http://partsregistry.org/seq/'"/>
+<xsl:param name="prf" select="'http://partsregistry.org/feat/'"/>
 <!-- prt is the Partsregistry type
      prd is the Partsregistry data
 
@@ -29,7 +34,7 @@ xmlns:prd="http://partsregistry.org/cgi/xml/part.cgi?part="
 <rdf:RDF>
 
   <xsl:for-each select="rsbpml/part_list/part">
-    <s:DnaComponent rdf:about="{concat($prd,part_name)}">
+    <s:DnaComponent rdf:about="{concat($prp,part_name)}">
       <s:displayId><xsl:value-of select="part_name"/></s:displayId>
         <xsl:choose>
           <xsl:when test="normalize-space(part_nickname)">
@@ -42,7 +47,7 @@ xmlns:prd="http://partsregistry.org/cgi/xml/part.cgi?part="
       <s:description>
         <xsl:value-of select="normalize-space(part_short_desc)"/>
           </s:description>
-          <pr:type rdf:resource="{concat($prt,translate(part_type,$uc,$lc))}"/>
+          <rdf:type rdf:resource="{concat($prt,translate(part_type,$uc,$lc))}"/>
           <!-- 
           <xsl:value-of select="part_status"/>
           <xsl:value-of select="part_results"/>
@@ -56,7 +61,7 @@ xmlns:prd="http://partsregistry.org/cgi/xml/part.cgi?part="
             <xsl:value-of select="."/>
           -->
       <s:dnaSequence>
-        <s:DnaSequence rdf:about="{concat($prd,generate-id())}">
+        <s:DnaSequence rdf:about="{concat($prs,generate-id())}">
           <s:nucleotides>
             <xsl:value-of select="translate(sequences/seq_data, 
                         '&#x20;&#x9;&#xD;&#xA;', ' ')"/>
@@ -66,23 +71,20 @@ xmlns:prd="http://partsregistry.org/cgi/xml/part.cgi?part="
 
          <xsl:for-each select="deep_subparts/subpart">
          <s:annotations>
-          <s:SequenceAnnotation rdf:about="{concat($prd,generate-id())}">
+          <s:SequenceAnnotation rdf:about="{concat($pra,generate-id())}">
             <xsl:if test="preceding-sibling::*">
-            <s:precedes rdf:resource="{concat($prd,generate-id(preceding-sibling::*))}"/>
+            <s:precedes rdf:resource="{concat($pra,generate-id(preceding-sibling::*))}"/>
             </xsl:if>
             <s:subComponent>
-              <s:DnaComponent rdf:about="{concat($prd,part_name)}"> 
+              <s:DnaComponent rdf:about="{concat($prp,part_name)}"> 
                 <s:displayId><xsl:value-of select="part_name"/></s:displayId>
                 <xsl:choose>
                   <xsl:when test="normalize-space(part_nickname)">
                      <s:name><xsl:value-of select="part_nickname"/></s:name>
                   </xsl:when>
-                  <xsl:otherwise>
-                     <s:name><xsl:value-of select="part_name"/></s:name>
-                  </xsl:otherwise>
                 </xsl:choose>
                 <s:description><xsl:value-of select="normalize-space(part_short_desc)"/></s:description>
-                <pr:type rdf:resource="{concat($prt,translate(part_type,$uc,$lc))}"/>
+                <rdf:type rdf:resource="{concat($prt,translate(part_type,$uc,$lc))}"/>
          </s:DnaComponent> 
             </s:subComponent>
           </s:SequenceAnnotation>
@@ -92,24 +94,21 @@ xmlns:prd="http://partsregistry.org/cgi/xml/part.cgi?part="
           <xsl:for-each select="specified_subparts/subpart">
           <s:annotations>
 
-          <s:SequenceAnnotation rdf:about="{concat($prd,generate-id())}">
+          <s:SequenceAnnotation rdf:about="{concat($pra,generate-id())}">
             <xsl:if test="preceding-sibling::*">
-            <s:precedes rdf:resource="{concat($prd,generate-id(preceding-sibling::*))}"/>
+            <s:precedes rdf:resource="{concat($pra,generate-id(preceding-sibling::*))}"/>
             </xsl:if>
             <s:subComponent>
 
-              <s:DnaComponent rdf:about="{concat($prd,part_name)}"> 
+              <s:DnaComponent rdf:about="{concat($prp,part_name)}"> 
                 <s:displayId><xsl:value-of select="part_name"/></s:displayId>
                 <xsl:choose>
                   <xsl:when test="normalize-space(part_nickname)">
                   <s:name><xsl:value-of select="part_nickname"/></s:name>
                   </xsl:when>
-                  <xsl:otherwise>
-                  <s:name><xsl:value-of select="part_name"/></s:name>
-                  </xsl:otherwise>
                 </xsl:choose>
                 <s:description><xsl:value-of select="normalize-space(part_short_desc)"/></s:description>
-                <pr:type rdf:resource="{concat($prt,translate(part_type,$uc,$lc))}"/>
+                <rdf:type rdf:resource="{concat($prt,translate(part_type,$uc,$lc))}"/>
               </s:DnaComponent> 
             </s:subComponent>
           </s:SequenceAnnotation>
@@ -119,24 +118,21 @@ xmlns:prd="http://partsregistry.org/cgi/xml/part.cgi?part="
           <xsl:for-each select="specified_subscars/subpart">
           <s:annotations>
 
-          <s:SequenceAnnotation rdf:about="{concat($prd,generate-id())}">
+          <s:SequenceAnnotation rdf:about="{concat($pra,generate-id())}">
             <xsl:if test="preceding-sibling::*">
-            <s:precedes rdf:resource="{concat($prd,generate-id(preceding-sibling::*))}"/>
+            <s:precedes rdf:resource="{concat($pra,generate-id(preceding-sibling::*))}"/>
             </xsl:if>
             <s:subComponent>
 
-              <s:DnaComponent rdf:about="{concat($prd,part_name)}"> 
+              <s:DnaComponent rdf:about="{concat($prp,part_name)}"> 
                 <s:displayId><xsl:value-of select="part_name"/></s:displayId>
                 <xsl:choose>
                   <xsl:when test="normalize-space(part_nickname)">
                   <s:name><xsl:value-of select="part_nickname"/></s:name>
                   </xsl:when>
-                  <xsl:otherwise>
-                  <s:name><xsl:value-of select="part_name"/></s:name>
-                  </xsl:otherwise>
                 </xsl:choose>
                 <s:description><xsl:value-of select="normalize-space(part_short_desc)"/></s:description>
-                <pr:type rdf:resource="{concat($prt,translate(part_type,$uc,$lc))}"/>
+                <rdf:type rdf:resource="{concat($prt,translate(part_type,$uc,$lc))}"/>
          </s:DnaComponent> 
             </s:subComponent>
           </s:SequenceAnnotation>
@@ -145,12 +141,12 @@ xmlns:prd="http://partsregistry.org/cgi/xml/part.cgi?part="
 
           <xsl:for-each select="specified_subscars/scar">
           <s:annotations>
-          <s:SequenceAnnotation rdf:about="{concat($prd,generate-id())}">
+          <s:SequenceAnnotation rdf:about="{concat($pra,generate-id())}">
             <xsl:if test="preceding-sibling::*">
-            <s:precedes rdf:resource="{concat($prd,generate-id(preceding-sibling::*))}"/>
+            <s:precedes rdf:resource="{concat($pra,generate-id(preceding-sibling::*))}"/>
             </xsl:if>
             <s:subComponent>
-              <s:DnaComponent rdf:about="{concat($prd,concat('RFC_',scar_standard))}"> 
+              <s:DnaComponent rdf:about="{concat($prp,concat('RFC_',scar_standard))}"> 
                 <s:displayId><xsl:value-of select="concat('RFC_',scar_standard)"/></s:displayId>
                 <xsl:choose>
                   <xsl:when test="normalize-space(scar_nickname)">
@@ -163,9 +159,9 @@ xmlns:prd="http://partsregistry.org/cgi/xml/part.cgi?part="
                 <xsl:if test="normalize-space(scar_comments)">
                   <s:description><xsl:value-of select="normalize-space(scar_comments)"/></s:description>
                 </xsl:if>
-                <pr:type rdf:resource="{concat($prt,translate(scar_type,$uc,$lc))}"/>
+                <rdf:type rdf:resource="{concat($prt,translate(scar_type,$uc,$lc))}"/>
                 <s:dnaSequence>
-                <s:DnaSequence rdf:about="{concat($prd,generate-id(scar_sequence))}">
+                <s:DnaSequence rdf:about="{concat($prs,generate-id(scar_sequence))}">
                   <s:nucleotides>
                     <xsl:value-of select="translate(scar_sequence, 
                       '&#x20;&#x9;&#xD;&#xA;', ' ')"/>
@@ -180,10 +176,10 @@ xmlns:prd="http://partsregistry.org/cgi/xml/part.cgi?part="
     
         <xsl:for-each select="features/feature">
           <s:annotations>
-          <s:SequenceAnnotation rdf:about="{concat($prd,generate-id())}">
+          <s:SequenceAnnotation rdf:about="{concat($pra,generate-id())}">
 <!--
             <xsl:if test="preceding-sibling::*">
-            <s:precedes rdf:resource="{concat($prd,generate-id(preceding-sibling::*))}"/>
+            <s:precedes rdf:resource="{concat($pra,generate-id(preceding-sibling::*))}"/>
             </xsl:if>
 -->
             <s:bioStart><xsl:value-of select="startpos"/></s:bioStart>
@@ -200,20 +196,20 @@ xmlns:prd="http://partsregistry.org/cgi/xml/part.cgi?part="
                 <xsl:choose>
                   <!-- There is a subpart with the same BBa_ as this feature -->
                   <xsl:when test="starts-with(title,'BBa_') and key('parts',title)">
-                    <s:DnaComponent rdf:about="{concat($prd,title)}">
-                      <pr:type rdf:resource="{concat($prt,translate(type,$uc,$lc))}"/>
+                    <s:DnaComponent rdf:about="{concat($prp,title)}">
+                      <rdf:type rdf:resource="{concat($prt,translate(type,$uc,$lc))}"/>
                     </s:DnaComponent>
                   </xsl:when>
                   <!-- This BBa_ feature is a part, not listed as subpart -->
                   <xsl:when test="starts-with(title,'BBa_') and not(key('parts',title))">
-                    <s:DnaComponent rdf:about="{concat($prd,title)}">
+                    <s:DnaComponent rdf:about="{concat($prp,title)}">
                       <s:displayId><xsl:value-of select="title" /></s:displayId>
-                      <pr:type rdf:resource="{concat($prt,translate(type,$uc,$lc))}"/>
+                      <rdf:type rdf:resource="{concat($prt,translate(type,$uc,$lc))}"/>
                     </s:DnaComponent>
                   </xsl:when>
                   <!-- This feature is not a part -->
                   <xsl:otherwise>
-                    <s:DnaComponent rdf:about="{concat(concat($prd,'feature/'),id)}">
+                    <s:DnaComponent rdf:about="{concat($prf,id)}">
                       <s:displayId><xsl:value-of select="id" /></s:displayId>
                       <xsl:choose>
                        <xsl:when test="normalize-space(title)">
@@ -223,7 +219,7 @@ xmlns:prd="http://partsregistry.org/cgi/xml/part.cgi?part="
                          <s:name><xsl:value-of select="type"/></s:name>
                        </xsl:otherwise>
                      </xsl:choose>
-                      <pr:type rdf:resource="{concat($prt,translate(type,$uc,$lc))}"/>
+                      <rdf:type rdf:resource="{concat($prt,translate(type,$uc,$lc))}"/>
                     </s:DnaComponent>
                   </xsl:otherwise>
                 </xsl:choose>

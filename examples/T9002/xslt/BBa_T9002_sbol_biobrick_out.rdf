@@ -6,12 +6,12 @@
     <s:description>GFP Producer Controlled by 3OC6HSL Receiver Device</s:description>
     <rdf:type rdf:resource="http://partsregistry.org/type/signalling"/>
     <s:dnaSequence>
-      <s:DnaSequence rdf:about="http://partsregistry.org/seq/id84044">
+      <s:DnaSequence rdf:about="http://partsregistry.org/seq/id144190">
         <s:nucleotides>tccctatcagtgatagagattgacatccctatcagtgatagagatactgagcactactagagaaagaggagaaatactagatgaaaaacataaatgccgacgacacatacagaataattaataaaattaaagcttgtagaagcaataatgatattaatcaatgcttatctgatatgactaaaatggtacattgtgaatattatttactcgcgatcatttatcctcattctatggttaaatctgatatttcaatcctagataattaccctaaaaaatggaggcaatattatgatgacgctaatttaataaaatatgatcctatagtagattattctaactccaatcattcaccaattaattggaatatatttgaaaacaatgctgtaaataaaaaatctccaaatgtaattaaagaagcgaaaacatcaggtcttatcactgggtttagtttccctattcatacggctaacaatggcttcggaatgcttagttttgcacattcagaaaaagacaactatatagatagtttatttttacatgcgtgtatgaacataccattaattgttccttctctagttgataattatcgaaaaataaatatagcaaataataaatcaaacaacgatttaaccaaaagagaaaaagaatgtttagcgtgggcatgcgaaggaaaaagctcttgggatatttcaaaaatattaggttgcagtgagcgtactgtcactttccatttaaccaatgcgcaaatgaaactcaatacaacaaaccgctgccaaagtatttctaaagcaattttaacaggagcaattgattgcccatactttaaaaattaataacactgatagtgctagtgtagatcactactagagccaggcatcaaataaaacgaaaggctcagtcgaaagactgggcctttcgttttatctgttgtttgtcggtgaacgctctctactagagtcacactggctcaccttcgggtgggcctttctgcgtttatatactagagacctgtaggatcgtacaggtttacgcaagaaaatggtttgttatagtcgaataaatactagagtcacacaggaaagtactagatgcgtaaaggagaagaacttttcactggagttgtcccaattcttgttgaattagatggtgatgttaatgggcacaaattttctgtcagtggagagggtgaaggtgatgcaacatacggaaaacttacccttaaatttatttgcactactggaaaactacctgttccatggccaacacttgtcactactttcggttatggtgttcaatgctttgcgagatacccagatcatatgaaacagcatgactttttcaagagtgccatgcccgaaggttatgtacaggaaagaactatatttttcaaagatgacgggaactacaagacacgtgctgaagtcaagtttgaaggtgatacccttgttaatagaatcgagttaaaaggtattgattttaaagaagatggaaacattcttggacacaaattggaatacaactataactcacacaatgtatacatcatggcagacaaacaaaagaatggaatcaaagttaacttcaaaattagacacaacattgaagatggaagcgttcaactagcagaccattatcaacaaaatactccaattggcgatggccctgtccttttaccagacaaccattacctgtccacacaatctgccctttcgaaagatcccaacgaaaagagagaccacatggtccttcttgagtttgtaacagctgctgggattacacatggcatggatgaactatacaaataataatactagagccaggcatcaaataaaacgaaaggctcagtcgaaagactgggcctttcgttttatctgttgtttgtcggtgaacgctctctactagagtcacactggctcaccttcgggtgggcctttctgcgtttata</s:nucleotides>
       </s:DnaSequence>
     </s:dnaSequence>
     <s:annotations>
-      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id84091">
+      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id144236">
         <s:subComponent>
           <s:DnaComponent rdf:about="http://partsregistry.org/part/BBa_R0040">
             <s:displayId>BBa_R0040</s:displayId>
@@ -23,8 +23,8 @@
       </s:SequenceAnnotation>
     </s:annotations>
     <s:annotations>
-      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id84109">
-        <s:precedes rdf:resource="http://partsregistry.org/anot/id84091"/>
+      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id144254">
+        <s:precedes rdf:resource="http://partsregistry.org/anot/id144236"/>
         <s:subComponent>
           <s:DnaComponent rdf:about="http://partsregistry.org/part/BBa_B0034">
             <s:displayId>BBa_B0034</s:displayId>
@@ -35,8 +35,8 @@
       </s:SequenceAnnotation>
     </s:annotations>
     <s:annotations>
-      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id84127">
-        <s:precedes rdf:resource="http://partsregistry.org/anot/id84091"/>
+      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id144272">
+        <s:precedes rdf:resource="http://partsregistry.org/anot/id144236"/>
         <s:subComponent>
           <s:DnaComponent rdf:about="http://partsregistry.org/part/BBa_C0062">
             <s:displayId>BBa_C0062</s:displayId>
@@ -48,8 +48,8 @@
       </s:SequenceAnnotation>
     </s:annotations>
     <s:annotations>
-      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id84145">
-        <s:precedes rdf:resource="http://partsregistry.org/anot/id84091"/>
+      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id144290">
+        <s:precedes rdf:resource="http://partsregistry.org/anot/id144236"/>
         <s:subComponent>
           <s:DnaComponent rdf:about="http://partsregistry.org/part/BBa_B0010">
             <s:displayId>BBa_B0010</s:displayId>
@@ -60,8 +60,8 @@
       </s:SequenceAnnotation>
     </s:annotations>
     <s:annotations>
-      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id84162">
-        <s:precedes rdf:resource="http://partsregistry.org/anot/id84091"/>
+      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id144308">
+        <s:precedes rdf:resource="http://partsregistry.org/anot/id144236"/>
         <s:subComponent>
           <s:DnaComponent rdf:about="http://partsregistry.org/part/BBa_B0012">
             <s:displayId>BBa_B0012</s:displayId>
@@ -72,8 +72,8 @@
       </s:SequenceAnnotation>
     </s:annotations>
     <s:annotations>
-      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id84180">
-        <s:precedes rdf:resource="http://partsregistry.org/anot/id84091"/>
+      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id144325">
+        <s:precedes rdf:resource="http://partsregistry.org/anot/id144236"/>
         <s:subComponent>
           <s:DnaComponent rdf:about="http://partsregistry.org/part/BBa_R0062">
             <s:displayId>BBa_R0062</s:displayId>
@@ -85,8 +85,8 @@
       </s:SequenceAnnotation>
     </s:annotations>
     <s:annotations>
-      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id84199">
-        <s:precedes rdf:resource="http://partsregistry.org/anot/id84091"/>
+      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id144344">
+        <s:precedes rdf:resource="http://partsregistry.org/anot/id144236"/>
         <s:subComponent>
           <s:DnaComponent rdf:about="http://partsregistry.org/part/BBa_B0032">
             <s:displayId>BBa_B0032</s:displayId>
@@ -97,8 +97,8 @@
       </s:SequenceAnnotation>
     </s:annotations>
     <s:annotations>
-      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id84216">
-        <s:precedes rdf:resource="http://partsregistry.org/anot/id84091"/>
+      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id144360">
+        <s:precedes rdf:resource="http://partsregistry.org/anot/id144236"/>
         <s:subComponent>
           <s:DnaComponent rdf:about="http://partsregistry.org/part/BBa_E0040">
             <s:displayId>BBa_E0040</s:displayId>
@@ -110,8 +110,8 @@
       </s:SequenceAnnotation>
     </s:annotations>
     <s:annotations>
-      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id84234">
-        <s:precedes rdf:resource="http://partsregistry.org/anot/id84091"/>
+      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id144379">
+        <s:precedes rdf:resource="http://partsregistry.org/anot/id144236"/>
         <s:subComponent>
           <s:DnaComponent rdf:about="http://partsregistry.org/part/BBa_B0010">
             <s:displayId>BBa_B0010</s:displayId>
@@ -122,8 +122,8 @@
       </s:SequenceAnnotation>
     </s:annotations>
     <s:annotations>
-      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id84251">
-        <s:precedes rdf:resource="http://partsregistry.org/anot/id84091"/>
+      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id144396">
+        <s:precedes rdf:resource="http://partsregistry.org/anot/id144236"/>
         <s:subComponent>
           <s:DnaComponent rdf:about="http://partsregistry.org/part/BBa_B0012">
             <s:displayId>BBa_B0012</s:displayId>
@@ -134,7 +134,7 @@
       </s:SequenceAnnotation>
     </s:annotations>
     <s:annotations>
-      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id84271">
+      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id144416">
         <s:subComponent>
           <s:DnaComponent rdf:about="http://partsregistry.org/part/BBa_F2620">
             <s:displayId>BBa_F2620</s:displayId>
@@ -145,8 +145,8 @@
       </s:SequenceAnnotation>
     </s:annotations>
     <s:annotations>
-      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id84290">
-        <s:precedes rdf:resource="http://partsregistry.org/anot/id84271"/>
+      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id144434">
+        <s:precedes rdf:resource="http://partsregistry.org/anot/id144416"/>
         <s:subComponent>
           <s:DnaComponent rdf:about="http://partsregistry.org/part/BBa_E0240">
             <s:displayId>BBa_E0240</s:displayId>
@@ -158,7 +158,7 @@
       </s:SequenceAnnotation>
     </s:annotations>
     <s:annotations>
-      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id84312">
+      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id144456">
         <s:subComponent>
           <s:DnaComponent rdf:about="http://partsregistry.org/part/BBa_F2620">
             <s:displayId>BBa_F2620</s:displayId>
@@ -169,8 +169,8 @@
       </s:SequenceAnnotation>
     </s:annotations>
     <s:annotations>
-      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id84356">
-        <s:precedes rdf:resource="http://partsregistry.org/anot/id84312"/>
+      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id144501">
+        <s:precedes rdf:resource="http://partsregistry.org/anot/id144456"/>
         <s:subComponent>
           <s:DnaComponent rdf:about="http://partsregistry.org/part/BBa_E0240">
             <s:displayId>BBa_E0240</s:displayId>
@@ -182,15 +182,15 @@
       </s:SequenceAnnotation>
     </s:annotations>
     <s:annotations>
-      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id84330">
-        <s:precedes rdf:resource="http://partsregistry.org/anot/id84312"/>
+      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id144475">
+        <s:precedes rdf:resource="http://partsregistry.org/anot/id144456"/>
         <s:subComponent>
           <s:DnaComponent rdf:about="http://partsregistry.org/part/RFC_10">
             <s:displayId>RFC_10</s:displayId>
             <s:name>[10]</s:name>
             <rdf:type rdf:resource="http://partsregistry.org/type/scar"/>
             <s:dnaSequence>
-              <s:DnaSequence rdf:about="http://partsregistry.org/seq/id84353">
+              <s:DnaSequence rdf:about="http://partsregistry.org/seq/id144498">
                 <s:nucleotides>tactagag</s:nucleotides>
               </s:DnaSequence>
             </s:dnaSequence>
@@ -199,13 +199,13 @@
       </s:SequenceAnnotation>
     </s:annotations>
     <s:annotations>
-      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id84400">
+      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id144545">
         <s:bioStart>1</s:bioStart>
         <s:bioEnd>19</s:bioEnd>
         <s:strand>+</s:strand>
         <s:subComponent>
-          <s:DnaComponent rdf:about="http://partsregistry.org/feat/1565164">
-            <s:displayId>1565164</s:displayId>
+          <s:DnaComponent rdf:about="http://partsregistry.org/feat/id144548">
+            <s:displayId>&gt;id144548</s:displayId>
             <s:name>TetR 1</s:name>
             <rdf:type rdf:resource="http://partsregistry.org/type/binding"/>
           </s:DnaComponent>
@@ -213,7 +213,7 @@
       </s:SequenceAnnotation>
     </s:annotations>
     <s:annotations>
-      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id84424">
+      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id144569">
         <s:bioStart>1</s:bioStart>
         <s:bioEnd>54</s:bioEnd>
         <s:strand>+</s:strand>
@@ -225,13 +225,13 @@
       </s:SequenceAnnotation>
     </s:annotations>
     <s:annotations>
-      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id84447">
+      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id144592">
         <s:bioStart>20</s:bioStart>
         <s:bioEnd>25</s:bioEnd>
         <s:strand>+</s:strand>
         <s:subComponent>
-          <s:DnaComponent rdf:about="http://partsregistry.org/feat/1565166">
-            <s:displayId>1565166</s:displayId>
+          <s:DnaComponent rdf:about="http://partsregistry.org/feat/id144594">
+            <s:displayId>&gt;id144594</s:displayId>
             <s:name>-35</s:name>
             <rdf:type rdf:resource="http://partsregistry.org/type/promoter"/>
           </s:DnaComponent>
@@ -239,13 +239,13 @@
       </s:SequenceAnnotation>
     </s:annotations>
     <s:annotations>
-      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id84469">
+      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id144614">
         <s:bioStart>26</s:bioStart>
         <s:bioEnd>44</s:bioEnd>
         <s:strand>+</s:strand>
         <s:subComponent>
-          <s:DnaComponent rdf:about="http://partsregistry.org/feat/1565167">
-            <s:displayId>1565167</s:displayId>
+          <s:DnaComponent rdf:about="http://partsregistry.org/feat/id144616">
+            <s:displayId>&gt;id144616</s:displayId>
             <s:name>TetR 2</s:name>
             <rdf:type rdf:resource="http://partsregistry.org/type/binding"/>
           </s:DnaComponent>
@@ -253,13 +253,13 @@
       </s:SequenceAnnotation>
     </s:annotations>
     <s:annotations>
-      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id84492">
+      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id144637">
         <s:bioStart>43</s:bioStart>
         <s:bioEnd>48</s:bioEnd>
         <s:strand>+</s:strand>
         <s:subComponent>
-          <s:DnaComponent rdf:about="http://partsregistry.org/feat/1565168">
-            <s:displayId>1565168</s:displayId>
+          <s:DnaComponent rdf:about="http://partsregistry.org/feat/id144639">
+            <s:displayId>&gt;id144639</s:displayId>
             <s:name>-10</s:name>
             <rdf:type rdf:resource="http://partsregistry.org/type/promoter"/>
           </s:DnaComponent>
@@ -267,7 +267,7 @@
       </s:SequenceAnnotation>
     </s:annotations>
     <s:annotations>
-      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id84514">
+      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id144659">
         <s:bioStart>63</s:bioStart>
         <s:bioEnd>74</s:bioEnd>
         <s:strand>+</s:strand>
@@ -279,13 +279,13 @@
       </s:SequenceAnnotation>
     </s:annotations>
     <s:annotations>
-      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id84537">
+      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id144682">
         <s:bioStart>67</s:bioStart>
         <s:bioEnd>70</s:bioEnd>
         <s:strand>+</s:strand>
         <s:subComponent>
-          <s:DnaComponent rdf:about="http://partsregistry.org/feat/1565172">
-            <s:displayId>1565172</s:displayId>
+          <s:DnaComponent rdf:about="http://partsregistry.org/feat/id144684">
+            <s:displayId>&gt;id144684</s:displayId>
             <s:name>conserved</s:name>
             <rdf:type rdf:resource="http://partsregistry.org/type/conserved"/>
           </s:DnaComponent>
@@ -293,7 +293,7 @@
       </s:SequenceAnnotation>
     </s:annotations>
     <s:annotations>
-      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id84558">
+      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id144703">
         <s:bioStart>81</s:bioStart>
         <s:bioEnd>836</s:bioEnd>
         <s:strand>+</s:strand>
@@ -305,13 +305,13 @@
       </s:SequenceAnnotation>
     </s:annotations>
     <s:annotations>
-      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id84580">
+      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id144725">
         <s:bioStart>81</s:bioStart>
         <s:bioEnd>830</s:bioEnd>
         <s:strand>+</s:strand>
         <s:subComponent>
-          <s:DnaComponent rdf:about="http://partsregistry.org/feat/1565187">
-            <s:displayId>1565187</s:displayId>
+          <s:DnaComponent rdf:about="http://partsregistry.org/feat/id144727">
+            <s:displayId>&gt;id144727</s:displayId>
             <s:name>luxR</s:name>
             <rdf:type rdf:resource="http://partsregistry.org/type/cds"/>
           </s:DnaComponent>
@@ -319,13 +319,13 @@
       </s:SequenceAnnotation>
     </s:annotations>
     <s:annotations>
-      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id84603">
+      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id144748">
         <s:bioStart>81</s:bioStart>
         <s:bioEnd>82</s:bioEnd>
         <s:strand>+</s:strand>
         <s:subComponent>
-          <s:DnaComponent rdf:about="http://partsregistry.org/feat/1565186">
-            <s:displayId>1565186</s:displayId>
+          <s:DnaComponent rdf:about="http://partsregistry.org/feat/id144750">
+            <s:displayId>&gt;id144750</s:displayId>
             <s:name>prefix</s:name>
             <rdf:type rdf:resource="http://partsregistry.org/type/biobrick"/>
           </s:DnaComponent>
@@ -333,13 +333,13 @@
       </s:SequenceAnnotation>
     </s:annotations>
     <s:annotations>
-      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id84625">
+      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id144770">
         <s:bioStart>254</s:bioStart>
         <s:bioEnd>254</s:bioEnd>
         <s:strand>+</s:strand>
         <s:subComponent>
-          <s:DnaComponent rdf:about="http://partsregistry.org/feat/1565189">
-            <s:displayId>1565189</s:displayId>
+          <s:DnaComponent rdf:about="http://partsregistry.org/feat/id144772">
+            <s:displayId>&gt;id144772</s:displayId>
             <s:name>T</s:name>
             <rdf:type rdf:resource="http://partsregistry.org/type/s_mutation"/>
           </s:DnaComponent>
@@ -347,13 +347,13 @@
       </s:SequenceAnnotation>
     </s:annotations>
     <s:annotations>
-      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id84648">
+      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id144793">
         <s:bioStart>572</s:bioStart>
         <s:bioEnd>572</s:bioEnd>
         <s:strand>+</s:strand>
         <s:subComponent>
-          <s:DnaComponent rdf:about="http://partsregistry.org/feat/1565190">
-            <s:displayId>1565190</s:displayId>
+          <s:DnaComponent rdf:about="http://partsregistry.org/feat/id144795">
+            <s:displayId>&gt;id144795</s:displayId>
             <s:name>A</s:name>
             <rdf:type rdf:resource="http://partsregistry.org/type/s_mutation"/>
           </s:DnaComponent>
@@ -361,13 +361,13 @@
       </s:SequenceAnnotation>
     </s:annotations>
     <s:annotations>
-      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id84671">
+      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id144816">
         <s:bioStart>837</s:bioStart>
         <s:bioEnd>861</s:bioEnd>
         <s:strand>+</s:strand>
         <s:subComponent>
-          <s:DnaComponent rdf:about="http://partsregistry.org/feat/1565191">
-            <s:displayId>1565191</s:displayId>
+          <s:DnaComponent rdf:about="http://partsregistry.org/feat/id144818">
+            <s:displayId>&gt;id144818</s:displayId>
             <s:name>barcode</s:name>
             <rdf:type rdf:resource="http://partsregistry.org/type/barcode"/>
           </s:DnaComponent>
@@ -375,7 +375,7 @@
       </s:SequenceAnnotation>
     </s:annotations>
     <s:annotations>
-      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id84692">
+      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id144837">
         <s:bioStart>870</s:bioStart>
         <s:bioEnd>949</s:bioEnd>
         <s:strand>+</s:strand>
@@ -387,13 +387,13 @@
       </s:SequenceAnnotation>
     </s:annotations>
     <s:annotations>
-      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id84715">
+      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id144860">
         <s:bioStart>881</s:bioStart>
         <s:bioEnd>924</s:bioEnd>
         <s:strand>+</s:strand>
         <s:subComponent>
-          <s:DnaComponent rdf:about="http://partsregistry.org/feat/1565197">
-            <s:displayId>1565197</s:displayId>
+          <s:DnaComponent rdf:about="http://partsregistry.org/feat/id144862">
+            <s:displayId>&gt;id144862</s:displayId>
             <s:name>stem_loop</s:name>
             <rdf:type rdf:resource="http://partsregistry.org/type/stem_loop"/>
           </s:DnaComponent>
@@ -401,7 +401,7 @@
       </s:SequenceAnnotation>
     </s:annotations>
     <s:annotations>
-      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id84737">
+      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id144882">
         <s:bioStart>958</s:bioStart>
         <s:bioEnd>998</s:bioEnd>
         <s:strand>+</s:strand>
@@ -413,13 +413,13 @@
       </s:SequenceAnnotation>
     </s:annotations>
     <s:annotations>
-      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id84760">
+      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id144904">
         <s:bioStart>965</s:bioStart>
         <s:bioEnd>984</s:bioEnd>
         <s:strand>+</s:strand>
         <s:subComponent>
-          <s:DnaComponent rdf:about="http://partsregistry.org/feat/1565207">
-            <s:displayId>1565207</s:displayId>
+          <s:DnaComponent rdf:about="http://partsregistry.org/feat/id144907">
+            <s:displayId>&gt;id144907</s:displayId>
             <s:name>T7 TE</s:name>
             <rdf:type rdf:resource="http://partsregistry.org/type/stem_loop"/>
           </s:DnaComponent>
@@ -427,13 +427,13 @@
       </s:SequenceAnnotation>
     </s:annotations>
     <s:annotations>
-      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id84782">
+      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id144927">
         <s:bioStart>985</s:bioStart>
         <s:bioEnd>998</s:bioEnd>
         <s:strand>+</s:strand>
         <s:subComponent>
-          <s:DnaComponent rdf:about="http://partsregistry.org/feat/1565208">
-            <s:displayId>1565208</s:displayId>
+          <s:DnaComponent rdf:about="http://partsregistry.org/feat/id144929">
+            <s:displayId>&gt;id144929</s:displayId>
             <s:name>polya</s:name>
             <rdf:type rdf:resource="http://partsregistry.org/type/polya"/>
           </s:DnaComponent>
@@ -441,13 +441,13 @@
       </s:SequenceAnnotation>
     </s:annotations>
     <s:annotations>
-      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id84804">
+      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id144949">
         <s:bioStart>991</s:bioStart>
         <s:bioEnd>991</s:bioEnd>
         <s:strand>+</s:strand>
         <s:subComponent>
-          <s:DnaComponent rdf:about="http://partsregistry.org/feat/1565209">
-            <s:displayId>1565209</s:displayId>
+          <s:DnaComponent rdf:about="http://partsregistry.org/feat/id144951">
+            <s:displayId>&gt;id144951</s:displayId>
             <s:name>stop</s:name>
             <rdf:type rdf:resource="http://partsregistry.org/type/stop"/>
           </s:DnaComponent>
@@ -455,13 +455,13 @@
       </s:SequenceAnnotation>
     </s:annotations>
     <s:annotations>
-      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id84825">
+      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id144970">
         <s:bioStart>1007</s:bioStart>
         <s:bioEnd>1026</s:bioEnd>
         <s:strand>+</s:strand>
         <s:subComponent>
-          <s:DnaComponent rdf:about="http://partsregistry.org/feat/1565220">
-            <s:displayId>1565220</s:displayId>
+          <s:DnaComponent rdf:about="http://partsregistry.org/feat/id144972">
+            <s:displayId>&gt;id144972</s:displayId>
             <s:name>LuxR/HSL</s:name>
             <rdf:type rdf:resource="http://partsregistry.org/type/binding"/>
           </s:DnaComponent>
@@ -469,7 +469,7 @@
       </s:SequenceAnnotation>
     </s:annotations>
     <s:annotations>
-      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id84848">
+      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id144993">
         <s:bioStart>1007</s:bioStart>
         <s:bioEnd>1061</s:bioEnd>
         <s:strand>+</s:strand>
@@ -481,13 +481,13 @@
       </s:SequenceAnnotation>
     </s:annotations>
     <s:annotations>
-      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id84871">
+      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id145016">
         <s:bioStart>1026</s:bioStart>
         <s:bioEnd>1031</s:bioEnd>
         <s:strand>+</s:strand>
         <s:subComponent>
-          <s:DnaComponent rdf:about="http://partsregistry.org/feat/1565222">
-            <s:displayId>1565222</s:displayId>
+          <s:DnaComponent rdf:about="http://partsregistry.org/feat/id145018">
+            <s:displayId>&gt;id145018</s:displayId>
             <s:name>-35</s:name>
             <rdf:type rdf:resource="http://partsregistry.org/type/promoter"/>
           </s:DnaComponent>
@@ -495,13 +495,13 @@
       </s:SequenceAnnotation>
     </s:annotations>
     <s:annotations>
-      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id84893">
+      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id145038">
         <s:bioStart>1048</s:bioStart>
         <s:bioEnd>1053</s:bioEnd>
         <s:strand>+</s:strand>
         <s:subComponent>
-          <s:DnaComponent rdf:about="http://partsregistry.org/feat/1565223">
-            <s:displayId>1565223</s:displayId>
+          <s:DnaComponent rdf:about="http://partsregistry.org/feat/id145040">
+            <s:displayId>&gt;id145040</s:displayId>
             <s:name>-10</s:name>
             <rdf:type rdf:resource="http://partsregistry.org/type/promoter"/>
           </s:DnaComponent>
@@ -509,13 +509,13 @@
       </s:SequenceAnnotation>
     </s:annotations>
     <s:annotations>
-      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id84916">
+      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id145061">
         <s:bioStart>1059</s:bioStart>
         <s:bioEnd>1059</s:bioEnd>
         <s:strand>+</s:strand>
         <s:subComponent>
-          <s:DnaComponent rdf:about="http://partsregistry.org/feat/1565224">
-            <s:displayId>1565224</s:displayId>
+          <s:DnaComponent rdf:about="http://partsregistry.org/feat/id145063">
+            <s:displayId>&gt;id145063</s:displayId>
             <s:name>start</s:name>
             <rdf:type rdf:resource="http://partsregistry.org/type/start"/>
           </s:DnaComponent>
@@ -523,13 +523,13 @@
       </s:SequenceAnnotation>
     </s:annotations>
     <s:annotations>
-      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id84938">
+      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id145083">
         <s:bioStart>1070</s:bioStart>
         <s:bioEnd>1082</s:bioEnd>
         <s:strand>+</s:strand>
         <s:subComponent>
-          <s:DnaComponent rdf:about="http://partsregistry.org/feat/1565231">
-            <s:displayId>1565231</s:displayId>
+          <s:DnaComponent rdf:about="http://partsregistry.org/feat/id145085">
+            <s:displayId>&gt;id145085</s:displayId>
             <s:name>RBS-3\Weak</s:name>
             <rdf:type rdf:resource="http://partsregistry.org/type/rbs"/>
           </s:DnaComponent>
@@ -537,7 +537,7 @@
       </s:SequenceAnnotation>
     </s:annotations>
     <s:annotations>
-      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id84960">
+      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id145105">
         <s:bioStart>1070</s:bioStart>
         <s:bioEnd>1082</s:bioEnd>
         <s:strand>+</s:strand>
@@ -549,13 +549,13 @@
       </s:SequenceAnnotation>
     </s:annotations>
     <s:annotations>
-      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id84983">
+      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id145128">
         <s:bioStart>1076</s:bioStart>
         <s:bioEnd>1079</s:bioEnd>
         <s:strand>+</s:strand>
         <s:subComponent>
-          <s:DnaComponent rdf:about="http://partsregistry.org/feat/1565233">
-            <s:displayId>1565233</s:displayId>
+          <s:DnaComponent rdf:about="http://partsregistry.org/feat/id145130">
+            <s:displayId>&gt;id145130</s:displayId>
             <s:name>RBS</s:name>
             <rdf:type rdf:resource="http://partsregistry.org/type/rbs"/>
           </s:DnaComponent>
@@ -563,7 +563,7 @@
       </s:SequenceAnnotation>
     </s:annotations>
     <s:annotations>
-      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id85006">
+      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id145151">
         <s:bioStart>1089</s:bioStart>
         <s:bioEnd>1808</s:bioEnd>
         <s:strand>+</s:strand>
@@ -575,7 +575,7 @@
       </s:SequenceAnnotation>
     </s:annotations>
     <s:annotations>
-      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id85029">
+      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id145174">
         <s:bioStart>1817</s:bioStart>
         <s:bioEnd>1896</s:bioEnd>
         <s:strand>+</s:strand>
@@ -587,13 +587,13 @@
       </s:SequenceAnnotation>
     </s:annotations>
     <s:annotations>
-      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id85052">
+      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id145196">
         <s:bioStart>1828</s:bioStart>
         <s:bioEnd>1871</s:bioEnd>
         <s:strand>+</s:strand>
         <s:subComponent>
-          <s:DnaComponent rdf:about="http://partsregistry.org/feat/1565241">
-            <s:displayId>1565241</s:displayId>
+          <s:DnaComponent rdf:about="http://partsregistry.org/feat/id145199">
+            <s:displayId>&gt;id145199</s:displayId>
             <s:name>stem_loop</s:name>
             <rdf:type rdf:resource="http://partsregistry.org/type/stem_loop"/>
           </s:DnaComponent>
@@ -601,7 +601,7 @@
       </s:SequenceAnnotation>
     </s:annotations>
     <s:annotations>
-      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id85073">
+      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id145218">
         <s:bioStart>1905</s:bioStart>
         <s:bioEnd>1945</s:bioEnd>
         <s:strand>+</s:strand>
@@ -613,13 +613,13 @@
       </s:SequenceAnnotation>
     </s:annotations>
     <s:annotations>
-      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id85096">
+      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id145241">
         <s:bioStart>1912</s:bioStart>
         <s:bioEnd>1931</s:bioEnd>
         <s:strand>+</s:strand>
         <s:subComponent>
-          <s:DnaComponent rdf:about="http://partsregistry.org/feat/1565251">
-            <s:displayId>1565251</s:displayId>
+          <s:DnaComponent rdf:about="http://partsregistry.org/feat/id145243">
+            <s:displayId>&gt;id145243</s:displayId>
             <s:name>T7 TE</s:name>
             <rdf:type rdf:resource="http://partsregistry.org/type/stem_loop"/>
           </s:DnaComponent>
@@ -627,13 +627,13 @@
       </s:SequenceAnnotation>
     </s:annotations>
     <s:annotations>
-      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id85119">
+      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id145264">
         <s:bioStart>1932</s:bioStart>
         <s:bioEnd>1945</s:bioEnd>
         <s:strand>+</s:strand>
         <s:subComponent>
-          <s:DnaComponent rdf:about="http://partsregistry.org/feat/1565252">
-            <s:displayId>1565252</s:displayId>
+          <s:DnaComponent rdf:about="http://partsregistry.org/feat/id145266">
+            <s:displayId>&gt;id145266</s:displayId>
             <s:name>polya</s:name>
             <rdf:type rdf:resource="http://partsregistry.org/type/polya"/>
           </s:DnaComponent>
@@ -641,13 +641,13 @@
       </s:SequenceAnnotation>
     </s:annotations>
     <s:annotations>
-      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id85141">
+      <s:SequenceAnnotation rdf:about="http://partsregistry.org/anot/id145286">
         <s:bioStart>1938</s:bioStart>
         <s:bioEnd>1938</s:bioEnd>
         <s:strand>+</s:strand>
         <s:subComponent>
-          <s:DnaComponent rdf:about="http://partsregistry.org/feat/1565253">
-            <s:displayId>1565253</s:displayId>
+          <s:DnaComponent rdf:about="http://partsregistry.org/feat/id145288">
+            <s:displayId>&gt;id145288</s:displayId>
             <s:name>stop</s:name>
             <rdf:type rdf:resource="http://partsregistry.org/type/stop"/>
           </s:DnaComponent>

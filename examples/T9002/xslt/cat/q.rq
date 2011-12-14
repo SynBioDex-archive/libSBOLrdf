@@ -1,0 +1,14 @@
+PREFIX s:<http://sbols.org/v1#> 
+SELECT DISTINCT ?dc ?displayId ?name ?description ?type ?dna ?seq ?annotations ?subComponent
+WHERE{
+?dc a s:DnaComponent;
+    s:displayId ?displayId.
+OPTIONAL{ ?dc s:name ?name.}
+OPTIONAL{ ?dc s:description ?description.}
+OPTIONAL{ ?dc s:type ?type.}
+OPTIONAL{ ?dc s:dnaSequence ?dna.}
+OPTIONAL{ ?dna s:nucleotides ?seq.}
+OPTIONAL{ ?dc s:annotations ?annotations.}
+OPTIONAL{ ?annotations s:subComponent ?subComponent.}
+      
+}

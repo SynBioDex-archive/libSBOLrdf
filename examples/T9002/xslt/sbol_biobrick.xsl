@@ -210,7 +210,7 @@ xmlns:prd="http://partsregistry.org/cgi/xml/part.cgi?part="
                   <!-- This feature is not a part -->
                   <xsl:otherwise>
                     <s:DnaComponent rdf:about="{concat($prf,generate-id(id))}">
-                      <s:displayId>><xsl:value-of select="generate-id(id)"/></s:displayId>
+                      <s:displayId><xsl:value-of select="generate-id(id)"/></s:displayId>
                       <xsl:choose>
                        <xsl:when test="normalize-space(title)">
                          <s:name><xsl:value-of select="title"/></s:name>

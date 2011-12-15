@@ -1,11 +1,13 @@
 PREFIX s:<http://sbols.org/v1#> 
+PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#> 
 CONSTRUCT {
 ?dc a s:DnaComponent;
-    a ?type;
     s:displayId ?displayId;
     s:name ?name;
-    s:description ?description;
-    s:dnaSequence ?dna.
+    s:description ?description.
+#?dc a ?type.
+?dc a ?so.
+?dc s:dnaSequence ?dna.
                   ?dna a s:DnaSequence;
                        s:nucleotides ?seq.
 ?dc s:annotations ?annotations.
@@ -17,7 +19,8 @@ WHERE{
     s:displayId ?displayId.
 OPTIONAL{ ?dc s:name ?name.}
 OPTIONAL{ ?dc s:description ?description.}
-OPTIONAL{ ?dc a+ ?type.}
+OPTIONAL{ ?dc a ?type.}
+OPTIONAL{ ?type rdfs:subClassOf ?so.}
 OPTIONAL{ ?dc s:dnaSequence ?dna.
                             ?dna s:nucleotides ?seq;
                                  a s:DnaSequence.

@@ -1,4 +1,4 @@
-@prefix s: <http://sbols.org/rdf#>.
+@prefix s: <http://sbols.org/v1#>.
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix pr: <http://partsregistry.org/>.
 @prefix prt: <http://partsregistry.org/type/>.

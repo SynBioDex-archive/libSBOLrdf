@@ -9,13 +9,13 @@
 ]>
 
 
-<rdf:RDF xmlns="http://sbols.org/rdf#"
-     xml:base="http://sbols.org/rdf"
+<rdf:RDF xmlns="http://sbols.org/v1#"
+     xml:base="http://sbols.org/v1"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-    <owl:Ontology rdf:about="http://sbols.org/rdf"/>
+    <owl:Ontology rdf:about="http://sbols.org/v1"/>
     
 
 
@@ -27,11 +27,11 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <owl:AnnotationProperty rdf:about="http://sbols.org/rdf#description">
+    <owl:AnnotationProperty rdf:about="http://sbols.org/v1#description">
         <rdfs:subPropertyOf rdf:resource="&rdfs;comment"/>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://sbols.org/rdf#displayId"/>
-    <owl:AnnotationProperty rdf:about="http://sbols.org/rdf#name">
+    <owl:AnnotationProperty rdf:about="http://sbols.org/v1#displayId"/>
+    <owl:AnnotationProperty rdf:about="http://sbols.org/v1#name">
         <rdfs:subPropertyOf rdf:resource="&rdfs;label"/>
     </owl:AnnotationProperty>
     
@@ -59,27 +59,27 @@
     
 
 
-    <!-- http://sbols.org/rdf#annotations -->
+    <!-- http://sbols.org/v1#annotations -->
 
-    <owl:ObjectProperty rdf:about="http://sbols.org/rdf#annotations"/>
+    <owl:ObjectProperty rdf:about="http://sbols.org/v1#annotations"/>
     
 
 
-    <!-- http://sbols.org/rdf#dnaSequence -->
+    <!-- http://sbols.org/v1#dnaSequence -->
 
-    <owl:ObjectProperty rdf:about="http://sbols.org/rdf#dnaSequence"/>
+    <owl:ObjectProperty rdf:about="http://sbols.org/v1#dnaSequence"/>
     
 
 
-    <!-- http://sbols.org/rdf#precedes -->
+    <!-- http://sbols.org/v1#precedes -->
 
-    <owl:ObjectProperty rdf:about="http://sbols.org/rdf#precedes"/>
+    <owl:ObjectProperty rdf:about="http://sbols.org/v1#precedes"/>
     
 
 
-    <!-- http://sbols.org/rdf#subComponent -->
+    <!-- http://sbols.org/v1#subComponent -->
 
-    <owl:ObjectProperty rdf:about="http://sbols.org/rdf#subComponent"/>
+    <owl:ObjectProperty rdf:about="http://sbols.org/v1#subComponent"/>
     
 
 
@@ -94,27 +94,27 @@
     
 
 
-    <!-- http://sbols.org/rdf#bioEnd -->
+    <!-- http://sbols.org/v1#bioEnd -->
 
-    <owl:DatatypeProperty rdf:about="http://sbols.org/rdf#bioEnd"/>
+    <owl:DatatypeProperty rdf:about="http://sbols.org/v1#bioEnd"/>
     
 
 
-    <!-- http://sbols.org/rdf#bioStart -->
+    <!-- http://sbols.org/v1#bioStart -->
 
-    <owl:DatatypeProperty rdf:about="http://sbols.org/rdf#bioStart"/>
+    <owl:DatatypeProperty rdf:about="http://sbols.org/v1#bioStart"/>
     
 
 
-    <!-- http://sbols.org/rdf#nucleotides -->
+    <!-- http://sbols.org/v1#nucleotides -->
 
-    <owl:DatatypeProperty rdf:about="http://sbols.org/rdf#nucleotides"/>
+    <owl:DatatypeProperty rdf:about="http://sbols.org/v1#nucleotides"/>
     
 
 
-    <!-- http://sbols.org/rdf#strand -->
+    <!-- http://sbols.org/v1#strand -->
 
-    <owl:DatatypeProperty rdf:about="http://sbols.org/rdf#strand"/>
+    <owl:DatatypeProperty rdf:about="http://sbols.org/v1#strand"/>
     
 
 
@@ -127,21 +127,21 @@
      -->
 
 
-    <!-- http://sbols.org/rdf#DnaComponent -->
+    <!-- http://sbols.org/v1#DnaComponent -->
 
-    <owl:Class rdf:about="http://sbols.org/rdf#DnaComponent"/>
+    <owl:Class rdf:about="http://sbols.org/v1#DnaComponent"/>
     
 
 
-    <!-- http://sbols.org/rdf#DnaSequence -->
+    <!-- http://sbols.org/v1#DnaSequence -->
 
-    <owl:Class rdf:about="http://sbols.org/rdf#DnaSequence"/>
+    <owl:Class rdf:about="http://sbols.org/v1#DnaSequence"/>
     
 
 
-    <!-- http://sbols.org/rdf#SequenceAnnotation -->
+    <!-- http://sbols.org/v1#SequenceAnnotation -->
 
-    <owl:Class rdf:about="http://sbols.org/rdf#SequenceAnnotation"/>
+    <owl:Class rdf:about="http://sbols.org/v1#SequenceAnnotation"/>
     
 
 

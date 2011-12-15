@@ -4,7 +4,7 @@
 <!DOCTYPE rdf:RDF [
     <!ENTITY pr "http://partsregistry.org/" >
     <!ENTITY SO "http://purl.org/obo/owl/SO#" >
-    <!ENTITY s "http://sbols.org/rdf#" >
+    <!ENTITY s "http://sbols.org/v1#" >
     <!ENTITY prd "http://partsregistry.org/data/" >
     <!ENTITY prt "http://partsregistry.org/type/" >
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
@@ -16,9 +16,9 @@
 ]>
 
 
-<rdf:RDF xmlns="http://sbols.org/rdf#"
-     xml:base="http://sbols.org/rdf"
-     xmlns:s="http://sbols.org/rdf#"
+<rdf:RDF xmlns="http://sbols.org/v1#"
+     xml:base="http://sbols.org/v1"
+     xmlns:s="http://sbols.org/v1#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:prf="&pr;data/feature/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
@@ -29,7 +29,7 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:SO="http://purl.org/obo/owl/SO#"
      xmlns:pr="http://partsregistry.org/">
-    <owl:Ontology rdf:about="http://sbols.org/rdf"/>
+    <owl:Ontology rdf:about="http://sbols.org/v1"/>
     
 
 
@@ -40,30 +40,30 @@
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
-    <!-- http://sbols.org/rdf#description -->
+    <!-- http://sbols.org/v1#description -->
 
-    <owl:AnnotationProperty rdf:about="http://sbols.org/rdf#description"/>
+    <owl:AnnotationProperty rdf:about="http://sbols.org/v1#description"/>
     
 
 
-    <!-- http://sbols.org/rdf#displayId -->
+    <!-- http://sbols.org/v1#displayId -->
 
-    <owl:AnnotationProperty rdf:about="http://sbols.org/rdf#displayId"/>
+    <owl:AnnotationProperty rdf:about="http://sbols.org/v1#displayId"/>
     
 
 
-    <!-- http://sbols.org/rdf#name -->
+    <!-- http://sbols.org/v1#name -->
 
-    <owl:AnnotationProperty rdf:about="http://sbols.org/rdf#name"/>
+    <owl:AnnotationProperty rdf:about="http://sbols.org/v1#name"/>
 
 
-    <owl:AnnotationProperty rdf:about="http://sbols.org/rdf#description">
+    <owl:AnnotationProperty rdf:about="http://sbols.org/v1#description">
         <rdfs:subPropertyOf rdf:resource="&rdfs;comment"/>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="&obo;IAO_0000412">
         <rdfs:label xml:lang="en">imported from</rdfs:label>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://sbols.org/rdf#name">
+    <owl:AnnotationProperty rdf:about="http://sbols.org/v1#name">
         <rdfs:subPropertyOf rdf:resource="&rdfs;label"/>
     </owl:AnnotationProperty>
     
@@ -88,9 +88,9 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-   <!-- http://sbols.org/rdf#annotations -->
+   <!-- http://sbols.org/v1#annotations -->
 
-    <owl:ObjectProperty rdf:about="http://sbols.org/rdf#annotations"/>    
+    <owl:ObjectProperty rdf:about="http://sbols.org/v1#annotations"/>    
 
 
     <!-- http://partsregistry.org/type -->
@@ -99,21 +99,21 @@
     
 
 
-    <!-- http://sbols.org/rdf#dnaSequence -->
+    <!-- http://sbols.org/v1#dnaSequence -->
 
-    <owl:ObjectProperty rdf:about="http://sbols.org/rdf#dnaSequence"/>
+    <owl:ObjectProperty rdf:about="http://sbols.org/v1#dnaSequence"/>
     
 
 
-    <!-- http://sbols.org/rdf#precedes -->
+    <!-- http://sbols.org/v1#precedes -->
 
-    <owl:ObjectProperty rdf:about="http://sbols.org/rdf#precedes"/>
+    <owl:ObjectProperty rdf:about="http://sbols.org/v1#precedes"/>
     
 
 
-    <!-- http://sbols.org/rdf#subComponent -->
+    <!-- http://sbols.org/v1#subComponent -->
 
-    <owl:ObjectProperty rdf:about="http://sbols.org/rdf#subComponent"/>
+    <owl:ObjectProperty rdf:about="http://sbols.org/v1#subComponent"/>
     
 
 
@@ -128,32 +128,32 @@
     
 
 
-    <!-- http://sbols.org/rdf#bioEnd -->
+    <!-- http://sbols.org/v1#bioEnd -->
 
-    <owl:DatatypeProperty rdf:about="http://sbols.org/rdf#bioEnd"/>
+    <owl:DatatypeProperty rdf:about="http://sbols.org/v1#bioEnd"/>
 
  
     
 
 
-    <!-- http://sbols.org/rdf#bioStart -->
+    <!-- http://sbols.org/v1#bioStart -->
 
-    <owl:DatatypeProperty rdf:about="http://sbols.org/rdf#bioStart"/>
+    <owl:DatatypeProperty rdf:about="http://sbols.org/v1#bioStart"/>
     
 
 
     
 
 
-    <!-- http://sbols.org/rdf#nucleotides -->
+    <!-- http://sbols.org/v1#nucleotides -->
 
-    <owl:DatatypeProperty rdf:about="http://sbols.org/rdf#nucleotides"/>
+    <owl:DatatypeProperty rdf:about="http://sbols.org/v1#nucleotides"/>
     
 
 
-    <!-- http://sbols.org/rdf#strand -->
+    <!-- http://sbols.org/v1#strand -->
 
-    <owl:DatatypeProperty rdf:about="http://sbols.org/rdf#strand"/>
+    <owl:DatatypeProperty rdf:about="http://sbols.org/v1#strand"/>
     
 
 
@@ -171,7 +171,7 @@
     <!-- http://partsregistry.org/type/barcode -->
 
     <owl:Class rdf:about="&pr;type/barcode">
-        <rdfs:subClassOf rdf:resource="http://sbols.org/rdf#DnaComponent"/>
+        <rdfs:subClassOf rdf:resource="http://sbols.org/v1#DnaComponent"/>
     </owl:Class>
     
 
@@ -187,7 +187,7 @@
     <!-- http://partsregistry.org/type/biobrick -->
 
     <owl:Class rdf:about="&pr;type/biobrick">
-        <rdfs:subClassOf rdf:resource="http://sbols.org/rdf#DnaComponent"/>
+        <rdfs:subClassOf rdf:resource="http://sbols.org/v1#DnaComponent"/>
     </owl:Class>
     
 
@@ -267,7 +267,7 @@
     <!-- http://partsregistry.org/type/scar -->
 
     <owl:Class rdf:about="&pr;type/scar">
-        <rdfs:subClassOf rdf:resource="http://sbols.org/rdf#DnaComponent"/>
+        <rdfs:subClassOf rdf:resource="http://sbols.org/v1#DnaComponent"/>
     </owl:Class>
     
 
@@ -275,7 +275,7 @@
     <!-- http://partsregistry.org/type/signalling -->
 
     <owl:Class rdf:about="&pr;type/signalling">
-        <rdfs:subClassOf rdf:resource="http://sbols.org/rdf#DnaComponent"/>
+        <rdfs:subClassOf rdf:resource="http://sbols.org/v1#DnaComponent"/>
     </owl:Class>
     
 
@@ -283,7 +283,7 @@
     <!-- http://partsregistry.org/type/start -->
 
     <owl:Class rdf:about="&pr;type/start">
-        <rdfs:subClassOf rdf:resource="http://sbols.org/rdf#DnaComponent"/>
+        <rdfs:subClassOf rdf:resource="http://sbols.org/v1#DnaComponent"/>
     </owl:Class>
     
 
@@ -299,7 +299,7 @@
     <!-- http://partsregistry.org/type/stop -->
 
     <owl:Class rdf:about="&pr;type/stop">
-        <rdfs:subClassOf rdf:resource="http://sbols.org/rdf#DnaComponent"/>
+        <rdfs:subClassOf rdf:resource="http://sbols.org/v1#DnaComponent"/>
     </owl:Class>
     
 
@@ -316,7 +316,7 @@
 
     <owl:Class rdf:about="&obo;SO_0000141">
         <rdfs:label rdf:datatype="&xsd;string">terminator</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://sbols.org/rdf#DnaComponent"/>
+        <rdfs:subClassOf rdf:resource="http://sbols.org/v1#DnaComponent"/>
         <obo:IAO_0000412 rdf:resource="&obo;so.owl"/>
     </owl:Class>
     
@@ -326,7 +326,7 @@
 
     <owl:Class rdf:about="&obo;SO_0000167">
         <rdfs:label rdf:datatype="&xsd;string">promoter</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://sbols.org/rdf#DnaComponent"/>
+        <rdfs:subClassOf rdf:resource="http://sbols.org/v1#DnaComponent"/>
         <obo:IAO_0000412 rdf:resource="&obo;so.owl"/>
     </owl:Class>
     
@@ -336,7 +336,7 @@
 
     <owl:Class rdf:about="&obo;SO_0000313">
         <rdfs:label rdf:datatype="&xsd;string">stem_loop</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://sbols.org/rdf#DnaComponent"/>
+        <rdfs:subClassOf rdf:resource="http://sbols.org/v1#DnaComponent"/>
         <obo:IAO_0000412 rdf:resource="&obo;so.owl"/>
     </owl:Class>
     
@@ -346,7 +346,7 @@
 
     <owl:Class rdf:about="&obo;SO_0000316">
         <rdfs:label rdf:datatype="&xsd;string">CDS</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://sbols.org/rdf#DnaComponent"/>
+        <rdfs:subClassOf rdf:resource="http://sbols.org/v1#DnaComponent"/>
         <obo:IAO_0000412 rdf:resource="&obo;so.owl"/>
     </owl:Class>
     
@@ -356,7 +356,7 @@
 
     <owl:Class rdf:about="&obo;SO_0000409">
         <rdfs:label rdf:datatype="&xsd;string">binding_site</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://sbols.org/rdf#DnaComponent"/>
+        <rdfs:subClassOf rdf:resource="http://sbols.org/v1#DnaComponent"/>
         <obo:IAO_0000412 rdf:resource="&obo;so.owl"/>
     </owl:Class>
     
@@ -366,7 +366,7 @@
 
     <owl:Class rdf:about="&obo;SO_0000552">
         <rdfs:label rdf:datatype="&xsd;string">Shine_Dalgarno_sequence</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://sbols.org/rdf#DnaComponent"/>
+        <rdfs:subClassOf rdf:resource="http://sbols.org/v1#DnaComponent"/>
         <obo:IAO_0000412 rdf:resource="&obo;so.owl"/>
     </owl:Class>
     
@@ -376,7 +376,7 @@
 
     <owl:Class rdf:about="&obo;SO_0000553">
         <rdfs:label rdf:datatype="&xsd;string">polyA_site</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://sbols.org/rdf#DnaComponent"/>
+        <rdfs:subClassOf rdf:resource="http://sbols.org/v1#DnaComponent"/>
         <obo:IAO_0000412 rdf:resource="&obo;so.owl"/>
     </owl:Class>
     
@@ -386,7 +386,7 @@
 
     <owl:Class rdf:about="&obo;SO_0000856">
         <rdfs:label rdf:datatype="&xsd;string">conserved</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://sbols.org/rdf#DnaComponent"/>
+        <rdfs:subClassOf rdf:resource="http://sbols.org/v1#DnaComponent"/>
         <obo:IAO_0000412 rdf:resource="&obo;so.owl"/>
     </owl:Class>
     
@@ -396,7 +396,7 @@
 
     <owl:Class rdf:about="&obo;SO_0001017">
         <rdfs:label rdf:datatype="&xsd;string">silent_mutation</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://sbols.org/rdf#DnaComponent"/>
+        <rdfs:subClassOf rdf:resource="http://sbols.org/v1#DnaComponent"/>
         <obo:IAO_0000412 rdf:resource="&obo;so.owl"/>
     </owl:Class>
     
@@ -406,27 +406,27 @@
 
     <owl:Class rdf:about="&obo;SO_0005836">
         <rdfs:label rdf:datatype="&xsd;string">regulatory_region</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://sbols.org/rdf#DnaComponent"/>
+        <rdfs:subClassOf rdf:resource="http://sbols.org/v1#DnaComponent"/>
         <obo:IAO_0000412 rdf:resource="&obo;so.owl"/>
     </owl:Class>
     
 
 
-    <!-- http://sbols.org/rdf#DnaComponent -->
+    <!-- http://sbols.org/v1#DnaComponent -->
 
-    <owl:Class rdf:about="http://sbols.org/rdf#DnaComponent"/>
+    <owl:Class rdf:about="http://sbols.org/v1#DnaComponent"/>
     
 
 
-    <!-- http://sbols.org/rdf#DnaSequence -->
+    <!-- http://sbols.org/v1#DnaSequence -->
 
-    <owl:Class rdf:about="http://sbols.org/rdf#DnaSequence"/>
+    <owl:Class rdf:about="http://sbols.org/v1#DnaSequence"/>
     
 
 
-    <!-- http://sbols.org/rdf#SequenceAnnotation -->
+    <!-- http://sbols.org/v1#SequenceAnnotation -->
 
-    <owl:Class rdf:about="http://sbols.org/rdf#SequenceAnnotation"/>
+    <owl:Class rdf:about="http://sbols.org/v1#SequenceAnnotation"/>
 
 
     <!-- 

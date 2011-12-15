@@ -1,7 +1,0 @@
-<?xml version="1.0"?>
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:it="http://xmlns.rdfinference.org/ril/issue-tracker" xmlns:rit="http://rdfs.rdfinference.org/ril/issue-tracker#" xmlns:dc="http://purl.org/metadata/dublin_core#">
-  <rdf:description about="http://meta.rdfinference.org/ril/issue-tracker/ril-20010502">
-    <rit:issue rdf:resource="#i2001030423"/>
-  </rdf:description>
-  <rdf:description about="i2001030423">Organize a vote on this topic</rdf:description>
-</rdf:RDF>

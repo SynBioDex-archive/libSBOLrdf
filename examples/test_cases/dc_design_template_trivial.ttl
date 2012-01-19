@@ -1,0 +1,12 @@
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix s:       <http://sbols.org/v1#> .
+@prefix so:      <http://purl.obolibrary.org/obo/> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix d:       <http://sbols.org/examples/> .
+
+d:dc_design_template_trivial a s:Dnacomponent;
+        s:displayId "dc_design_template_trivial";
+	s:annotation d:sarp_dc_design_template_trivial_1.
+
+d:sarp_dc_design_template_trivial_1 a s:SequenceAnnotation;
+	s:subComponent d:dc.

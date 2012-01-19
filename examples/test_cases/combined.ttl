@@ -1,0 +1,218 @@
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix s:       <http://sbols.org/v1#> .
+@prefix so:      <http://purl.obolibrary.org/obo/> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix d:       <http://sbols.org/examples/> .
+
+d:col_basic a s:Collection;
+        s:displayId "col_basic";
+	s:component d:dcs;
+        s:component d:dcst.
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix s:       <http://sbols.org/v1#> .
+@prefix so:      <http://purl.obolibrary.org/obo/> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix d:       <http://sbols.org/examples/> .
+
+d:col_empty a s:Collection;
+	s:displayId "col_empty".
+
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix s:       <http://sbols.org/v1#> .
+@prefix so:      <http://purl.obolibrary.org/obo/> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix d:       <http://sbols.org/examples/> .
+
+d:dc_annotated_template_combination a s:Dnacomponent;
+        s:displayId "dc_design_template_vanilla";
+	s:annotation d:sarp_dc_design_template_vanilla_1;
+	s:annotation d:sarp_dc_design_template_vanilla_2.
+
+d:sarp_dc_design_template_vanilla_1 a SequenceAnnotation;
+	s:precedes d:sarp_dc_design_template_vanilla_2;
+        s:subComponent d:dc;
+d:sarp_dc_design_template_vanilla_2 a SequenceAnnotation;
+        s:bioStart 1;
+        s:bioEnd 2;
+        s:subComponent d:dc.
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix s:       <http://sbols.org/v1#> .
+@prefix so:      <http://purl.obolibrary.org/obo/> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix d:       <http://sbols.org/examples/> .
+
+d:dc_design_template_empty_promise a s:Dnacomponent;
+        s:displayId "col_basic";
+	s:annotation d:sarp_dc_design_template_empty_promise.
+
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix s:       <http://sbols.org/v1#> .
+@prefix so:      <http://purl.obolibrary.org/obo/> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix d:       <http://sbols.org/examples/> .
+
+d:dc_design_template_trivial a s:Dnacomponent;
+        s:displayId "dc_design_template_trivial";
+	s:annotation d:sarp_dc_design_template_trivial_1.
+
+d:sarp_dc_design_template_trivial_1 a s:SequenceAnnotation;
+	s:subComponent d:dc.
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix s:       <http://sbols.org/v1#> .
+@prefix so:      <http://purl.obolibrary.org/obo/> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix d:       <http://sbols.org/examples/> .
+
+d:dc_design_template_vanilla a s:Dnacomponent;
+        s:displayId "dc_design_template_vanilla";
+	s:annotation d:sarp_dc_design_template_vanilla_1;
+	s:annotation d:sarp_dc_design_template_vanilla_2.
+
+d:sarp_dc_design_template_vanilla_1 a SequenceAnnotation;
+	s:precedes d:sarp_dc_design_template_vanilla_2;
+        s:subComponent d:dc;
+d:sarp_dc_design_template_vanilla_2 a SequenceAnnotation;
+        s:subComponent d:dc.
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix s:       <http://sbols.org/v1#> .
+@prefix so:      <http://purl.obolibrary.org/obo/> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix d:       <http://sbols.org/examples/> .
+
+d:dc_multitiered a s:DnaComponent;
+      s:displayId "dc_multitiered";
+      s:annotation d:sapos_dc_multitiered_1;
+
+d:sapos_dc_annotated_composite_1 a SequenceAnnotation;
+      s:bioStart 1;
+      s:bioEnd 2;
+      s:strand "+";
+      s:subcomponent d:dc_second_tier.
+
+d:dc_second_tier a s:DnaComponent;
+      s:displayId "dc_second_tier";
+      s:annotation d:sapos_dc_multitiered_2.
+
+d:sapos_dc_annotated_composite_2 a SequenceAnnotation;
+      s:bioStart 1;
+      s:bioEnd 2;
+      s:strand "-";
+      s:subcomponent d:dc.
+
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix s:       <http://sbols.org/v1#> .
+@prefix so:      <http://purl.obolibrary.org/obo/> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix d:       <http://sbols.org/examples/> .
+
+d:dc_partially_realized_design_template a s:Dnacomponent;
+        s:displayId "dc_partially_realized_design_template";
+	s:annotation d:sarp_dc_partially_realized_design_template_1;
+	s:annotation d:sarp_dc_partially_realized_design_template_2;
+	s:annotation d:sarp_dc_partially_realized_design_template_3.
+
+d:sarp_dc_partially_realized_design_template_1 a SequenceAnnotation;
+	s:precedes d:sarp_dc_design_template_vanilla_2;
+        s:bioStart 1;
+        s:bioEnd 2;
+        s:subComponent d:dc.
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix s:       <http://sbols.org/v1#> .
+@prefix so:      <http://purl.obolibrary.org/obo/> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix d:       <http://sbols.org/examples/> .
+
+d:dcs_annotated_composite a s:DnaComponent;
+      s:displayId "dcs_annotated_composite";
+      s:sequence d:seq;
+      s:annotation d:sapos_dcs_annotated_composite_1;
+      s:annotation d:sapos_dcs_annotated_composite_2.
+
+d:sapos_dcs_annotated_composite_1 a SequenceAnnotation;
+      s:bioStart 1;
+      s:bioEnd 2;
+      s:strand "+";
+      s:subcomponent d:dc.
+      
+d:sapos_dcs_annotated_composite_2 a SequenceAnnotation;
+      s:bioStart 1;
+      s:bioEnd 2;
+      s:strand "-";
+      s:subcomponent d:dc.
+
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix s:       <http://sbols.org/v1#> .
+@prefix so:      <http://purl.obolibrary.org/obo/> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix d:       <http://sbols.org/examples/> .
+
+d:dcs_annotated a s:DnaComponent;
+      s:displayId "dcs";
+      s:sequence d:seq;
+      s:annotation d:sapos_dcs_annotated_1.
+
+d:sapos_dcs_annotated_1 a SequenceAnnotation;
+      s:bioStart 1;
+      s:bioEnd 2;
+      s:strand "+";
+      s:subcomponent d:dc.
+      
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix s:       <http://sbols.org/v1#> .
+@prefix so:      <http://purl.obolibrary.org/obo/> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix d:       <http://sbols.org/examples/> .
+
+d:dcs a s:DnaComponent;
+      s:displayId "dcs";
+      s:sequence d:seq.
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix s:       <http://sbols.org/v1#> .
+@prefix so:      <http://purl.obolibrary.org/obo/> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix d:       <http://sbols.org/examples/> .
+
+d:dcst a s:DnaComponent;
+        s:displayId "dcst"
+        s:dnaSequence d:seq;
+        rdfs:type so:SO_0000110. #sequence_feature
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix s:       <http://sbols.org/v1#> .
+@prefix so:      <http://purl.obolibrary.org/obo/> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix d:       <http://sbols.org/examples/> .
+
+d:dc a s:Dnacomponent;
+        s:displayId "dc".
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix s:       <http://sbols.org/v1#> .
+@prefix so:      <http://purl.obolibrary.org/obo/> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix d:       <http://sbols.org/examples/> .
+
+d:sanull a s:SequenceAnnotation.
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix s:       <http://sbols.org/v1#> .
+@prefix so:      <http://purl.obolibrary.org/obo/> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix d:       <http://sbols.org/examples/> .
+
+d:sarp a s:SequenceAnnotation;
+	s:precedes s:sanull.
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix s:       <http://sbols.org/v1#> .
+@prefix so:      <http://purl.obolibrary.org/obo/> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix d:       <http://sbols.org/examples/> .
+
+d:sarp a s:SequenceAnnotation;
+	s:precedes s:sanull
+        s:subComponent d:dc.
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix s:       <http://sbols.org/v1#> .
+@prefix so:      <http://purl.obolibrary.org/obo/> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix d:       <http://sbols.org/examples/> .
+
+d:seq a s:DnaSequence;
+      s:nucleotides "actg".

@@ -1,0 +1,9 @@
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix s:       <http://sbols.org/v1#> .
+@prefix so:      <http://purl.obolibrary.org/obo/> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix d:       <http://sbols.org/examples/> .
+
+d:dcs a s:DnaComponent;
+      s:displayId "dcs";
+      s:sequence d:seq.

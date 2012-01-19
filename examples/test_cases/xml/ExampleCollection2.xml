@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Collection description="A simple example collection" name="Example 2 Collection" displayId="example-2-collection" uri="/col/233">
+    <component description="pFAB21_J23101_Anderson_RBS" displayId="pFAB21" uri="/comp/4555">
+        <type>http://sbols.org/sbol.owl#plasmid</type>
+    </component>
+    <component description="pFAB22_J23101_Bujard_RBS" displayId="pFAB22" uri="/comp/2322">
+        <type>http://sbols.org/sbol.owl#plasmid</type>
+    </component>
+    <component description="pFAB23_J23101_B0030_RBS" displayId="pFAB23" uri="/comp/11123">
+        <type>http://sbols.org/sbol.owl#plasmid</type>
+    </component>
+</Collection>

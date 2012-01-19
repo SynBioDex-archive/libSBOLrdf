@@ -1,0 +1,14 @@
+<?xmlversion="1.0" encoding="UTF-8" standalone="yes"?>
+<Collection description="This was generated during the test run." name="Complete Collection" displayId="collection-id-1234" uri="/col/1">
+    <component description="A Component" name="DnaComponent 4321" displayId="component-id-4321" uri="/comp/1"/>
+    <component description="A Component" name="DnaComponent 4444" displayId="component-id-4444" uri="/test/2">
+        <sequence uri="/seq/1">
+            <nucleotides>gataca</nucleotides>
+        </sequence>
+        <annotation subComponentURI="/test/2" bioEnd="50" bioStart="1" uri="/anno/1"/>
+        <annotation subComponentURI="/test/2" strand="+" bioEnd="900" bioStart="50" uri="/anno/2">
+            <precede uri="/anno/1"/>
+            <precede uri="/anno/2"/>
+        </annotation>
+    </component>
+</Collection>

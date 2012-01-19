@@ -6,7 +6,7 @@
    <s:DnaComponent rdf:about="http://example.com/dc1">
       <s:displayId>DC1</s:displayId>
       <s:name>DnaComponent1</s:name>
-      <s:description>Invalid bioStart value (not a positive integer)</s:description>
+      <s:description>Invalid bioStart exists, bioEnd missing</s:description>
       <s:annotation>
          <s:SequenceAnnotation rdf:about="http://example.com/sa2">
             <s:bioStart>1</s:bioStart>

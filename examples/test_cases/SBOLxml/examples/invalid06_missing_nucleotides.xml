@@ -10,7 +10,7 @@
 	<s:DnaComponent rdf:about="http://example.com/dc1">
 		<s:displayId>DC1</s:displayId>
 		<s:name>DnaComponent1</s:name>
-		<s:description>Invalid character in nucleotides</s:description>
+		<s:description>Missing nucleotides</s:description>
 		<s:dnaSequence rdf:resource="test">
 			<s:DnaSequence rdf:about="http://example.com/ds1">
 			</s:DnaSequence>

@@ -11,18 +11,18 @@
 		<s:displayId>DC1</s:displayId>
 		<s:name>DnaComponent1</s:name>
 		<s:description>A collection may contain multiple components</s:description>
-		<s:components>
+		<s:component>
 			<s:DnaComponent rdf:about="http://example.com/dc1">
 				<s:displayId>DC1</s:displayId>
 				<s:name>DnaComponent1</s:name>
 			</s:DnaComponent>
-		</s:components>
-		<s:components>
+		</s:component>
+		<s:component>
 			<s:DnaComponent rdf:about="http://example.com/dc2">
 				<s:displayId>DC2</s:displayId>
 				<s:name>DnaComponent2</s:name>
 			</s:DnaComponent>
-		</s:components>
+		</s:component>
 	</s:Collection>
 	
 </rdf:RDF>

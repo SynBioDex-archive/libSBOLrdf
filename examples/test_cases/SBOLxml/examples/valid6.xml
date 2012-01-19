@@ -15,8 +15,8 @@
 		another document too. In this example http://example.com/dc1 reference is to a component
 		in this document and http://example.com/dc2 reference is to a component that is defined elsewhere.
 		</s:description>
-		<s:components rdf:resource="http://example.com/dc1"/>
-		<s:components rdf:resource="http://example.com/dc2"/>
+		<s:component rdf:resource="http://example.com/dc1"/>
+		<s:component rdf:resource="http://example.com/dc2"/>
 	</s:Collection>
 	<s:DnaComponent rdf:about="http://example.com/dc1">
 		<s:displayId>DC1</s:displayId>

@@ -1,36 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schema targetNamespace="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	elementFormDefault="qualified" attributeFormDefault="qualified"
 	xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-	xmlns:sbol="http://sbols.org/v1#"
-	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-	
-   <xsd:import namespace="http://sbols.org/v1#" schemaLocation="sbol.xsd"/>
-   
+	xmlns:sbol="http://sbols.org/v1#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+	<xsd:import namespace="http://sbols.org/v1#" schemaLocation="sbol.xsd" />
+
 	<annotation>
 		<documentation>
-			Constrained XML Schema for RDF in use with SBOL documents. Contains definitions for only those RDF
-            elements that are relevant for SBOL.
+			Constrained XML Schema for RDF in use with SBOL
+			documents. Contains definitions for only those RDF
+			elements that are
+			relevant for SBOL.
 		</documentation>
 	</annotation>
-   
-    <!-- Top-level of RDF Document -->
+
+	<!-- Top-level of RDF Document -->
 	<element name="RDF">
 		<xsd:complexType>
 			<xsd:sequence maxOccurs="unbounded">
-				<group ref="sbol:SBOLTopLevelType"/>
+				<group ref="sbol:SBOLTopLevelType" />
 			</xsd:sequence>
 		</xsd:complexType>
 	</element>
-   
-	<attribute name="resource" type="xsd:anyURI"/>
-   
-	<attribute name="about" type="xsd:anyURI"/>
-   
+
+	<xsd:group name="GenericType">
+		<xsd:sequence>
+			<xsd:element name="type" type="rdf:Reference" />
+		</xsd:sequence>
+	</xsd:group>
+
+	<xsd:group name="SequenceOntologyType">
+		<xsd:sequence>
+			<xsd:element name="type">
+				<xsd:complexType>
+					<xsd:complexContent>
+						<xsd:restriction base="xsd:anyType">
+							<xsd:attribute name="resource" type="rdf:SequenceOntologyURI"
+								use="required" />
+						</xsd:restriction>
+					</xsd:complexContent>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:group>
+
+	<attribute name="about" type="xsd:anyURI" />
+
+	<attribute name="resource" type="xsd:anyURI" />
+
 	<xsd:complexType name="Reference">
 		<xsd:complexContent>
 			<xsd:restriction base="xsd:anyType">
-				<xsd:attribute ref="rdf:resource" use="required"/>
+				<xsd:attribute name="resource" use="required" />
 			</xsd:restriction>
 		</xsd:complexContent>
 	</xsd:complexType>
+
+	<xsd:simpleType name="SequenceOntologyURI">
+		<xsd:restriction base="xsd:anyURI">
+			<xsd:pattern value="http://purl.obolibrary.org/obo/(\c)*" />
+		</xsd:restriction>
+	</xsd:simpleType>
 </schema>

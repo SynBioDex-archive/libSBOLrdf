@@ -17,7 +17,7 @@
 			</s:DnaSequence>
 		</s:dnaSequence>
 		<s:annotation>
-			<s:SequenceAnnotation rdf:about="example.com/sa1">
+			<s:SequenceAnnotation rdf:about="http://example.com/sa1">
 				<s:subComponent rdf:resource="http://example.com/dc2"/>
 			</s:SequenceAnnotation>
 		</s:annotation>	

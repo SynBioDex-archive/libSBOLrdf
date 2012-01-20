@@ -8,7 +8,7 @@
       <s:name>DnaComponent1</s:name>
       <s:description>Invalid because subComponent missing</s:description>
       <s:annotation>
-         <s:SequenceAnnotation rdf:about="example.com/sa1">
+         <s:SequenceAnnotation rdf:about="http://example.com/sa1">
             <s:bioStart>1</s:bioStart>
             <s:bioEnd>54</s:bioEnd>
             <s:strand>+</s:strand>

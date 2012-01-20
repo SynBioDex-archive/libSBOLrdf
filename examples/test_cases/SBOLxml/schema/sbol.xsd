@@ -16,6 +16,11 @@
    </xsd:annotation>
 
    <xsd:group id="SBOLTopLevelType" name="SBOLTopLevelType">
+      <xsd:annotation>
+         <xsd:documentation>
+            Top level SBOL types that are allowed to occur as the children of root RDF document.  
+         </xsd:documentation>
+      </xsd:annotation>
       <xsd:choice>
          <xsd:element name="Collection" type="CollectionType"/>
          <xsd:element name="DnaComponent" type="DnaComponentType"/>
@@ -24,6 +29,12 @@
    </xsd:group>
 
    <xsd:complexType name="CollectionType">
+      <xsd:annotation>
+         <xsd:documentation>
+            Collection type from SBOL core data model. Additional elements from other namespaces can be added
+            at the end of the element's children.
+         </xsd:documentation>
+      </xsd:annotation>   
       <xsd:sequence>
          <xsd:element name="displayId" type="DisplayIdType" minOccurs="1" maxOccurs="1"/>
          <xsd:element name="name" type="NameType" minOccurs="0" maxOccurs="1"/>                
@@ -35,6 +46,15 @@
    </xsd:complexType>
 
    <xsd:complexType name="DnaComponentReferenceType">
+      <xsd:annotation>
+         <xsd:documentation>
+            Reference to a DnaComponent element. The reference to DnaComponent can be in Collection or 
+            SequenceAnnotation. The reference can be direct by including another DnaComponent as a child 
+            node or an external DnaComponent can be referred just using its URI. Both types of reference
+            should not be used at the same time. Unfortunately, XML Schema does not allow us to say that
+            we cannot have the child element if the attribute exists.
+         </xsd:documentation>
+      </xsd:annotation>    
       <xsd:sequence>
          <xsd:element name="DnaComponent" type="DnaComponentType" minOccurs="0"/>
       </xsd:sequence>
@@ -42,6 +62,12 @@
    </xsd:complexType>
 
    <xsd:complexType name="DnaComponentType">
+      <xsd:annotation>
+         <xsd:documentation>
+            DnaComponent type from SBOL core data model. Only displayId element is required for this
+            element; all the other elements are optional.
+         </xsd:documentation>
+      </xsd:annotation>    
       <xsd:sequence>
          <xsd:group ref="rdf:SequenceOntologyType" minOccurs="0" maxOccurs="unbounded"/> 
          <xsd:element name="displayId" type="DisplayIdType" minOccurs="1" maxOccurs="1"/>
@@ -68,6 +94,11 @@
    </xsd:complexType>
 
    <xsd:complexType name="DnaSequenceType">
+      <xsd:annotation>
+         <xsd:documentation>
+            DnaSequence type from SBOL core data model. The nucleotides element is required.
+         </xsd:documentation>
+      </xsd:annotation>
       <xsd:sequence>
          <xsd:element name="nucleotides" minOccurs="1" maxOccurs="1" type="NucleotideType"/>
          <xsd:any namespace="##other" processContents="skip" minOccurs="0" maxOccurs="unbounded"/>
@@ -76,6 +107,12 @@
    </xsd:complexType>
 
    <xsd:complexType name="SequenceAnnotationType">
+      <xsd:annotation>
+         <xsd:documentation>
+            SequenceAnnotation type from SBOL core data model. The subComponent element is required. Other 
+            elements are optional.
+         </xsd:documentation>
+      </xsd:annotation>   
       <xsd:sequence>
          <xsd:element name="precedes" type="rdf:Reference" minOccurs="0"/>
          <xsd:group ref="BioStartBioEndGroup" minOccurs="0" maxOccurs="1"/>
@@ -87,6 +124,12 @@
    </xsd:complexType>
 
    <xsd:group name="BioStartBioEndGroup">
+      <xsd:annotation>
+         <xsd:documentation>
+            The start and end coordinates are optional but if they exist, they should exist together so
+            they are defined together in a group.
+         </xsd:documentation>
+      </xsd:annotation>    
       <xsd:sequence>
          <xsd:element name="bioStart" type="xsd:positiveInteger" minOccurs="1" maxOccurs="1"/>
          <xsd:element name="bioEnd" type="xsd:positiveInteger" minOccurs="1" maxOccurs="1"/>
